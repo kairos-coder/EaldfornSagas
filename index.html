@@ -1,0 +1,4629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ealdforn Sagas - Complete Old Saxon Epic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #0a0a08;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23262625' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+            color: #d9d1ba;
+            font-family: 'Crimson Text', serif;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            border-bottom: 2px solid #3d2b1a;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            color: #c8a876;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: #a78c5d;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .header-decoration {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .header-decoration span {
+            font-size: 2rem;
+            color: #7a5c2d;
+        }
+        
+        nav {
+            background: rgba(35, 30, 25, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 1px solid #5d4b32;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: #c8a876;
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            padding: 8px 15px;
+            border: 1px solid #5d4b32;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #5d4b32;
+            color: #e5d6b3;
+        }
+        
+        .content-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .poem-content {
+            flex: 3;
+            background: rgba(35, 30, 25, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #5d4b32;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        
+        .sidebar {
+            flex: 1;
+            background: rgba(35, 30, 25, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #5d4b32;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .parchment {
+            background-color: #2a241c;
+            background-image: 
+                linear-gradient(rgba(58, 48, 39, 0.7) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(58, 48, 39, 0.7) 1px, transparent 1px);
+            background-size: 20px 20px;
+            padding: 40px;
+            border: 1px solid #5d4b32;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .parchment::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                0deg,
+                transparent 0%,
+                rgba(198, 168, 112, 0.1) 2%,
+                transparent 4%,
+                transparent 96%,
+                rgba(198, 168, 112, 0.1) 98%,
+                transparent 100%
+            );
+            pointer-events: none;
+        }
+        
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: #c8a876;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #5d4b32;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-family: 'Cinzel', serif;
+            color: #c8a876;
+            margin: 25px 0 15px;
+        }
+        
+        .poem-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #d9d1ba;
+            text-align: justify;
+            white-space: pre-line;
+        }
+        
+        .poem-text p {
+            margin-bottom: 25px;
+            text-indent: 2em;
+        }
+        
+        .decoration {
+            text-align: center;
+            color: #7a5c2d;
+            font-size: 2rem;
+            margin: 20px 0;
+            letter-spacing: 10px;
+        }
+        
+        .chapter-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #5d4b32;
+        }
+        
+        .btn {
+            background: #5d4b32;
+            color: #e5d6b3;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Cinzel', serif;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #7a5c2d;
+        }
+        
+        .sidebar-box {
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-box ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .sidebar-box li {
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #5d4b32;
+            padding-bottom: 10px;
+        }
+        
+        .sidebar-box a {
+            color: #c8a876;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .sidebar-box a:hover {
+            color: #e5d6b3;
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 2px solid #3d2b1a;
+            color: #7a5c2d;
+            font-size: 0.9rem;
+        }
+        
+        .saga-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .saga-item {
+            background: rgba(45, 40, 35, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #5d4b32;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .saga-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .saga-title {
+            font-family: 'Cinzel', serif;
+            color: #c8a876;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #5d4b32;
+            padding-bottom: 8px;
+        }
+        
+        .saga-original {
+            font-style: italic;
+            color: #a78c5d;
+            margin-bottom: 15px;
+        }
+        
+        .saga-description {
+            color: #d9d1ba;
+            line-height: 1.6;
+        }
+        
+        .saga-length {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #7a5c2d;
+        }
+        
+        .text-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .search-box input {
+            background: rgba(58, 48, 39, 0.7);
+            border: 1px solid #5d4b32;
+            padding: 8px 12px;
+            border-radius: 5px;
+            color: #d9d1ba;
+            font-family: 'Crimson Text', serif;
+        }
+        
+        .line-counter {
+            color: #a78c5d;
+            font-style: italic;
+        }
+        
+        .text-display {
+            max-height: 60vh;
+            overflow-y: auto;
+            padding: 15px;
+            background: rgba(35, 30, 25, 0.5);
+            border-radius: 5px;
+            border: 1px solid #5d4b32;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #a78c5d;
+            font-style: italic;
+        }
+        
+        @media (max-width: 900px) {
+            .content-container {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .saga-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .text-controls {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .parchment {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>THE EALDFORN SAGAS</h1>
+            <div class="subtitle">An Old Saxon Epic of 22,000 Lines</div>
+            <div class="header-decoration">
+                <span>⚔️</span>
+                <span>📜</span>
+                <span>🛡️</span>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#sagas">The Seven Sagas</a></li>
+                    <li><a href="#read">Read the Text</a></li>
+                    <li><a href="#history">Historical Context</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="content-container">
+            <main class="poem-content">
+                <div class="parchment">
+                    <h2 id="read">Complete Text of The Ealdforn Sagas</h2>
+                    <div class="decoration">* * *</div>
+                    
+                    <div class="text-controls">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search text...">
+                            <button class="btn" id="search-btn">Search</button>
+                        </div>
+                        <div class="line-counter" id="line-counter">Select a saga to begin reading</div>
+                    </div>
+                    
+                    <div class="text-display" id="text-display">
+                        <div class="loading">Please select a saga from the sidebar to begin reading</div>
+                    </div>
+                    
+                    <div class="chapter-nav">
+                        <button class="btn" id="prev-btn" disabled>Previous Section</button>
+                        <button class="btn" id="next-btn" disabled>Next Section</button>
+                    </div>
+                </div>
+            </main>
+            
+            <aside class="sidebar">
+                <div class="sidebar-box">
+                    <h3>The Seven Sagas</h3>
+                    <ul id="saga-nav">
+                        <li><a href="#" data-saga="aethling">Aethlingsaga</a></li>
+                        <li><a href="#" data-saga="maegen">Mægenþegnasaga</a></li>
+                        <li><a href="#" data-saga="twina">Twīna Wyrmblōda Saga</a></li>
+                        <li><a href="#" data-saga="fithung">Fithungasaga</a></li>
+                        <li><a href="#" data-saga="gluskaba">Gluskabasaga</a></li>
+                        <li><a href="#" data-saga="lufu">Lufu-Sangas</a></li>
+                        <li><a href="#" data-saga="matewgas">Matewgas-Sangas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-box">
+                    <h3>Text Navigation</h3>
+                    <div class="saga-nav-controls">
+                        <button class="btn" id="goto-start" disabled>Beginning</button>
+                        <button class="btn" id="goto-random" disabled>Random Passage</button>
+                        <button class="btn" id="goto-end" disabled>Final Section</button>
+                    </div>
+                </div>
+                
+                <div class="sidebar-box">
+                    <h3>Download</h3>
+                    <p>Complete text available for study:</p>
+                    <button class="btn" id="download-txt">Download Text</button>
+                    <button class="btn" id="download-pdf">Download PDF</button>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Reading Tools</h3>
+                    <div class="tool-controls">
+                        <label for="font-size">Font Size:</label>
+                        <select id="font-size" class="btn">
+                            <option value="1rem">Normal</option>
+                            <option value="1.2rem">Large</option>
+                            <option value="1.4rem">X-Large</option>
+                        </select>
+                    </div>
+                    <div class="tool-controls">
+                        <label for="theme">Theme:</label>
+                        <select id="theme" class="btn">
+                            <option value="dark">Dark Parchment</option>
+                            <option value="light">Light Parchment</option>
+                            <option value="sepia">Sepia</option>
+                        </select>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        <footer>
+            <p>Website created to preserve and celebrate The Ealdforn Sagas</p>
+            <p>Old Saxon Poetry | Epic Literature | Historical Texts</p>
+            <p>© 2023 The Ealdforn Project</p>
+        </footer>
+    </div>
+
+    <!-- TEXT DATA - PASTE YOUR CONTENT BELOW THIS LINE -->
+    <script id="saga-data" type="text/plain">
+        <!-- 
+        Aethlingasaga:
+Fitt I: The World Dreamer's Slumber
+The beginning of the Cantica Antiqua
+Ēalā, hwaet! 
+Hlōh ðā hē wunian wēold 
+ǣnne in ǣre, ealra āgen. 
+Ðā wæs se wuldres 
+weard weorcum fēowera: 
+hē ne wende nānne wīġ, 
+nē nāne weras, 
+nē nāne burġe bēd, 
+nē nēan burġe. 
+Hē slēp on slǣpe, 
+swā hē slēp his slǣp, 
+on ðǣre slǣpes sōðum, 
+swā hē sāwe his sāwl. 
+ǣnig wæs on ānre, 
+ealra ǣre. 
+Hē dreaht his dreame, 
+ðā hē ðā dǣd wæs, 
+mǣneþ his miċelne mihte, 
+ðā hē ðæs moldan hēold, 
+and ðā hē his sēoþes sōðe sǣt.
+
+Fitt II: The Awakening of the World
+The Dreamer's Creation
+Þā wæs Mategwas, 
+miċelne mǣgenþearfe, 
+þēgnas his geþingode, 
+ðā he his ðēode weold. 
+Hē sǣt on swæðe, 
+swā he swæðe draca, 
+and ðā he his miċelne 
+mihte mid ðām moldan gēng. 
+Hē drēame ðā ðā dēade, 
+ðā hē his dǣde dēode. 
+Mategwas, se miċele mǣġenþearfe, 
+miċelne mǣġenþearfe, 
+ðā he his miċelne mæġenþearfe. 
+And ðā he his wera wunode, 
+weorcum heofones, 
+and ðā he his burga burge, 
+beorgas mid beorgum. 
+Hē sæt ðā on swæðe, 
+swā he swæðe sǣ, 
+and ðā he his wordum wealde, 
+wunode on worulde. 
+Hē dreaht his dreame, 
+ðā hē his dǣde dēode.
+Fitt III: Mategwas and the Wyrm Niddhogg
+The tale of Mategwas
+Þa gerymede, 
+þeðe meġan þearfan, 
+mæġenþēgnas fōron. 
+Fæste āfōron fram ðæs eorles ǣre, 
+þā hē his āgen 
+þegn Mategwas se myċele, 
+þe māgas his gārāgum 
+gūþeġewearðes ġeġān ðēah. 
+Wēold he ðā wīgfruma, 
+waldende heofones, 
+þēgnas his geþingode, 
+ðā he þæs þēodgiefan 
+nīðdraca nama, 
+Niddhogg, his nīðġewyrdes.
+Nīðhogg, se nacoda wyrm, 
+nāthwylċes weofdes, 
+eorðan æþeling, 
+ealdorfīendsceof, 
+þe hē his lǣstan līchama on līġe gesǣt, 
+drāca, se dryhten. 
+Ðā ðā dǣdfruma 
+þēgnas on ðā þēodġewearðan, 
+þā hē ðæs fōrðlāc 
+Nīðhogges nīðġewyrdes, nīðġewyrdes. 
+And ðā se Mategwas, 
+mæġenþegn þæs, 
+miċelne mǣġenþearfe, 
+þā hē mid ðām 
+mǣgenum ġeseah 
+þæs dracan dǣd, 
+dēaðes geþeaht. 
+Þā wæs se wyrm wāde, 
+wīgġearwe on līċe and on līġe, 
+līċġearwa, on þām wīġwæġe. 
+Wīgġearwa wæs se Mategwas, 
+miċelne mǣġenþearfe. 
+And þā hē þone dracan dōmde, 
+ðā hē his dǣde weold, 
+sǣde he his sēoþes, 
+segeð hē his weorce weold, 
+hwæt he his dǣde dōde, 
+deofles gewealdes.
+Fitt IV: The Wyrm's Challenge
+The beginning of the battle
+Ðā wæs se wuldres weard, 
+weorcsum man, 
+Mategwas se miċela, 
+ðā he on mēran hōh, 
+hē mid his hāligan handum, 
+hē mid his heofones cræfte, 
+þā wæs him ðæt wīgġewearþ, 
+wēoreld āgen. 
+Ðā wæs se wyrm wōd, 
+Nīðhogg, se nacoda, 
+hē on ðære eorðan ēode, 
+ealra āgen. 
+Hē slōh mid his sċealċe, 
+sċēold mid his sċielda, 
+on Mategwas, 
+se miċela, mæġenþegn. 
+Ðā wæs se þegn þēode, 
+þēgnas his geþingode. 
+Hē mid his hlīfċynne, 
+mid his hēafde wunode, 
+on ðām wīġe, 
+þā hē ðæs werod āgen. 
+Nīðhogg, se nāðe, 
+ðā hē his næġġa bræġde, 
+on ðone Mategwas, mæġenþegn. 
+Ðā wæs se wīgġewearþ, 
+weorðes geġewearð, 
+Ðā wæs se hēafod hēah, 
+heofones geġewearð.
+Fitt V: The Messenger's Prophecy
+This Fitt, inspired by the Heliand's annunciation, introduces a prophecy about the battle's outcome. It focuses on the inner thoughts of a wise figure who receives the divine message.
+
+Thô was se tīd ċuman, 
+ðæt hit eal swā ġelǣsted weorð, 
+swā se wuldres weard weorcum fēowera, 
+ðā hē his þegn sende, 
+se heofones boda, 
+se Gluskab ġehalġode, 
+ðā he his ġearwe wæs, 
+on ðā weorðan woruld, 
+ðā he his wordum āhōh. 
+Hē ġeaf his hlīfċynne, 
+mid his hēafdes cræfte, 
+on ðone eorðan ēode, 
+on ðone eorles slǣpe. 
+Hē spræċ mid his wordum, 
+wēorod āgen, 
+"Hēl wæs þu, Mategwas, 
+ðū byst ðīnum hǣrran lēof, 
+wealdende weorðe, 
+þā ðū his weorce wealde. 
+Þū scealt for eallum wesan, 
+wīgġewearþe ġewīhode. 
+Ne hāfe ðū wēnean hūġe, 
+ne forhtie ðū ðīnum ferhe, 
+ne wese ðū wrāð on worulde. 
+Þū scealt þīn wīg winnan, 
+wīþ Nīðhogg, se nacoda wyrm."
+
+Fitt VI: The Chieftain's Decree
+This Fitt, inspired by the census passage from the Heliand, describes a decree from a powerful chieftain that compels Mategwas to travel, setting the stage for the fulfillment of the prophecy.
+
+Þā wearð fram Rūmuburġ 
+rīċes mannes, 
+ofer ealle ðās irminþēode 
+Ƿaldere, se ðēoden, 
+ban and bōdscipe ofer 
+ðā his brādan ġewealde 
+ċuman fram ðām cāseran, 
+cyninġum ġehwilċum, 
+hāmsittendum, 
+swā wīde swā his heretogan 
+ofer eall ðæt landscipe 
+lēoda ġeweoldan. 
+Hēt man ðæt ealle 
+ðā elilendie menn 
+healdan heora hāmstālas, 
+hālig word, 
+cūman tō ðām cynnæ ġehwām, 
+ðanon he cynnæs wæs, 
+ġeboren fram ðām burgum. 
+Þæt ġebod wearð ġelǣsted 
+ofer ðās wīdan woruld. 
+Wered samnode tō ealra burga ġehwām.
+ Fōron ðā bodan ofer eall, 
+ðā fram ðām cāseran cumene wǣron, 
+bōcscēawe weras, 
+and on brēfe scrīfan 
+swīðe nīedlīċe naman ġehwilċan. 
+And þā Mategwas se gōda, 
+swā hit god mihtig, 
+waldend wolde: 
+sōhte him ðā wānan hām, 
+ðā burh on Beðleem, 
+ðār he his bōcscipes 
+ġeboren wæs, bearna strengost.
+Fitt VII: The Birth of the King
+This Fitt redrafts the birth narrative, establishing the new hero Haldric in the grand fortress of Glimthaven, destined to be a great king.
+
+Þā wæs he on þām hāme, 
+hūseles drēam, 
+Mategwas se miċela, 
+mæġenþegn þæs, 
+and ðā him ðā māras manas, 
+mæġenþeawes, 
+þā his bōd, bearna strangost, 
+ġeboren wæs, bearna cræfta. 
+Hēo ġesāh his sunu, 
+se sēoþes līf, 
+and ðā hēo his līċe lǣdde, 
+lēofan miht. 
+Hēo wæs on ðære burge, 
+bāðe ġemǣne, 
+on ðære burge Glimthaven, 
+barnes ġebyrd. 
+Þā wæs he swā fæġer, 
+cyninges bearnes, 
+þēgnas on þēode, 
+þæs þēodgiefes, 
+mid his wēoredes wīġ, 
+wuldres ġerǣd. 
+And ðā his mōder, 
+mihtes gewunode, 
+hēo him āhōh, 
+hēofones cræfte, 
+and him līġe lǣdde, 
+līchama seald. 
+Hēo hine on hām, 
+hæfde þearf, 
+hēo hine on sēalas, 
+sǣde his sēoþes, 
+þā hē his sunu, 
+swā he him sǣde on swæðe.
+And þā wæs on ðām feldum, 
+fēasċīpe weras, 
+hiredan hēaldan, 
+hēora flōdes cræft, 
+hēora hālsūmes, 
+on hīwe, on hwīle. 
+Ðā wæs se hēofones bōda, 
+hālig gāst, and him sǣde his sēoþes, 
+sēoþes gewealdes: 
+"Eow is ðæt barn, 
+barnes ġebyrd, 
+on ðære burge Glimthaven, 
+cyninġes ġerǣd." 
+And ðā hēo ðā on līċe, 
+līfdrēam drǣfde, 
+hēo ðā on līċe, 
+lēaf weorces, 
+and hēo ðā on þēode, 
+þēodgiefan, 
+and ðā hēo ðā on līċe, 
+lēoðum lāh.
+Fitt VIII: The Wise Thanes and the Hawk-King
+This Fitt, inspired by the tale of the Magi, introduces three wise thanes who seek the newborn king, Haldric. They encounter a cunning and murderous ruler who is threatened by the prophecy.
+
+Þēah ðā ġit Mategwas ġemǣre manna, 
+on his hāme, 
+hūseles drēam, 
+þā wæs him ðæt 
+word ġeworden on worulde āgen, 
+ðæt heofones word hāliges þēgnes. 
+Þā wæs him se werod wīde ġenāmen, 
+þrea þēġnas, 
+þēodum of westan, 
+on langan weġe ofer ðæt land þider, 
+fylġdun ānne berhtne bēacan, 
+and sōhton ðæt bearn godes, 
+mid hlūttre hūġe.
+Þā hēo Hæfoc sealdon, 
+se riċe rædġiefa, 
+on his healle sittende, 
+slīðe cyninġ, 
+mōdiġne mid his mannum, 
+sīe sōðes word, 
+hālsedon hine hǣlige. 
+"Hūlīċ ārend, ūt ġebrōhton," 
+se cyninġ cwaþ, "wīde of westan?" 
+"Wē ġesāwon," 
+cwaþon hēo, 
+"bēacenes scīnan, 
+hāliġes cræft. 
+Wē sōhton ðæt bearn, 
+barnes ġebyrd, 
+ðæt sceal wesan 
+cyninġ ofer eall þes cynerīċe. 
+Wē āgon us, ealdre þēode, 
+bōclīċra worþ, ġeboren on Glimthaven."
+Þā wearð Hæfoc innan brēostum, 
+hearm wið heortan. 
+Hē ġeāh ðā bōcere man, 
+se cræfta man, clyppede, 
+"Hwer sceal se cyninġ, 
+cuman on worulde?" 
+"Sē is," cwaþon hēo, 
+"on Glimthaven ġeboren, 
+swā hit on ūrum bōcum ġewriten, 
+wīse weras, ġefyrn ġesāgon. 
+Þā sceal fram ðære byrġe, 
+burga hyrde, lēof landes weard, 
+on ðis lēoht cuman." 
+Hæfoc on hūġe, 
+hālig word, 
+sōhte him slēges þearf, 
+sǣde he sōhte.
+Fitt IX: The King's Fear and the Thegn's Dream
+This Fitt, inspired by the wise men's dream, describes how the three thanes are warned in a vision not to return to the treacherous Hawk-King, Hæfoc, thus protecting the newborn Haldric.
+
+Þā ġefræġn ic ðæt sōna 
+æfter ðām slīðmōd cyning, 
+ðā wīsan manna word, 
+þām wræcċan sæġde, 
+ðā ðār on elilendie eorlas wǣron, 
+ferran ġefarene, 
+and hē fræġnade æfter ðām, 
+hwænne hīe on westerweġum 
+ǣrest ġesāwon 
+þone cyningstearran cuman,
+cumbal lȳhtan, 
+hēadre fram heofone. 
+Hīe ne woldon him 
+ðā hēlan ǣwiht, 
+ac sæġdon hit him sōðlīċe. 
+Þā hēt hē hīe on þone sīð faran, 
+hēt ðæt hīe heora 
+ārend eal underfundon, 
+ymb ðæs cildes cyme, 
+and se cyning self ġebēad, 
+swīðe heardlīċe, 
+hēah cyninġ þæs, 
+þām wīsan mannum, 
+ǣr þām hīe fōron norðan forð, 
+þæt hīe him eft ġecȳðdon, 
+hwār hē þone cyning 
+scolde sēċan æt his selðum. 
+Þā hogode hē him tō banan 
+weorðan wǣpnes ecġum.
+Ac eft Gluskab ðōhte wið ðām þinġe: 
+hē mihte onfōn mā, 
+ġelǣstan on ðis lēohte. 
+Þā ġēngon eft ðā cumbla forð 
+wænum under wolcnum. 
+Þā wǣron ðā wīsan 
+menn fūse tō farenne: 
+ġewiton him forð ðanon,
+balde on bōdscipe: 
+woldon ðæt bearn 
+godes sylfne sēċan. 
+Hīe ne hæfdon ðanon ġesīðas mā, 
+būton ðæt hīe þrīe wǣron: 
+wisson him þinġa ġesċēad, 
+wǣron him glēawe gumon, 
+ðā ðā giefa lǣddon. 
+Þā sǣġde him on slǣpe 
+se heofones boda, 
+swæðe ġetrēowan, 
+þæt hīe eft ne fōron on 
+ðæs cyninges hand, 
+ac hīe sceoldon nīwe weġas niman, 
+hālig word, hāmweardes wīsian. 
+Hīe onfēngon ðæt word weorðlīce, 
+and hīe wendon him 
+eft on weges ōðres.
+Fitt X: The Flight from the Hawk-King
+This Fitt, inspired by the flight into Egypt, details how Mategwas is warned in a dream by Gluskab to flee the wrath of the Hawk-King, Hæfoc. It culminates in Hæfoc's murderous rage and the lament of the mothers.
+
+Þā wæs sōna æfter ðām Gluskab cuman, se godes boda, Mategwas tō spræcan, sǣġde him on swefne, slǣpendum on niht, boda drohtnes, ðæt ðæt bearn godes, se slīðmōd cyning, sēcan wolde, āhtian his ealdres. "Nū scealt ðū hine on Glōmscīnne land onlǣdan," cwaþ he, "and under ðām lēodum wesan, mid ðām godes bearnum and mid ðǣre gōdan ðeowan, wunian under ðām weorode, oþ ðæt ðē word cume, hǣrran ðīnes, ðæt ðū ðæt hālige bearn eft tō ðām landscipe lǣdan mōte, drohten ðīne."
+Ðā fram ðām drēame onsprang Mategwas on his ġesthūse, and ðæt godes ġebod sōna oncnēow. Ƿāt him on ðone sīð ðanon se þegn mid ðǣre þēowe, sōhte him þēode ōðre ofer brādan beorg. Ðā ġefræġn æfter ðām Hæfoc se cyning, þær hē on his rīċe sæt, ðæt wǣron ðā wīsan menn westan ġehworfen, ēastan on heora ēðel, and fōron him ōðerne weġ. Hē wiste ðæt hīe him ðæt ārende eft ne woldon seċġan on his selðum. Ðā wearð him ðæs on sorgum hūġe, mōd murnende, cwaþ ðæt hit him ðā menn dydon, hæleð tō hōnum. Hē ġehēt ðāheardlīċe Hæfoc ofer his rīċe, hēt ðā his rincas faran, cyning ðāra lēoda, hēt ðæt hīe cildra swā fela þurh heora handmæġn hēafdum benāmon, swā fela bearna ymbe Glimthaven, swā swā ðǣr ġeboren wearð, on twām ġēarum. Tēonan fremudon ðæs cyninges ġesīðas. Ðā scolde ðǣr swā manig cildisc mann sweltan synna lēas. Nā wæs sið ne ǣr iūmārlīcra forgang ġeongra manna, earmlīcra dēað. Īdise wēopon, mōdra manige, ġesāwon heora meġu spillan: ne mihte hīe him nēo ġefremman, þēah hīe mid heora fæðmum twām heora āgen bearn earmum befēngan.
+Fitt XI: The Forest-Guardian's Call
+This Fitt replaces John the Baptist with Ealdward, a Heimdall-inspired forest-guardian, a lone seer who lives in the wilderness and announces the coming of the new king, Haldric, with a blast from his horn.
+
+Þā wæs him Ealdward fram his geoguðhāde, āweaxen on āne wēstenne; þār ne wæs werodes þā mā, būtan ðæt hē þær āncora hālgode ðegn, se wuldres weardes, weorc geðēodde. Hē forlēt þēoda ġemang, manna ġemǣnðu. Þā wæs him mihtiġ cuman on ðǣre wēstenne word fram heofone, gōdlīċ stefn, and Ealdward ġebēad, þæt hē Haldrices cyme and his cræft miċel ofer ðisne middanġeard mǣran scolde; hēt hine wārlīċe wordum seċġan, þæt wǣre heofonrīċe hæleða bearnum on ðām landscipe, lēodum ġenēalǣċed, wunsumlicost welena. Hē forð lǣdde him ðā hwītan horn, hlyd swīðlīċe, sōna sǣġde, "Wēsað hēofonrīċe hǣleðum ġenēalǣċed. Nū lǣtað ēow on ēowrum mōdsēfan ēowerra selfra synna hrēowan, lāðes ðæt ġe on ðis lēohte fremmod, and mīnum lǣrum hȳrað, wendon æfter mīnum wordum. Ic ēow on wætere sceal dēopian dēorlīċe, þēah ic ēower dǣda ne mæġe, ēowerra selfra synna ālǣtan. Ac se is on ðis lēoht cuman, mihtiġ tō mannum, and under ēow middum stend. Hē ēow dēopian sceal on ēowres drohtenes nama on þone hālgan gāst. Þæt is hǣrra ofer eall."
+Hǣleð manige be ðām lǣrum þā, lēode wēndon, weras wārlīċe, ðæt ðæt waldend Haldric self wǣre. Hīe cwǣdon, "Bist ðū nu Haldric se ðā hēr langum ġeō lēode sæġdon, weras wārlīċe, ðæt hē scolde on ðisne weoruld cuman?" Ealdward ðā ġemǣlde and tōgēanes spræc, "Ne eom ic ðæt bearn godes, wǣre waldend Haldric, ac ic sceal him ðone weġ rȳman, hǣrran mīnum." Hīe cwǣdon, "Hwæt sceolon wē þām weorode seċġan tō sōðe?" Ealdward ðā ġemǣlde, glēaw andsware, "Ic eom foraboda frēan mīnes, lēofes hǣrran; ic sceal ðis land rǣċan, ðis weorod æfter his willan. Ic hæbbe fram his worde mid me stranġe stefne, þēah hīe hēr ne willan forstandan fela, werodas on ðǣre wēstenne. Ne eom ic mid wihte ġelīċ drohtene mīnum: hē is mid his dǣdum swā stranġ."
+
+Fitt XII: The Anointing in the Wood
+This Fitt describes Haldric's return to his homeland, grown to manhood. He finds the forest-guardian, Ealdward, and is anointed as the true king in a sacred forest pool, a moment witnessed and affirmed by the divine powers.
+
+Þā wæs eorla cyninġ, Haldric ġeworden, āweaxen on eorðan, ealdor beorna. Hē ġewāt him of Glōmscīnne, ġeong rīċesweard, on his folde feorran, folce rȳman. Hē sōhte his sōðfæstnes, se sōðe cyning, hwæt him gefræġn folce, and friþu bēodan. Hē ġewāt þā on þæt wēste land, þær se Wealdweard wæs, hālig on hylle, and horn blāwan.
+Þā ġesāh se wīse mann, Ealdward on fēorran, hū se Haldric wæs, hæleð-þēoden, cuman on cræftes cyne, and hāliges gāstes. Ealdward ðā ġemǣlde, and on heortan spræc, "Ic þe sceal, cyning, on cneowbede biddan, þæt ðū me scealt dēopian, drohtenes þēgn, and ic ðe ne mihte, minne hēofonrīces." Ac se Haldric ðā cwaþ, hǣleðum mihtiġ, "Lǣt ðū, eorl, ðæt wesan āne tīd, swā se drohten us, dēorlīċe cȳð, þæt we fulfremodon fates wīsan." And Ealdward ðā ðēode, þēgn þone ġeong, on ðæt wæter wīde, wuldres wordum.
+Þā wæs him se heofon, hēah ġetēod, and se hāliġes gāstes on him scīnan. Hē him ðā sǣġde, swēġes wordum, "Þū eart min sunu, se sōðe cyning, on ðe me līcað, lēofan mīne." And ðā wæs se Haldric, hāliġ manna, ġenāmen on nihtes, nāðres georne. And hē wæs on ðām weorode, weres ānsyne, sōðes sǣġde, swā se wuldor ġeworðe.
+Fitt XIII: The First Thanes and the Wyrm's Whisper
+After his anointing, the now-affirmed king Haldric gathers his first companions. He is then tested by a shadowy figure—a whisper of Niddhogg's malice—who offers him power without struggle, a temptation he must overcome to prove his worthiness.
+
+Þā wæs heofones hād on Haldrice ġeseted, eorla cyninġes on his āġene weġe. Þā cōmon him lēode ofer landes weard, and weras wæron wīde, wuldres wordum, þā se Ealdward sōna sǣġde his sōðfæstnes. Hīe wæron þegn-gielde, þēodnes cymes, and hāliges gāstes, Hæfoc forscryðdon. Hīe onfēngon þone þēoden, þā þā sōð wæs, fæġer on fǣġnes, and him folgdon on weġe.
+Þā wæs him on ðām wēstenne, wuldres weard, and ðā him cōm Niddhogges niðes bodan, on þām hēafode hūse, hāliges gāstes. Se þegnes cwaþ, "Þū mihtest rīċe rædan, and þēoden Haldric, on ðām rīċe geþeon. Lǣt ðū þā lēohtes lāre, and þæt weorc þæs wuldres. Ic þē forgeaf eal ðā welan, wundra þæs weoruldum." Ac se Haldric þā spræc, hæleð-þēoden, "Fæder mīn is se Frea, se fyrnnes weard, and ic him folgode, on his fyrnnes weġe."
+And se þegn him þā ðēowde, þā þā word wæron, on his hāliges gāstes, hāliges weorðes. Þā wæs him Niddhogges niðes bodan, nǣfre nīwe. And hē wæs fram þām wīġe gewunnen on weoruldum. Haldric þā onfēng, hæleða mihte, and him seġde his sōðfæstnes, se sōðe cyning.
+Mægenþegnasaga
+Continuing the Cantica Antiqua
+
+Fitt XIV: The Memory of First War
+Haldric receives visions of the primordial battle between Mategwas and Niddhogg
+Þā wæs Haldric hālig cyning,
+ on his heartan hūse,
+ heofones mægnes,
+ mihtig on mōde.
+ Þā him cōm swefnes cræft,
+ swīðe dēope,
+ fram his fæder frēan,
+ fyrngewinnes sōð.
+ Ġesāh hē þā on slǣpe
+ slīðne campan,
+ hū æt fruman fyrst
+ feohtende wǣron
+ Mategwas se mǣra
+ and se morðwyrm,
+ Nīðhogg se nāðsceaða,
+ niðgrimm weorc.
+Þā wæs middangeard
+ mǣst ungescepen,
+ būtan blācne grund
+ and beorhte tungol.
+ Nīðhogg on nēolum
+ niðer creōpende,
+ sceaða scearpnægla,
+ scūrheard draca.
+ Wolde hē worlde
+ wrāðe gescieðan,
+ ealles ordsceafte
+ ende macian.
+ Ac se Mategwas,
+ mǣgenþrym hæfde,
+ waldend weorc-cræftes,
+ wīsdōm and miht.
+"Nū sceal ūser
+ ungemǣte feoht
+ wesan geworht,"
+ Mategwas cwaþ.
+ "Þū wilt, wyrmsceaða,
+ woruld forspillan.
+ Ic sceal foldan
+ fram þē freoðian,
+ lēoht fram lygesearwum,
+ lif fram deaðe.
+ Stande wē nū
+ on stedefæste
+ campstōwe,
+ cēne beadurincas!"
+
+Fitt XV: The Shaping of Earth-Middle
+The cosmic battle creates the foundations of the world
+Þā gefeaht fyrst
+ fēond wið frēond,
+ heardra gehwæðer
+ heorugrimme.
+ Mategwas mid mǣgene
+ moldgrundes wearð,
+ scōp hē scearpne
+ scield of stānum,
+ beorgas tō bordwælle,
+ brāde dūnscrafu.
+ Nīðhogg mid næglum
+ neowle dælde,
+ clawde sē clūstertēðe
+ ceald wæterstreamas,
+ dēope dalu,
+ dimme holtas.
+Swā wrǣttlice
+ weorold gescēape,
+ þurh heora heardum
+ hilderæsum.
+ Hwǣr se Mategwas
+ mōdige stōd,
+ þǣr weox wāstmas,
+ wudubearwas grēne.
+ Hwǣr se Nīðhogg
+ niðer stāpode,
+ þǣr wearð wāsten,
+ wintrig and ceald.
+ Tungol getācnodon
+ tīrfæstre stōwe,
+ hwǣr heora heardum
+ handum gefeahton.
+Seofon dagas lang
+ sige-lēas feoht,
+ seofon nihta rīm
+ nān oferswīðde.
+ Þā æt nēhstan
+ nīða heard-ost,
+ Mategwas mōdig
+ mǣl gespræce:
+ "Þū scealt, slǣht-wyrm,
+ slǣpe bindan,
+ oð dōmesdæges
+ dǣda gehȳrred.
+ Ic þē on neowelnysse
+ niðer sendan wille,
+ under eorðgrundes
+ innoste rōtas!"
+
+Fitt XVI: The Binding of the Serpent
+Mategwas chains Niddhogg beneath the World-Tree's roots
+Mid mihtegum wordum,
+ Mategwas cwæð
+ galdor and gēastas,
+ grimme beadurūnas.
+ Eorðe onēatne,
+ īsenclammas,
+ bunden of beadusearwum,
+ brōhte tō wyrme.
+ Fēter-clammas fæste,
+ fyrnwit bunden,
+ ymbhwyrft handum
+ heardne scynscaðan.
+ Nīðhogg ne mihte
+ nōwiht rīsan,
+ būtan rōta under
+ rynum gnagan.
+"Hēr scealt þū habban,"
+ Mategwas sæġde,
+ "hūs under hrusan,
+ heardne slǣpe.
+ Þonne middangeard
+ mǣst geblīcað,
+ and folc fǣringa
+ fyrnrēht forlǣteð,
+ þonne meaht þū mǣþum
+ morðor macian.
+ Ac oð þām daege,
+ dēopestr slǣpe!"
+ Gewāt þā se godfruma
+ goldweard,
+ scīmende scyppend
+ scīre tungl,
+ mōnan and mearce,
+ middangeardes weard.
+Eft tō his bearnum
+ blis āsende,
+ līf and lustfulnes,
+ lēoht and hāle.
+ Hālige gāstas
+ ofer hrōfas sendan,
+ bletsigan foldan
+ bearnum mannum,
+ ēce miltse
+ eall tōgædre.
+ Swā gefrēodode
+ frēa ælmihtig
+ weorold fram wīte,
+ wuldor gefēode.
+
+Fitt XVII: The Awakening and the Oath-Swearing
+Haldric awakens from the vision and gathers his first oath-sworn companions
+Þā onwōc se cyning
+ craft-wīs Haldric,
+ fram þām swefne swīðum,
+ sōðcyn wita.
+ Ealne æþelan
+ ellen oncnēow,
+ hū his fæder fæder
+ feoht gewann,
+ woruld geworhte
+ wīsdōme þurh,
+ freoðe foldan
+ fram feondsceaðan.
+ Nū hē mihte māran
+ mōd oncnāwan,
+ hwæt him gedafenað
+ dēdum tō wyrcenne.
+Gegyrede hine gearo
+ goldhringe cyning,
+ nam his handgesweord,
+ hlūd horn blēow.
+ Tō him cōmon cumlīðe
+ cēne beadurincas,
+ þegnas on þēawum,
+ þrīdda dǣl
+ eallra æþelinga
+ þe on earde wǣron,
+ sōhton hine sylfne
+ under sunnan scīman.
+ "Hwæt, gē gōdfruman!"
+ Haldric him tō cwæð,
+ "Wille gē wið mē
+ wearþan tō sīðe?"
+"Þū eart ūser cyning,
+ cnihtwesende!"
+ Sægde se forma
+ folces lǣttēow.
+ "Wē willað mid þē
+ weorodes menigan,
+ faran tō feorrlande,
+ feohtende beadu,
+ winnende wuldor,
+ weorðmynde gestrīenan!"
+ Þā swōron hīe ealle
+ āðas fæste,
+ trēowðe getācnodon,
+ tīrfæstre gecȳðu,
+ oð deaðes daeg
+ drōhtnes þegnas.
+
+Fitt XIV: The Memory of First War
+Haldric receives visions of the primordial battle between Mategwas and Niddhogg
+Þā wæs Haldric hālig cyning,
+ on his heartan hūse,
+ heofones mægnes,
+ mihtig on mōde.
+ Þā him cōm swefnes cræft,
+ swīðe dēope,
+ fram his fæder frēan,
+ fyrngewinnes sōð.
+ Ġesāh hē þā on slǣpe
+ slīðne campan,
+ hū æt fruman fyrst
+ feohtende wǣron
+ Mategwas se mǣra
+ and se morðwyrm,
+ Nīðhogg se nāðsceaða,
+ niðgrimm weorc.
+Þā wæs middangeard
+ mǣst ungescepen,
+ būtan blācne grund
+ and beorhte tungol.
+ Nīðhogg on nēolum
+ niðer creōpende,
+ sceaða scearpnægla,
+ scūrheard draca.
+ Wolde hē worlde
+ wrāðe gescieðan,
+ ealles ordsceafte
+ ende macian.
+ Ac se Mategwas,
+ mǣgenþrym hæfde,
+ waldend weorc-cræftes,
+ wīsdōm and miht.
+"Nū sceal ūser
+ ungemǣte feoht
+ wesan geworht,"
+ Mategwas cwaþ.
+ "Þū wilt, wyrmsceaða,
+ woruld forspillan.
+ Ic sceal foldan
+ fram þē freoðian,
+ lēoht fram lygesearwum,
+ lif fram deaðe.
+ Stande wē nū
+ on stedefæste
+ campstōwe,
+ cēne beadurincas!"
+
+Fitt XV: The Shaping of Earth-Middle
+The cosmic battle creates the foundations of the world
+Þā gefeaht fyrst
+ fēond wið frēond,
+ heardra gehwæðer
+ heorugrimme.
+ Mategwas mid mǣgene
+ moldgrundes wearð,
+ scōp hē scearpne
+ scield of stānum,
+ beorgas tō bordwælle,
+ brāde dūnscrafu.
+ Nīðhogg mid næglum
+ neowle dælde,
+ clawde sē clūstertēðe
+ ceald wæterstreamas,
+ dēope dalu,
+ dimme holtas.
+Swā wrǣttlice
+ weorold gescēape,
+ þurh heora heardum
+ hilderæsum.
+ Hwǣr se Mategwas
+ mōdige stōd,
+ þǣr weox wāstmas,
+ wudubearwas grēne.
+ Hwǣr se Nīðhogg
+ niðer stāpode,
+ þǣr wearð wāsten,
+ wintrig and ceald.
+ Tungol getācnodon
+ tīrfæstre stōwe,
+ hwǣr heora heardum
+ handum gefeahton.
+Seofon dagas lang
+ sige-lēas feoht,
+ seofon nihta rīm
+ nān oferswīðde.
+ Þā æt nēhstan
+ nīða heard-ost,
+ Mategwas mōdig
+ mǣl gespræce:
+ "Þū scealt, slǣht-wyrm,
+ slǣpe bindan,
+ oð dōmesdæges
+ dǣda gehȳrred.
+ Ic þē on neowelnysse
+ niðer sendan wille,
+ under eorðgrundes
+ innoste rōtas!"
+
+Fitt XVI: The Binding of the Serpent
+Mategwas chains Niddhogg beneath the World-Tree's roots
+Mid mihtegum wordum,
+ Mategwas cwæð
+ galdor and gēastas,
+ grimme beadurūnas.
+ Eorðe onēatne,
+ īsenclammas,
+ bunden of beadusearwum,
+ brōhte tō wyrme.
+ Fēter-clammas fæste,
+ fyrnwit bunden,
+ ymbhwyrft handum
+ heardne scynscaðan.
+ Nīðhogg ne mihte
+ nōwiht rīsan,
+ būtan rōta under
+ rynum gnagan.
+"Hēr scealt þū habban,"
+ Mategwas sæġde,
+ "hūs under hrusan,
+ heardne slǣpe.
+ Þonne middangeard
+ mǣst geblīcað,
+ and folc fǣringa
+ fyrnrēht forlǣteð,
+ þonne meaht þū mǣþum
+ morðor macian.
+ Ac oð þām daege,
+ dēopestr slǣpe!"
+ Gewāt þā se godfruma
+ goldweard,
+ scīmende scyppend
+ scīre tungl,
+ mōnan and mearce,
+ middangeardes weard.
+Eft tō his bearnum
+ blis āsende,
+ līf and lustfulnes,
+ lēoht and hāle.
+ Hālige gāstas
+ ofer hrōfas sendan,
+ bletsigan foldan
+ bearnum mannum,
+ ēce miltse
+ eall tōgædre.
+ Swā gefrēodode
+ frēa ælmihtig
+ weorold fram wīte,
+ wuldor gefēode.
+
+Fitt XVII: The Awakening and the Oath-Swearing
+Haldric awakens from the vision and gathers his first oath-sworn companions
+Þā onwōc se cyning
+ craft-wīs Haldric,
+ fram þām swefne swīðum,
+ sōðcyn wita.
+ Ealne æþelan
+ ellen oncnēow,
+ hū his fæder fæder
+ feoht gewann,
+ woruld geworhte
+ wīsdōme þurh,
+ freoðe foldan
+ fram feondsceaðan.
+ Nū hē mihte māran
+ mōd oncnāwan,
+ hwæt him gedafenað
+ dēdum tō wyrcenne.
+Gegyrede hine gearo
+ goldhringe cyning,
+ nam his handgesweord,
+ hlūd horn blēow.
+ Tō him cōmon cumlīðe
+ cēne beadurincas,
+ þegnas on þēawum,
+ þrīdda dǣl
+ eallra æþelinga
+ þe on earde wǣron,
+ sōhton hine sylfne
+ under sunnan scīman.
+ "Hwæt, gē gōdfruman!"
+ Haldric him tō cwæð,
+ "Wille gē wið mē
+ wearþan tō sīðe?"
+"Þū eart ūser cyning,
+ cnihtwesende!"
+ Sægde se forma
+ folces lǣttēow.
+ "Wē willað mid þē
+ weorodes menigan,
+ faran tō feorrlande,
+ feohtende beadu,
+ winnende wuldor,
+ weorðmynde gestrīenan!"
+ Þā swōron hīe ealle
+ āðas fæste,
+ trēowðe getācnodon,
+ tīrfæstre gecȳðu,
+ oð deaðes daeg
+ drōhtnes þegnas.
+
+Fitt XVIII: The First Hall-Building
+Haldric establishes his royal seat and the great mead-hall
+Þā sōhte se cyning
+ cēne beaduwiga,
+ stōwe on staþole
+ stearce getimbrode,
+ healle healice,
+ hlūdne þrymseld.
+ Gecēas hē cyneburh
+ on cnolle hēahum,
+ þǣr æt fruman fyrst
+ folde grēttest,
+ beorgas ymbūtan
+ beorhte stānweallas,
+ wæterstrēamas
+ wlitebeorhte flōwon.
+"Hēr sceal hālig ham
+ healdend wesan,"
+ Haldric hēahcyning
+ hlūde sæġde,
+ "māran meduhealle
+ mōnna bearnum
+ þonne æfre ǣr
+ eorðbūende
+ geworhton under wolcnum,
+ wuldorprym micel!"
+ Swā het hē his þegnas
+ þearflīce wyrcean,
+ timbran trumne
+ torht cyneseld,
+ goldgerenode
+ glæmstānas settan.
+Seofon mōnað lang
+ manfulne weorc,
+ dæges and nihtes
+ deorlīce timbran.
+ Āhōfon hēah hrōf,
+ hlūdne gyldenheall,
+ mearc-stānas mǣre
+ around medubenċum.
+ Ealdgereht eall
+ innanwearde,
+ beāgas and byrnan,
+ beorhte frætwe,
+ wǣpna gehwilc
+ weorðfullne stōd,
+ gearo tō gūðe
+ goldhroden cyning.
+Þā wæs heall gearo,
+ hlūd under heofone,
+ mārost meduþegnas
+ meþelstede fundon.
+ Gecwǣdon cyning
+ cēne Haldrice:
+ "Hwæt sceal hātan
+ hūs þis māre?"
+ Ða ondswarede
+ æþeling gōd:
+ "Þunresheal sceal hātan
+ þegnseld þis!
+ Hēr sceal hūnigswēte
+ hlūde flotian,
+ beorhtast beadurinc
+ blisse habban!"
+
+Fitt XIX: The Shadow in the North
+News comes of strange happenings in the northern wastelands
+Þā wæs on Þunresheale
+ þegn-sibb micel,
+ bliss and beorscipe,
+ beadurinc manig
+ æt symbeldæge
+ sibb gefremede.
+ Þǣr wæs hearpan swēg,
+ hlēoðor wrǣttlic,
+ glee-manna sang
+ geond goldwearde,
+ word-wyrhtan cræft
+ wīsdōm-berend
+ sealde soðlēoð
+ under seld-hrōfe.
+Ac þā cōm cuma
+ ceald of norðan,
+ hrēowmod hæleð
+ hūru spræce:
+ "Hēr sindon tīðinga
+ torne gehladene!
+ On norðwegas
+ nīðgrim weorc,
+ eorðan æfre
+ īdelnes wexeð.
+ Folde forsitteð,
+ frumbearn sweltað,
+ næfre nǣnig
+ nīht ne dæg
+ sunnan scīman
+ sōðfæst beleohteð."
+"Hwæt is þāra tacna?"
+ Haldric frægn,
+ cyning cēne
+ cwic andsware.
+ "Blāce beorgas
+ beorhte næfre,
+ deorcnyss dæghwamlīce
+ dimmer weaxeð.
+ Ealne weg wyrmfāh
+ wīde spongon,
+ sweart swāðu
+ swearte nǣddran,
+ Nīðhogges cyn
+ niðer crēopende,
+ fēond-scafan fela
+ foldan spilgað!"
+Þā āstōd se æþeling,
+ eal-wealda helm,
+ grīmhȳdig guma
+ gūð-bil genam.
+ "Nū is tīma cumen
+ tīrfæst weorc,
+ þæt wē norðweard
+ niðe sōhton!
+ Ne mæg ic munduclic
+ mīnum lēodum
+ lǣtan līðan
+ lāðra fēonda
+ nīð ne nearowe,
+ nefne ic norðan fare!"
+
+Fitt XX: The Gathering of the War-Host
+Haldric marshals his army to march north against the growing darkness
+Þā sōna æfter
+ sund-buendum
+ horn gehīerde
+ hlūde blāwan,
+ geond eall ēþel
+ æþelinges bōd:
+ "Cumað, campgearwe
+ cēne rincas!
+ Tīma is tō farenne
+ tō feoht-stōwe,
+ wīgend wiðstandan
+ wyrmcynn fāh,
+ beaduwerk beornan
+ būtan ōþrum!"
+Cōmon þā cēne
+ of cyneburge,
+ þrēo þūsenda
+ þegna gehwilc,
+ byrnum gebyrged,
+ billum tō gearowe.
+ Brunfāg bunden
+ bord-weall fæst,
+ æscolt and eccg
+ eall gebeorht,
+ helm and hring-byrne
+ hlūde scīnende,
+ campweoroda cyning
+ cūð and mǣre.
+Þǣm fyrdweorode
+ fæger siððan
+ Haldric cyning
+ hlūde mǣlde:
+ "Gē sindon gōde
+ gārsecge menn,
+ cēne campweorude
+ cyning-weorðe!
+ Nū sceal ūser ellen
+ æþelinges weorðan,
+ feoht-grādig faran
+ folce tō helpe,
+ lǣtan linde weorðan
+ hlūde ymb handa,
+ grimme gāras
+ geond grǣsland fleogan!"
+"Gif wē dēað drihtnes
+ dǣdum moton,
+ in Wulderhalle
+ weorðian sittan,
+ giefan us godfyrht
+ glēde niman!
+ Ac gif wē libban
+ lȳtel hwīle,
+ sige-tīr strīenan
+ under sunnan scīman,
+ þonne bið ūser noma
+ nihtlanges heard
+ on scopes sange
+ scīran gehīered!"
+ Hlōhan þā beadurinc,
+ bil-swīðe wer,
+ gearwe tō gange
+ goldwine folces.
+
+Fitt XXI: The March to Shadow-Realm
+The war-band travels north into increasingly desolate and cursed lands
+Gewāt þā ofer geofon
+ goldwine folces,
+ mōdig mægenþegn
+ magas lǣdan,
+ norðwearde on
+ nihtscūa land,
+ þǣr næfre nǣnig
+ nihtegale sang,
+ ne blōstma ne blæd
+ beorhte ne grēow,
+ eall wæs andsware
+ īdel and wēste.
+Þrīe dagas lang
+ þēgn-weoroda mæst
+ fērde forð on weg
+ folce gelǣdde,
+ oð þæt hīe gesāwon
+ sārig tacen:
+ hrīmge heafodbeorg
+ hlūde stōd,
+ þanon cōm mist
+ morgen-ceald,
+ deorcfāh nēol
+ dimhȳdig sceadu
+ ymbhwyrft swīðe
+ sweart and heard.
+"Hwæt is þes hlāw?"
+ Haldric frægn,
+ se þe mōst meahte
+ mǣrne gūð-rinc.
+ Andswearede
+ eald gūð-beorn:
+ "Þis is se stōw
+ stæðolfæst ǣr,
+ þǣr æt fruman fyrst
+ folde wearð
+ geworht wið wyrmum
+ wīsdōme þurh.
+ Hēr bindeð æfre
+ bealu-rūnas
+ Nīðhogg neðan,
+ under neowolnysse."
+"Ac nū sindon
+ slǣpe-bendas
+ heardan handum
+ hēr tōslitene!
+ Lōciað, lēofe men,
+ hū ligetu springað
+ fram foldan sceat
+ fȳr-drācena!
+ Wyrmfāh wīde
+ wrixle fleogað,
+ Nīðhogges bearn
+ nihtscaðu macaþ!"
+ Þā ondrǣdde
+ duguð and geogoð,
+ ac Haldric cyning
+ heort ne forhte.
+Fitt XXII: The Final Battle and the Binding Renewed
+The climax and conclusion of the Maegenbegnasaga
+Þā gestōd se cyning
+ cēne on campstōwe,
+ Haldric se hēahgōda
+ hlūde mǣlde:
+ "Nū is endedæg
+ eallra gesceafta!
+ Hēr sceal weorðan
+ wīg ōðer twēga:
+ oððe middangeard
+ morðe spilgan,
+ oððe freoðu findan
+ folce tō helpe!"
+Þā āstāh of eorðan
+ egeslīc wyrm,
+ Nīðhogg se nāðscaða
+ nihtscūan lǣdde.
+ Sweart wæs his scūa,
+ scearpan tēðum,
+ īsenclammas
+ ealle tōbrocen,
+ bindrūnas
+ gebāne on foldan.
+ Spræc þā se slīðgrim
+ sweartan reorde:
+"Ic eom æþeling
+ ealdra dagas,
+ ǣr þonne tungol
+ tīd ġerīmdon!
+ Hwæt wenest þū,
+ wǣpnes bearhtme,
+ tōgēanes mē
+ tō campian?
+ Ic eom deāð and dimnes,
+ dēop under eorðan,
+ ic eom ende
+ ealra þinga!"
+Haldric him andswarede,
+ æþeling gōd:
+ "Þū eart lȳgend
+ on langan tīde!
+ Ic eom lēoht and līf,
+ lāst Mategwases.
+ Þurh mē sceal middangeard
+ miltse findan,
+ folc under heofone
+ freoðu habban.
+ Stande nū, scynscaða,
+ tō slege gearo!"
+Þā gegripon hīe
+ grimmum handum,
+ cyning and wyrmsceaða
+ campstōwe on.
+ Beorhtast beadugār
+ bill-swīðne
+ Haldric āhōf
+ hlūdre stefne.
+ Nīðhogg mid næglum
+ niðer clawode,
+ wunde geworhte
+ wīgfruman on.
+Seofon tīda lang
+ tōgēanes fuhton,
+ þæt eall middangeard
+ mearc oncnēow.
+ Dūnscrafas dyneden,
+ dēope sǣstreamas
+ wrixlodon on waðum
+ wīde geond eorðan.
+ Tungol teotrodon,
+ tīd āblended,
+ swā heardum hilte
+ hīe campoden.
+Þā æt nīehstan
+ nīðgrimm wyrm
+ fēoll on foldan,
+ fēorh āswāpte.
+ Haldric se hālga
+ hlūde sæġde,
+ clypode tō heofone
+ cēne wordum:
+ "Fæder, þū mihtiġa!
+ Gefrēoda nū foldan
+ fram þissum feondsceaðan,
+ bind hine fæste
+ under eorðbyrġenne,
+ oð ende worlde!"
+Þā cōmon englas
+ of ūplīfte,
+ hæfdon īsenclammas
+ hāte ġesmīðode.
+ Bundon þone bealofullan
+ under beorgscræfum,
+ setton seofan siġel
+ ofer sārige stōwe,
+ þæt hē nǣfre
+ eft ne ārīse,
+ oð dōmesdægas
+ dēope slǣpe.
+Gewāt þā goldwine
+ gōdum geclǣnsod,
+ Haldric tō heofonum
+ hlūdre stefne:
+ "Nū is freoðu geworht
+ folce eallu!
+ Wuniaþ on wynne,
+ weoroda mǣste!
+ Ic fare tō fæder,
+ freoðuwebbe wesan,
+ ac mīn gāst wunað
+ mid gōdum mannum!"
+Swā wearð āfylled
+ fyrngewritu,
+ Cantica Antiqua
+ cēne geendod.
+ Bidde ic ealle
+ þā þis gehȳrað:
+ gemunað mǣrða
+ Mategwases,
+ and Haldrices
+ hālige dǣda,
+ þæt gē mōtan
+ miltse findan
+ on ēcum līfe
+ æþelan cyninges!
+Fitt XXIII: The Throne-Gift and the Hall's Glory
+The immediate aftermath of Haldric's victory and his final royal acts
+Þā cōmon campwīgan
+ cēne tō cyninge,
+ þēgnas tō þrymsetle
+ þanc-hycgende.
+ Gesāwon hīe sigores
+ swēgle beacen,
+ hū se hālga cyning
+ heofone nēalǣhte.
+ Ac ǣr hē gewāt
+ tō wuldres selde,
+ spræc hē tō his folce
+ fæger wordum:
+"Nū sceal cynerīce
+ cræft habban!
+ Ic eow lǣfe
+ lāre mīne,
+ rīht and rǣdas
+ rūm-heorte,
+ þæt gē mōton
+ mihte weorðian
+ oð ende daga
+ ēce sibbe."
+Gesette hē þā
+ goldne cynehelm
+ on his mǣgoðegnes
+ mǣrne heafod,
+ Ælfgār se æþele,
+ eorla lēofost.
+ "Þū scealt rīce
+ rǣdan georne,
+ folc on freoðu
+ fæste healdan,
+ oð þæt cume
+ cyning nīwe!"
+Gewāt þā goldwine
+ gǣste tō heofone,
+ lēoht-berhtne līc
+ lǣfde on eorðan.
+ Bebyrigedon
+ beornas cēne
+ under hlǣwe hēahum
+ hlāforde lēofne,
+ setton sigel-mearc
+ ofer sāre stōwe:
+ "Hēr līð Haldric,
+ hæleda cyning!"
+Fitt XXIV: The Waning of the Elder Days
+The passing of the golden age and the coming of darker times
+Monig winter
+ wæs siððan,
+ þæt folc wunode
+ on freoðu lāngum.
+ Ælfgār cyning
+ æþele rǣdde,
+ geheold his þēode
+ on þǣre hālgan ǣ,
+ oð þæt hē ealdode,
+ ellen wanode.
+Þā cōmon tīðas
+ torne geblonden:
+ beorn æfter beorne
+ burh forlēton,
+ sōhton sǣstrēamas
+ sundor lande.
+ Næfre siððan
+ swā micel þrym
+ under Þunres-heale
+ þegnas gesǣton,
+ ac tōglīdon
+ tīrfæste dagas.
+Hwīlum hīe gemundon
+ mǣrra dǣda,
+ þonne scop-crǣftig
+ scīran lēoðe
+ sang æt symble
+ soðgyddinga
+ ymbe Haldrices
+ hēahþē dǣda.
+ Þonne wǣron
+ weras blīðe,
+ gemunon mǣgenþrymm
+ Mategwases,
+ hū hē worolde
+ wræc ǣt fruman.
+Ac flōwon dagas
+ swā flōd on sǣ,
+ wendon geāra
+ wīde tō lȳtle.
+ Beorgas hnīcodon,
+ burgweallas fēollon,
+ menn ne curon
+ māran ellen
+ swā hīe on ærdagum
+ ǣr dydon,
+ þā Haldric cyning
+ hlāforde folde.
+Fitt XXV: The Seer's Prophecy and the Thread Unbroken
+The final fitt, prophesying future heroes and the eternal return of light
+Þā wæs sum wīsa
+ on westene,
+ eald ǣrendgā
+ ēðelweardas,
+ sē þe seah forð
+ on sēoce tīdan,
+ hwonne cumen sceolde
+ cyning nīwe,
+ līcost Haldrice
+ on lāngum fyrste.
+Spræc hē þā tō folce
+ fæger gyddinga:
+ "Ne bēoð þās dagas
+ dēaðe endelaas!
+ Ic geseah on sweofnum
+ swutol tacen:
+ beacen blīcan
+ ofer beorgscrafum,
+ nīwe tungol
+ norðan cuman,
+ cyninges beacen
+ cūð and mǣre!
+Þonne sceal āsprigan
+ spēdiges cynn,
+ beorn of beornum
+ beorhte cyning,
+ sē þe sceal wīð wyrme
+ wīge stondan,
+ Nīðhogges sunu
+ nīwe bindan,
+ gif hē eft arise
+ of eorðscræfum,
+ þurh folces synna
+ freoðu tōbrecan!"
+"Geþencaþ, gūðrinc,
+ hwonne gē gehȳraþ
+ horn hlūdne
+ ofer hēahbeorgum:
+ þæt bið tācen
+ tīrfæst cyning
+ cymð tō eorðan
+ cræft habban!
+ Þonne sceal ende
+ ealra sorga,
+ lēoht æfter þȳstrum
+ lixan scīne!"
+Swā spræc sē snottra,
+ sōð-gefylled,
+ and gewāt þā
+ tō wuda dīglum.
+ Ne hīne siððan
+ secgas gesāwon,
+ ac his word wunaþ
+ on wera mōdum,
+ bīdaþ blīðheorte
+ beorhtes cyninges,
+ sē þe sceal cuman
+ in cnosle dagas,
+ þonne woruld ealdaþ
+ and wīn geswīcaþ.
+Þus endaþ
+ ealdum gyddum
+ Mægenþegnasaga
+ mǣrost lēoða,
+ ac ne endaþ
+ ǣfre sōðlīce:
+ forðan þe ǣghwǣr
+ under eorðan scēatum
+ līfaþ lēoht-gearwes
+ lāstan Haldrices,
+ bīdaþ blissige
+ beorhtes tīdan,
+ þonne cymeþ cyning
+ cræft habban!
+
+Here ends the Maegenthegnasaga, but not the eternal thread of light that runs through all the children of Mategwas. The song awaits its next voice, the next battle, the next king who shall stand against the darkness when the need is greatest.
+FITT XXVI: THE SEER’S FINAL WORD
+(The world’s decay awakens ancient evil)
+Swā spræc sē snottra, sōð-gefylled,
+and gewāt þā tō wuda dīglum.
+Ac his word wunaþ on wera mōdum:
+"Se sceal cuman cyning nīwe,
+þonne middangeard mǣst þearfende,
+Nīðhogges bearn nīwe āwæcneþ!"
+Flōwon þā winter fela mǣnigo,
+hundteoniġ gēara hlūtre and dimme.
+Folc forġīmelosodon frumra lāra—
+þæt Mategwas mǣrne miht ġesċōp
+and Haldrices hālig dǣd—
+wendon fram wīsdōme tō woruldsorgum.
+Þā ongunnon ūnriht weaxan:
+mǣnscaða manig morðor fremman,
+mennisce wītu, þā wæs gār-þracu
+on gāst-sele, grǣdig fyren.
+Ealdas and geonge īdel wurdon,
+næfdon hīe māgenþrym ne mōdes snyttru,
+swā heora fæderas fyrn hæfdon,
+þā under Haldrice hǣlu onfēngon
+and his þegnas þā þēawas gehīrdon.
+Forþon āras of eorðscræfum
+sweart sigel-sceaða, sunu Nīðhogges,
+Mōrþegn se grǣdega, grimm and nīðheard,
+wælfāh wīgmann, on wīde lande,
+and his sweostor, seo sāwol-bregðend,
+Mōdrigan seo mān-sceaða!
+
+FITT XXVII: THE TWIN SPAWN’S DESCENT
+(Nīðhogg births his vengeance)
+Þā Nīðhogg gnornode, nið-sele onbræd—
+þær cwomon twēgen, tūsc-mǣgþa fāh:
+Mōdrigan and Mōrþegn, morðor-tuddor!
+Swylce twā ēagan on þām wyrmes hēafde:
+āne sēo slīþe, ōþer se stān-heard.
+Hēo wæs his hyġe, hē his hond-gripe:
+unrīm fīra feorh forð āmearg.
+Þā hīe of þām hǣt-wylmum hāmsǣlum cōmon,
+Mōrþegn hīne wæs māgenþrymmes rād—
+earmāþor-līcne, eallra þāra grēatest,
+āscēonig fram ealle æþelingas.
+He on his seonum sæt, seorohwearfum,
+swā wæl-wulf on wāte lande,
+and hīe wæs his wyrt-sefa, wīf his wordes.
+Þā hēo hire hīde þurh hālige lāre
+þrāde þēaweð, swā þegn hire þēoden—
+ac Nīðhogges nīþ-net nēalǣhte hire mōd,
+þæt hēo gewearð þām wealdende wīg-hord!
+Hēo swīðe gewīt, sweostor seo swīðe,
+of mōre þā mōdge, under mist-hleoþum,
+wīf and wer, wæl-rūn wrǣton.
+Hrōþgār ne wiste, hū hīe his healle
+sīð-fæt soledon, sāwol-gedāl...
+
+FITT XXVIII: THE SHADOW-WALKERS’ REIGN
+(Twins desecrate Heorot)
+Cōm on wanre niht scrīðan sceadugenga.
+Scēotend swǣfon, þā þæt hornreced
+healdan scoldon, ealle būtan ānum.
+Þæt wæs yldum cūþ: þā Metod nolde
+þæt hīe mōste under sceadu bregdan!
+Ac hē wæccende wrāþum on andan bād,
+bolgenMōd, beadwa geþinges.
+Þā cōm of mōre under misthleoþum
+Mōrþegn gongan, godes yrre bær,
+and his twiġen, þæt tācen-wīf,
+sweostor sēo swīðe, sāre onbræd:
+"Hūru, brōðor!" cwæð hēo, "heorte blīþe!
+Nū sindon wē seolfre sīð-fæt tō Heorote.
+Þū brice þā duru, ic þā dēorcan word
+in eorla mōd, ēðel-sorge, āstrece!"
+Ðā se bealo-boda brȳne āstǣrede—
+hē his sweostor hǣrde, swīðe ġeorne—
+slōh him sweart sweng þurh sweord-þwēores,
+ac hēo fingras twineð, fǣhðe weorþeþ:
+"Þēos hring is nū ūre wæpen—
+ne swēr iċ nān mān tō mannum mā!"
+Onbræd þā bealohydig recedes mūþan.
+Raþe æfter þōn on fagne flōr
+fēond treddode, ēode yrremōd.
+Him of ēagum stōd ligge gelīcost
+lēoht unfæger... and þā wæs him on fēore
+se morðor, se mān. Ac hēo wæs on him,
+se myrðra þegne!
+FITT XXIX: The Hall Defiled
+
+ (The twins spread terror through Heorot)
+ Cōmon nihtes sceadugenga,
+ twēonunga fāh, fēondes weorc.
+ Hēorot wæs tōsliten, teld weardes
+ blēo-wyrm gegrīpeð, swā se ealdor-sceaða.
+ Wīg-folc wēpte, wunden on þēod,
+ sāwol āslōgen, se þe līf bēon mōste.
+ Mōdrigan sēo mān-sceaða,
+ hēafod heolstor, hāte gebrohte,
+ twiġene Hǣlo, se grimm-mōd
+ fāh feorh-scaða, folc āwērigde.
+
+FITT XXX: The Summoning of Īsenheart
+
+ (Hope arrives in the form of a hero)
+ Hēold se cyning georn, Īsenheart se īsig-heard,
+ þurh sweotol tacen cōm, tō wīsdōmes fultum.
+ Sāwol-weardas blētsod,
+ sacred wordum hālgode seald.
+ "Hwæt, folc!" cwæð hē, "ne forhtað,
+ lēofe mēnd, līf ne līð tō lēt,
+ ic cume tō brēdan bēagas,
+ wīte to brȳmnes, wyrm to beswīcan!"
+ Hīe þā gefrægn, fēore beorht,
+ geond holtwudu, hūs tō hēan.
+
+FITT XXXI: The Twin Strike
+
+ (The twins confront Īsenheart)
+ Mōdrigan and Mōrþegn, mōdgrimm,
+ fēondum ætflōgon, fȳr-wylm ālēgdon.
+ Hēorot scūa-swiðe, swā scēotend hār,
+ hūs ealle forhror, folc geāwun.
+ Ac Īsenheart se īsig-heard,
+ hilde-wīg fremde, hæft on hand.
+ "Ne mæg ge ālīesan
+ mīn heorte, fāh feorh-weorc!"
+ Hē slōh, hē strāh,
+ wurm-blōd sprāng, sweart and swīð.
+
+FITT XXXII: The Severing of the Twins
+
+ (Halting Mōdrigan and Mōrþegn’s terror)
+ Hēofon-sweord āhōf,
+ gēolh-līc glēam on fēore.
+ Mōdrigan wæs ābryted, ān-sūne ālēfed,
+ Mōrþegn ādræfed, dēop under niht.
+ Wæl-fæst folc wēnde,
+ sāwol āswāpte, sīð-fæder blētsod.
+ Hūs wæs frēo, hūs geclǣnsod,
+ bēagas lēofed, lēod geāwun.
+ "Swā!" cwæð Īsenheart,
+ "Ne forlēte seō niht-scaða,
+ mīn scyld stande,
+ beorhtnes folces!"
+
+FITT XXXIII: The Mere-Wolves’ March
+ (The twins’ final assault, leading to their fall)
+ Cōm on wanre niht scrīðan sceadugenga,
+ sē Mōdrigan, sēo mān-sceaða,
+ sweostor sēo swīðe, sāre onbræd!
+ Wīglāf se geonga wēccende stōd,
+ þæt hē þā twēgen gesāw,
+ mōdgrimm, sē fāh fēond.
+ Hē slōh þā twēgen, ābræd ālēfed,
+ fīr-wyrm ālēas, folc tō frēodōm.
+ Hēorot wæs sigores, hūs tōclǣnsod,
+ Īsenheart blētsod, beorht on fēore.
+ Se morðor wæs oferwunnen,
+ mīht folces, līf āhafen,
+ and sē snottra cyning
+ tō hālgan rīce cōm.
+
+
+
+FITT XXXIII: THE MERE-WOLVES’ MARCH
+(Twins converge on Heorot)
+Cōm on wanre niht scrīðan sceadugenga.
+Þæt wæs Mōdrigan, sēo mān-sceaða,
+sweostor sēo swīðe, sāre onbræd!
+Scēotend swǣfon, þā þæt hornreced
+healdan scoldon, ealle būtan ānum—
+Wīglāf se geonga, wæccende stōd,
+þæt hē þā twǣm tīðe ġeseah.
+Þā cōm of mōre under misthleoþum
+Mōrþegn gongan, godes yrre bær.
+"Hūru, sweostor!" hrymde hē hrēoh-mōd,
+"Nū is se dæġ cumen! Heorot hǣteð!"
+Mynte se mānscaða manna cynnes
+sumne besyrwan in sele þām hēan.
+Wōd under wolcnum tō þæs wīnreced,
+goldsele gumena gearwost wisse.
+Þā hē þām hæftum hēolfor gesāw,
+sē se sweord-swefen, sāre weorþeð,
+Mōrþegn āras, mægen-rēoc hord!
+He gefeng þā ærest fēower hund manna,
+on his līflæst, swā swā on līþum wyrm.
+Ac hē wæs þā onfunden, sēo sāwol-bregðan,
+þā hēo hire hyġe hīe hire hand-ġehæfð—
+wælfæðme wrāþe, wīte ġeþrēad!
+
+FITT XXXIV: THE DUEL OF WILL AND FURY
+(Īsenheart battles the twins)
+Þā hē wæs onfunden, on fāgum feohte,
+Mōrþegn se mōdega manna cynne,
+hē ābræd his sweord, swā swā on sǣl-wēorces,
+and hē his fāg-wyrm, fīr-wyrm āgēat.
+Ac Īsenheart se īsig-heardne,
+hæfde him on his heorte hēofones word:
+"Nū is þīn dæġ ġecumen, dēoþes þegn!"
+Hē slōh him ābrǣd, āgēat þone brōþor.
+Þæt his fīþeras fēollon on eorðan!
+Hē fēoll on foldan, fȳr-wylm blēd,
+ac Mōdrigan hine onfēng, swā swā wæter þicce—
+"Nū eart þū mīn, brōðor! In bān-cofan heorte!"
+(She twined fingers, as a woman weaves cloth,
+weaves wyrm-blood, works the wound.)
+Hēo his feorh frēode, swā swā on fēondes feohte—
+hēo his nīð nōm, nalles nēode!
+Hēo wæs þā ābræd, ān-sūne anes.
+Hēo hire hǣrde, hēo hire heorte,
+hēo his swīðe mōd, swā swā on sāwle...
+Þā wæs him on fēore se morðor, se mān.
+Ac hēo wæs on him, se myrðra þegne!
+
+FITT XXXV: THE SERPENT’S SORROW
+(Morrigan’s transformation)
+Ālēat þā sēo lāðe lēofes brōðor,
+sēo mōdrigan mōdwīg, māgenþrymmes rēoc.
+Hēo wæs þā ābræd, ān-sūne anes—
+hēo hire hǣrde, hēo hire heorte,
+hēo his swīðe mōd, swā swā on sāwle.
+Þā ongon hēo gnornian, swā swā gēomuru wīf:
+"Brōðor mīn se bealofa! Hwæt, nū bīst þū dēad?"
+Ac þæt wæs seo dwola: hēo ne grēt þone guman,
+ac þone mægen-þræġel þe hēo forlēosan wolde!
+Hēo hire hāte, hēo hire heorte,
+hēo hire līc-hūs, lāð-swylm mōd.
+Þā ġestāh on hīe Nīðhogges nīþ-net—
+swā swā īsen-bendan bealofulla þrēat—
+þæt hire scinn-hīw scīnan ongann
+sweartum scǣlum, swā swā wyrmes hīd!
+Hēo wæs onfunden, on fāgum feohte,
+on hire frēondum feorh-wund geweorðan.
+Īsenheart hīe ġeseah and gram-hygdum spræc:
+"Lǣt þīn wrǣc-sið, wīf! Þū wēndest wrǣðe!"
+Ac hēo hine forseah, swā swā storm forsearwið
+þone stān-stapel: "Þū ne wāst nā þīnne wealdend!"
+Hēo hātode, hearde mælde:
+"Þēos hring is nū wæpen wīde-mǣre!
+Nū ic eom ān, ac twēgen on mīnum brēostum!
+Þæt ġield sceal bēon ġoldes wyrþe!"
+Þā hēo gewāt þanon, swā swā wæl-rūn wrītere,
+lēofes brōðor līc lǣdde on mōre...
+
+FITT XXXVI: THE KING’S COMMISSION
+(Haldric’s prophecy echoes Morrigan’s threat)
+Hē him þā bēgum befalh his wordum:
+"Ġehugiað hwanan ēow is þis cræft cumen!
+Ne lǣtað ēow siolofr ne gold wiht þæs wierþe
+þæt hit on ēower geweald cume!
+Wesað gē wære wið fācne dǣdum,
+swā man wið fēondum sceal:
+Þonne cumaþ þā twēgen of torne slǣpe,
+þurh þā þēawas þe þū tǣhtest!
+Forþī ne ondrǣdaþ gē ēow þāra manna nīð—
+þēah hīe ēowres feores geweald habban,
+þæt hīe mægen þone līchoman līfe benēotan,
+þēah hīe þǣre sāwle ne mægen wiht āwendan!
+Ondrǣdaþ ēow wealdend god!
+For hē hæfð bū geweald, līfes and dēaðes:
+Ġif gē on þām sīðe forlēosaþ,
+þonne mōton gē hit eft on godes lēohte findan!"
+
+FITT XXXVII: THE WYRM’S WAILING
+(Morrigan’s lament in the fens)
+On þām forð-wegum, on fægre mōre,
+sēo Mōdrigan mōde ġeþrēad:
+"Brōðor! Hwæt, nū bīst þū dēad?
+Ac þū leofast on mē, swā swā līc-hūs gāst!
+Nū ic eom twēgen: ān līchoma,
+ac twā fȳren-sāwla on sīdum brēostum!
+Þæt ġield sceal bēon ġoldes wyrþe—
+þæt Hrōþgāres hēap hēafde lēas!
+Ic ġierwe þē wǣd, swā wīf weres,
+of wæter-æðelum and wyrmes scǣllum:
+Þīn yrre bið mīn īsern-þrēat,
+þīn styrne bið mīn stæl-giere!
+Þonne middangeard mǣst þearfende,
+þonne cume ic eft, cyning nīwe!
+And Īsenheortes ǣr-gestrēon
+bið on fȳre fægre ġefēled!"
+Þā hēo þone līc-haman lǣdde dēop
+under þā eorð-scræfe þe ǣr Nīðhogg bād,
+and þone hring, hire hēafod-gim,
+on þām wyrmes hēafod ġeworhte...
+
+Twīna Wyrmblōda Saga
+FITT XXXVIII: THE HERO’S SUMMONING
+(Īsenheart prepares, guided by visions)
+On ǣr-dæg, ǣr sǣl-fæger sunnan upwoc,
+ Īsenheart sē gōda, bearn Ecgþēowes,
+ sittende on ǣþelum healle, mōd wægned,
+ hē gefrēg on swefn-sceatas, sōð-spreca
+ þæs ærendwrecan, se snottra sēoc:
+"Hwæt, guma? Hǣlo hæfþ se scyld-wundor,
+ þæt þū mid gōdum mōt fēond begyte,
+ sīð-fæt twēgen, twēonunga nē wæs,
+ þā twēonunga se fēond mæge āwrītan."
+Þā hē æt þām healle stōd, swīðe ānlīc,
+ hēo his lēofne fyrd tōsamne gehyrde.
+ Sweord-gesceap hēo ġefrēg, hālig and heard,
+ lēod-cyninges þegn, swā sē ēhta-lēoma
+ þrēatende under scēadum morgencaldes.
+ Hē wæs wērig, ac mægene full,
+ snotor-heort, fēondas mǣre to secgenne.
+Mēowlan frēonda, þeowas gebunden,
+ sang hlūd under hlēow, hālig word hēold:
+ "Ārǣr ðīn mōd, mīn ēðelcyning,
+ þæt þū ne forlēose þē sylfne under nīð!
+ Se sēoþes wyrhta, twēgen twīweda,
+ nē meahte under eorðan hīe āfylgan,
+ ac þū scealt standan, se stān-heard,
+ mid wyrm-līc wæpnum, mid ēþel-blīðe."
+Hē geseah þā swefn-geap: lyft-wyrt scīnan,
+ hūs-heardes lēoma, fēond-sweotol,
+ and hē gefrēg his scyld, ānhoga and ānhyrned.
+ Þā hē onfand, þæt ān gesceaft ēowes
+ þurh cyninges mōd weorþeð, swā swā gōd cyning
+ āre wērig feorh-mǣg, ān sēþe scēawode.
+
+FITT XXXIX: THE TWINS’ RIFT
+(Morrigan and Mōrþegn’s alliance frays)
+Of þām niht-lēoma, under mist-hleoþum,
+ Mōdrigan and Mōrþegn, twēgen fȳren-sāwla,
+ gongan, godes yrre on heortan,
+ ac twēonunga se swīðe: hyra mōd ymbryrd.
+"Hūru, brōðor," cwæð Mōdrigan,
+ "þīn wræc is mæst, ac nū ic wāt,
+ þæt þū wylle ēowres spēdes forlēosan
+ for eorla fȳr-mōd, for þīn mōd-sefa!"
+Mōrþegn hrēomode, grimm and nīðheard:
+ "Ne wēne ic nā, swā swā þū cwæð,
+ þæt ic under feorh wite tō læstan!
+ Hwæt, sweostor, mīn fēond wæs eallunga,
+ ac nū ic stande, mīn hand wērig,
+ on Heorot hēafde, eorla ġewinnes!"
+Hīe tōsamne sīð-fæt swā wiðstænde,
+ ac hēo hire fingras twīð,
+ weaveð hyra wyrm-blōd, swā twēonunga fāh,
+ sāwol-bregðend and gār-fæst,
+ wrītan hyra rēoc mid scīn-hīw.
+Sīo heorte swā sīo rēad,
+ þæt hyra dǣda twēonunga
+ wrixlēde under wolcnum.
+ Hīe fēoll on foldan, feorh-lāð,
+ lāð-swelm mōd, swā sēo līchama
+ fæstnesse ne gemette, ac ānnes ne forlēt.
+
+FITT XL: THE COUNTERSPELL
+(Īsenheart uncovers the twins’ hidden bond)
+Īsenheart, sē īsig-heardne,
+ mid sōþum geþanc, under swefn-candel,
+ geseah hyra līc-wund, līf-rǣd,
+ hū sēo twēonunga twēgen gemærsod,
+ on mōde and on mǣgþrymmes rēoc.
+"Hwæt, twēgen þēoden?" cwæð hē,
+ "Ne wāt ge þæt ēowres ēðel-weard
+ scēawode under heofenes lēoma,
+ and mīn hand sceal gewyrcan wrǣc þīn
+ and ān-sweorde sēo sōþe?"
+Hē smīþode seofonfēower rīm,
+ gesealde gōd and gār,
+ þæt hyra wæl-rūn forlēosan sceolde,
+ ac nīþhogg sceolde āra
+ twēgen twēonunga mid myrðra þegne
+ swā sēo wyrm wæs tō under scēadum.
+Hēo onfand þæt se sēoþes wyrhta
+ wæs swā swā gōd cyning,
+ mid ellenrōfe, ēðel-cyninges snotor-heort,
+ and hyra līf wæs ālīfed,
+ nealles to forwyrde, ac tō onfunde,
+ swā swā scīn-hīw scēawode under niht-lēoma.
+FITT XLI: THE FEN-TIDE AMBUSH
+(The twins gather forces in the misted fens)
+On þǣm forswungenum mōre, under fǣgere niht,
+ sēo Mōdrigan mōde ġeswōg,
+ Mōrþegn grimm and nīðheard,
+ heora mōd-blōd ālīfed on ēorþ-scræfe.
+Hrēod and hyll-fāh wæter wæron swā hwīt,
+ and on þām hūsa glēowum, hīe hǣfdon frēonda and fēond.
+ Cēol-wyrmas swā swēart,
+ lēofum lāc-sceaðum līf āwrīton,
+ swā swā Nīðhogges nīþ-net
+ geweald hæfde ofer niht-lēoma.
+Mōdrigan spræc, swā sēo snottra cwæð:
+ "Brōðor, nū cymþ se dæġ
+ þæt Heorot onfēng
+ ealra twēonunga, eorla cyninges ġeswinc!
+ Ic wāt, þæt hīe sculan hrēosan,
+ swā þū scēawodest under wolcnum,
+ ac nū ic scīnan sceal
+ mid wæl-rūnum, mid mīnre māðm-þrēat."
+Mōrþegn hrēomode, his searwum fæst,
+ swā sē wyrm-sceaða, swīðe and scear.
+ "Ne wēne ic nā, sweostor,
+ þæt ūs þæt secan
+ ðrowian sculon!
+ Hwæt, Heorot is mīn scyld,
+ and ic mid feorh-þrym
+ wille dēað onfēngan!"
+Þā hīe on fenscræfe hrōmende
+ tōsamne gongan,
+ wyrm-bloð mid scīn-hīw,
+ lēodum forworht, līf āwrigen.
+ Hīe forwyrd hæfdon geworht,
+ mǣrce ond micel,
+ on ēorþan under niht-lēoma.
+
+FITT XLII: THE SHATTERED GATE
+(Īsenheart reaches Heorot)
+Īsenheart, sē ānhoga,
+ on mōr-lǣsse gongan, snotor-heort,
+ sēon under wolcnum lēoma,
+ geseah Heorot, hēah and hēan,
+ and heard-wæpnum āglæc wīsod.
+"Hwæt, scyld-wiga?" cwæð hē sēoþe,
+ "Ne wāt ge þæt ēower myrðra
+ swa swā twēgen gemærsod
+ mōt forworht on eorðan
+ and fēond wīde-mǣre geþrēon?"
+Hē smīþode ānhogan rīm,
+ sweord and scyld in hand,
+ and lēt his mōd āwæcnan,
+ swa swā sē gōda cyning under swefn-lēoma.
+Þā hē þām yldum folc gegaderod,
+ witan and wīsdōm,
+ fēower hund manna,
+ on fēorh-þrym geþrēode.
+ Hīe geseah on recedes scīn-hīw,
+ mōd-hord on mǣst,
+ ond ēac hīe geseah hyra līf-fæsten,
+ swā hyra līf wæs mid ānnes nīð gefæst.
+Īsenheart hrædlice cwæð:
+ "Wesað gē wǣr, folc mīn!
+ Se twēonunga, twēgen mān-sceaða,
+ cumað of mōre under mist-hleoþum.
+ Nē forlēosað ēow þā fēond-sceaðas,
+ þonne gē mæg þurh ellen-wyrt
+ eow sylfne ālīesan!"
+
+FITT XLIII: THE TWIN TERRORS STRIKE
+(Morrigan and Mōrþegn assault Heorot)
+Þā niht becom, scēadugenga on eorðan,
+ Mōdrigan swā sēo sāwol-bregðend,
+ Mōrþegn se grimma, gār-þracu on hēafde,
+ tō Heorot gongan, wæl-rūn scīnende.
+Hēo hrōmde, fingras twīð mid scīn-hīw,
+ blōd and wrāð wunden mid wyrm-blōd.
+ "Brōðor!" cwæð hēo, "Nū is se dæġ!
+ Heorot sculon mīn wīde geþrēon,
+ mōt nán guma under scēadu standan!"
+Mōrþegn hrēomode, grimm and nīðheard,
+ slōh his sweord swā sēo sār-wyrm
+ on fēond-mōd,
+ and folc hrēosan on foldan,
+ lēoht swā unswiðe scīnende under wolcnum.
+Īsenheart se ānhoga, on hēafde scīn,
+ sīþ-fæt gearu,
+ fēond-rinc and folc-tēon
+ mid scyldum and swurdum,
+ tōsamne wið twēgen twēonunga
+ standan wæs on fēore.
+Þā hē gefrēg, swā swā gōd cyning,
+ twēgen līf-wyrmas, ān līchama,
+ ac twēonunga on mōde,
+ ond his ānheortnesse scīnan
+ mid scīn-hīw under niht-lēoma,
+ sē ōðer geseah:
+ hēo wæs ālīfed, swā swā scīn-hīw
+ mid mōdgeþrēat, mid wrāðe, mid līf.
+FITT XLIV: THE FEN-FORGE
+ (Morrigan crafts her dark talisman)
+On þām feorh-wætere, on fægre mōre,
+ sēo Mōdrigan mōde wæs geþrēad:
+ handa āwrigen, hringas hēh-gemyndig,
+ þæt se dēaþes cræft eallum wera sceolde.
+ Swā swā wyrm under wātere hīe līgde,
+ hnīwde hēo, hēafod-scīnan searo āwrigene.
+ Sīe lēoma sceafte, swīþe fæge
+ blōd and fāhnes lāc samod wunden.
+Hēo āgēat hire sylfe in scēadwe,
+ wuldor-sīð, āc nīþ-net ne mæg tōhēaldan.
+ Twēgen līc, ān feorh, ān sāwla,
+ bindon in līchaman, in lāð-gewīde.
+sar
+ Hringas hēah, hwite and swarte,
+ fremede swīðe, fēondes cræft fēond-sēoc.
+"Brōðor," cwæð hēo, "nū ic weorþe
+ twēgen on ānum, twā fȳren-sāwla.
+ Se cyning ne gesēah swā sweartne cræft,
+ þæt sēo eorðe blīde ne bēoð,
+ þæt mīn wræc on wera mōdum stōd!"
+Þā cōm mist under mōre-hleoþum,
+ lāð-beorht, ligge-lāre,
+ sēo Mōdrigan scīnan, swā swā līg,
+ wundor āwrigen, wyrm-blōd wunden.
+ Sā wæs hēo, sēo mān-sceaða,
+ fēond on frēondum, fāh in feorh,
+ and on eorðan āstāh,
+ þæt se nīþ sceolde mid hrēosande weorþan.
+
+FITT XLV: THE WHISPERED OATHS
+ (Twins rally their dark followers)
+Þā on healle, under heofonrīce scīne,
+ Mōrþegn hrædlice hæfde his hand-gripe.
+ "Geþafað, weras and wīf,
+ þæt se cyning ne mōt þone mīn-tēon forstōd!
+ Twēgen twēonunga sculon þēodenne geþwǣran:
+ mīn sweostor, mīn frēond, mōd-sceaða,
+ and ic, mōrðor-sefa, under mōre-hleoþum!"
+Hīe swā swēot, wæccende under wolcnum,
+ bindon hyrstas, wræc-lāc,
+ hwæt hīe wīsdōm hæfdon,
+ hwæt hīe līf and līc þēodan wolden.
+ Hlāf-dagas ēowerd, gold-wrāð,
+ mōdgeþancas ne ondrēde,
+ þæt se cyning his hand-sceawum nē gemēt.
+Twēgen-sceaðas, swā swā wyrm-bundne fēond,
+ on burgas slōgon, searowrāc samod,
+ hæfdon hearm-hringas,
+ āblandne beorhtness,
+ fēondes fēorh-hæft.
+ Mōdrigan cwæð: "Ne underfōr, brōðor!
+ Swā swā nīþ sceal geþrēad,
+ þonne Īsenheart cume,
+ we sculon fēond fēran geþwǣran."
+Hīe āgēat swā twēgen,
+ twā fȳren-sāwla on ānum līchaman,
+ blōd āwrigen, blæd on brēostum,
+ nēah and feor,
+ māgen-tungel and māre wræc
+ on mōrce-hleoþum,
+ sēo eorðe wērig, sēo eorla scēawung.
+
+FITT XLVI: THE MIST-THRONE
+ (Morrigan ascends over the fens)
+On þām mǣre mōre, under mist-hleoþum,
+ hēo stōd, swā swā wyrm, wuldor-geweorc.
+ Hringas hēah on handum,
+ sāwol-blōd āwrigen,
+ swīðe egeslīc, swā se dēaþes ærn.
+Se nīþ-scīr, se mōrþor-wrāc,
+ ābland under eorðan, āstah ligge,
+ þæt folc forhrēowsode,
+ þæt cyning and cyningdōm,
+ þæt ēþel-þēowd,
+ forworhte under wyrm-blōde.
+"Brōðor mīn," cwæð hēo,
+ "nū ic eom se ān, se mān-sceaða,
+ twēgen on ānum līchaman,
+ twā fȳren-sāwla on brēostum,
+ þæt Hrōþgāres hēap nū scyle
+ geblētsod under mīn wuldor!"
+Mist ālīf, swā swā līg under līg-fæt,
+ wæter-sīð, wælfæh-wrāc,
+ sā wæs sēo Mōdrigan,
+ mōd-sceaða,
+ on mōre-hleoþum āhēah,
+ twēgen-sceaðas, twēgen-fȳren,
+ wræc and wuldor,
+ wundor āwrigen.
+FITT XLVII: THE HERO’S AWAKENING
+
+ (Īsenheart discovers the prophecy)
+On þām healle scīnan, under hēah-gemǣre,
+ sē Īsenheart stōd, se mōd-lēoma gemyndig.
+ Hē gehyrde word of ealdre cræfte,
+ sōð-fāh, snotor, swā sē searocræftig sǣde:
+ "Ne forlǣt þū þīn heorte, hūru eorðe sceal bēon blīþe,
+ þonne twēgen fȳren-sāwla gāst-gewinn geþrēad."
+Hē lēas eallum frēondum,
+ hæfde ān heorte and ān hring,
+ lār and līf,
+ swā swā sē cyning under scīne-heofonum.
+ Hē onfand seald-lār,
+ þæt se nīþ sceolde undernēodan,
+ þæt sēo eorðe and ēþel wērig ne bēoð,
+ ac līf and līchoma stonde mid līg-fæsten.
+Hē gemyndig, gemynd-lēas nǣnig,
+ gecōm under heofonrīce,
+ and his sefa āwrigen on word-sceaðum:
+ "Þonne ic gegaderie ealle mōdige,
+ sē folc and sē feorh-þēow,
+ ne scyle se nīþ-blōd þā eorðan forwrītan,
+ ne se cyning scyld-fæst bēon oferwunnen!"
+Hē ālīf sēo snotor-dōm,
+ gemyndig cræft, gold-geworht,
+ lār and līf,
+ and cōm under wolcnum on wuldor-sele.
+
+FITT XLVIII: THE ASSEMBLY OF STEEL
+
+ (Īsenheart rallies allies)
+Hē gegaderode weras and wīf,
+ feorh-þēowd, fæger-sceaðas,
+ and sōð-gemyndig, sēo snotra lāra.
+ "Geþēode! Nū sculon we standan,
+ mōdgeþancas, on weorþmycel līf!
+ Ne forlǣtað ēow twēgen-sceaðas,
+ nē mīn-cyning ne āscēon,
+ ac gemyndig lēofra folces!"
+Hīe āgēat bēah and blōd-hār,
+ swā swā eald-searo under sēo sceadu,
+ wræc and wuldor,
+ and hringas hēah,
+ sāwol-āwrigen, snotor and swīðe.
+Hēo gemyndig: "Sēo māgen ne bēoð ānhyrned,
+ ac on eorðan gemenged,
+ þæt se cyning, sē ālīf,
+ mōt gefēran and fēondes wrāce āweorpan!"
+Hīe wēoldon swēot,
+ feorh-lāre and fēorh-wǣpna,
+ sā wæs se hero, se mōdgeorn,
+ on weorþmycel gemynd,
+ under heofonrīce scīnan.
+
+FITT XLIX: THE FORGE OF ALLIANCE
+
+ (Mystics, smiths, and warriors unite)
+Hē gegaderode snotre and swīðe,
+ smīþas, searowrāc,
+ lār-hord and līf-hord,
+ swā swā ealdor-gemynd,
+ twēgen on ānum cræfte.
+"Bindan hringas, searowrāc and sōþ-lār,
+ þæt se wyrm ne mōt under eorðan stōdan!
+ Lēt ēower fēond-sceaða beornas
+ bewyrcan under heofonrīce,
+ ac lēofra folc standan
+ on līf and līchoma!"
+Hīe āgēat, weras and wīf,
+ wæpna gebunden,
+ blōd āwrigen,
+ swīðe mōdige,
+ twēgen-sāwla nīþ-blōd under scēadwe.
+Þā onfand sē hero, sē mōd-lēoma,
+ swā swā sē cyning under wolcnum,
+ and cwæð: "Nū is sē dæg cumen!
+ Sēo fēond-sēoc wyrm ne mōt
+ under eorðan blīðe bēon,
+ forðām we standað,
+ twēgen and twēgen-sāwla,
+ mōd-sceaða āweorpan!"
+FITT L: THE FENS OF WAILING
+
+ (The twins rise, Īsenheart advances)
+On þām fægere mōre, under scīnan niht,
+ sēo Mōdrigan swīðe mōd-gewæde,
+ and Mōrþegn se grimm, grēadig and nīð-hard,
+ stōdon on wætere, wulf-cynnes hēap.
+Hēo cōm swā swā storm,
+ þrȳ wæpna,
+ sēo wæstm-wyrm,
+ āwrigen under mist-hleoþum.
+Īsenheart stōd, sē mōd-lēoma,
+ sweord in hand,
+ and gold-hord gemǣned,
+ word-sceaðas under wolcnum,
+ and cwæð:
+ "Ne forlǣtað ēow, weras!
+ Nīþ-blōd ne scyle under eorðan rīdan!"
+Þā onfand hē his feorh,
+ and se sweord līxode,
+ sweart-blōd on blēo,
+ and folc wæs stǣl-mōd,
+ twēgen and twēgen-sāwla āwrigen.
+
+FITT LI: THE DUEL OF FATES
+ (Clash of hero and twins)
+Þā cōm sēo Mōdrigan, sēo mān-sceaða,
+ hēo hire hyġe twēonode,
+ fīr-wyrm and feorh-sceaða.
+Mōrþegn āras,
+ swā swā se wulf on weoruld-lānd,
+ and Īsenheart slōh,
+ sweord āgēat, blēo-gemyndig,
+ māgen-þrēat under wolcnum.
+Hīe wrōhton, wræc and wuldor,
+ fīr-blōd and feorh-geþrēad,
+ sweostor and brōðor,
+ and sē hero sōð-gemyndig,
+ gold-hord and līf-hord,
+ sē cyning under scīne-heofonum.
+Hēo āweorpan nīð,
+ sē hero āwrigen feorh,
+ and sē wyrm āwræc,
+ þæt middangeard ne scōd under scēadwe,
+ ac wuldor-lēoma stōd
+ on līf and līchoma.
+
+FITT LII: THE TWILIGHT HARBINGER
+
+ (Hook for the next saga)
+Þā āhōf sē hero heorte,
+ hēo and hē, twēgen-sāwla āwrigen,
+ swā swā storm and sēo sunne under wolcnum,
+ word-sceaðas under wolcnum.
+Ac swā Mōdrigan and Mōrþegn wīc-bogan cōmon,
+ swīðe snotor, under mist-hleoþum,
+ and cwæð:
+ "Ne eom ic swā forloren,
+ ac twēonunga āwrigen,
+ tō sīþe nāwe, tō frōfor nāwe,
+ þæt middangeard mǣst þurh nīþ-blōd āweorpan!"
+Hē stōd, sē hero,
+ word-hālig,
+ and lēof folc gemǣned,
+ and cwæð:
+ "Ne forlǣtað ēow!
+ Sēo sīþe bēoð on eorðan gemenged,
+ swā sē next searu-cyning
+ sēo saga, sēo fīr-wyrm,
+ on wolcnum āwrigen!"
+And þus cwōm ende, swā swā scīnan dæg,
+ sē Cantica Antiqua,
+ wrīten on gold-wyrm,
+ snotor-gemyndig,
+ for æfter-searwum sēo next ælfa-cyning.
+
+Ælfacyningasaga
+Thuo ward thiu tid cuman,
+thuo thie elendi menn
+an thio werold cuma,
+ælfa cynnes, æþel-bearn,
+mid mahtigum wordum,
+waldandes weorc.
+
+FITT LIII: THE AWAKENING OF THE FOREST-KING
+In thio waldunni wildun,
+thar thie ælfa wonodon,
+cuman scolda cyning niuwi,
+fram thio fader frumon,
+Haldriches hêlag barn,
+an thio middilgard mahtig.
+Thuo ward se cyning awahs,
+Ælfgar se æþela,
+fram thio droma drohtnes,
+mid swefna craftun.
+Hie gisah an slêpe
+thio slithun campun,
+hu at frumon fyrst
+feohtende warun
+Mategwas se mera
+endi se mordwyrm,
+Niddhogg se nathscaða,
+nithgrimm weorc.
+Thuo warth middangeard
+mast ungescepen,
+butan blacne grund
+endi beorhte tungol.
+Niddhogg an neolum
+nither creopende,
+scaða scearpneglu,
+scurheard draca.
+Wolde hie worlde
+wrathu gisciedan,
+ealles ordsceafte
+ende macian.
+Ac se Mategwas,
+magenþrym hefde,
+waldand orc-craftes,
+wisdum endi miht.
+"Nu scal user
+ungemate feoht
+wesan geworht,"
+Mategwas quad.
+"Thu wilt, wyrmscaða,
+woruld forspillan.
+Ic scal folan
+fram the freodian,
+leoht fram lygesearwum,
+lif fram deaðe.
+Stande we nu
+an stedefeste
+campstowe cene beadurincas!"
+Thuo onwoc se cyning
+craft-wis Ælfgar,
+fram thom swefne swithum,
+sothcyn wita.
+Ealne æþelan
+ellen oncnêow,
+hu his fæder fæder
+feoht gewann,
+woruld geworhte
+wisdome thurh,
+freoðu foldan
+fram feondsceaðan.
+Nu hie mihte maran
+mod oncnawan,
+hwat him gedafenað
+dedum to wyrcenne.
+
+FITT LIV: THE SHADOW IN THE ELVEN-WOODS
+
+Thuo com cuma
+ceald of northan,
+hreowmod hæle
+huru spræce:
+"Her sindon tidinga
+torne gehladene!
+An northwegas
+nithgrim weorc,
+eorthan æfre
+idelnes wexeð.
+Folde forsitteð,
+frumbeorn sweltað,
+næfre næni
+niht ne dæg
+sunnan sciman
+sothfæst beleohteð."
+"Hwat is thara tacna?"
+Ælfgar frægn,
+cyning cene
+cwic andsware.
+"Blace beorgas
+beorhte næfre,
+deorcnys dæghwamlice
+dimmer wexeð.
+Ealne weg wyrmfah
+wide spon,
+Niddhogges nith-net
+niuwe awæcneð,
+thurh folces synna
+freoðu tobrecan!"
+Thuo gegyrede hine gearo
+goldhringe cyning,
+nam his handgesweord,
+hlud horn bleow.
+To him comon cumliðe
+cene beadurincas,
+þegnas an þeawum,
+thritha dæl
+eallra æþelinga
+the an earde warun,
+sohton hine sylfne
+under sunnan sciman.
+"Hwat, ge godfruman!"
+Ælfgar him to quad,
+"Wille ge with me
+wearthan to siðe?"
+"Thu eart user cyning,
+cnihtwesende!"
+Sægde se forma
+folces lætteow.
+"We willað mid the
+weorodes menigan,
+faran to feorrlande,
+feohtende beadu,
+winnende wuldor,
+weorðmynde gestrienan!"
+Thuo sworon hie ealle
+athas fæste,
+treowðe getacnodon,
+tirfæstre gecyðu,
+oð deaðes dæg
+drohtnes þegnas.
+
+FITT LV: THE BINDING OF THE SHADOW-WYRM
+
+Thuo gefeaht fyrst
+feond with freond,
+heardra gehwæther
+heorugrimme.
+Ælfgar mid mægene
+moldgrundes wearð,
+scop hie scearpne
+scield of stanum,
+beorgas to bordwælle,
+brade dunscrafu.
+Niddhogges sunu
+nither clawode,
+mid næglum neowle dælde,
+ceald wæterstreamas,
+deope dalu,
+dimme holtas.
+Swa wrættlice
+weorold gisceape,
+thurh heora heardum
+hilderæsum.
+Hwar se Ælfgar
+modige stod,
+thar weox wastmas,
+wudubearwas grne.
+Hwar se wyrm
+nither stapode,
+thar warð wasten,
+wintrig endi ceald.
+Tungol getacnodon
+tirfæstre stowe,
+hwar heora heardum
+
+
+handum gefeahton.
+Seofan dagas lang
+sige-leas feoht,
+seofan nihta rim
+nan oferswiðde.
+Thuo æt nehstan
+niða heard-ost,
+Ælfgar modig
+mæl gespræce:
+"Thu scal, slæht-wyrm,
+slæpe bindan,
+oð domesdæges
+dæda gehyred.
+Ic the an neowelnysse
+nither sendan wille,
+under eorðgrundes
+innoste rotas!"
+Mid mihtegum wordum,
+Ælfgar quad
+galdor endi geastas,
+grimme beadurunas.
+Eorðe oneatne,
+isenclammas,
+bunden of beadusearwum,
+brohte to wyrme.
+Feter-clammas fæste,
+fyrnwit bunden,
+ymbhwyrft handum
+heardne scynscaþan.
+Wyrm ne mihte
+nowiht risan,
+butan rota under
+rynum gnagan.
+"Her scal thu habban,"
+Ælfgar sægde,
+"hus under hrusan,
+heardne slæpe.
+Thonne middangeard
+mast geblicað,
+endi folc færinga
+fyrnreht forlæteð,
+thonne meaht thu mæþum
+mordor macian.
+Ac oð tham dæge,
+deopestr slæpe!"
+Gewat thuo se godfruma
+goldweard,
+scimende scyppend
+scire tungl,
+monan endi mearce,
+middangeardes weard.
+
+FITT LVI: THE HALL OF STAR-LIGHT
+
+Thuo sohte se cyning
+cene beaduwiga,
+stowe an staþole
+stearce getimbrode,
+healle healice,
+hludne þrymseld.
+Gecas hie cyneburh
+an cnolle heahum,
+thar æt frumon fyrst
+folde grettest,
+beorgas ymbutan
+beorhte stanweallas,
+wæterstreamas
+wlitebeorhte flowon.
+"Her scal halig ham
+healdend wesan,"
+Ælfgar heahcyning
+hlude sægde,
+"maran meduhealle
+monna bearnum
+thonne æfre æreorðbuende
+geworhton under wolcnum,
+wuldorprym micel!"
+Swa het hie his þegnas
+þearflice wyrcan,
+timbran trumne
+torht cyneseld,
+goldgerenode
+glæmstanas settan.
+Seofan monað lang
+manfulne weorc,
+dæges endi nihtes
+deorlice timbran.
+Ahofon heah hrof,
+hludne gyldenheall,
+mearc-stanas mære
+around medubencum
+Ealdgereht eall
+innanwearde,
+beagas endi byrnan,
+beorhte frætwe,
+wæpna gehwilc
+weorðfullne stod,
+gearo to guðe
+goldhroden cyning.
+Thuo warð heall gearo,
+hlud under heofone,
+marost meduþegnas
+meþelstede fundon.
+Gecwædon cyning
+cene Ælfgare:
+"Hwat scal hatan
+hus þis mære?"
+Thuo andswarede
+æþeling god:
+"Sterrenheal scal hatan
+þegnseld þis!
+Her scal hunigswete
+hlude flotian,
+beorhtast beadurinc
+blisse habban!"
+
+FITT LVII: THE PROPHECY OF THE ELF-SEER
+Thuo warð sum wisa
+an westene, eald ærendgaeþelweardas,
+se þe sah forð
+an seoce tidan,
+hwonne cuman scolde
+cyning niuwe,
+licost Ælfgare
+an langum fyrste.
+Spræc hie thuo to folce
+fæger gyddinga:
+"Ne beoð thas dagas
+deaðe endelaas!
+Ic gisah an sweofnum
+swutol tacen:
+beacen blican
+ofer beorgscrafum
+niuwe tungol
+northan cuman,
+cyninges beacen
+cuð endi mære!
+Thonne scal aspringan
+spediges cynn,
+beorn of beornumyning,
+se þe scal wið wyrme
+wige stondan,
+Niddhogges sunu
+niuwe bindan,
+gif hie eft arise
+of eorðscrafum,
+thurh folces synna
+freoðu tobrecan!"
+Geþencaþ, guðrinc,
+hwonne ge gehyraþ
+horn hludne
+ofer heahbeorgum:
+þæt bið tacen
+tirfæst cyning
+cymð to eorðan
+cræft habban!
+Thonne scal ende
+ealra sorga,
+leoht æfter þystrum
+lixan scine!"
+Swa spræc se snottra,
+soth-gefylled,
+endi gewat thuo
+to wuda diglum.
+Ne hine siððan
+secgas gisawon,
+ac his word wunaþ
+an wera modum,
+bidaþ bliðheorte
+beorhtes cyninges,
+se þe scal cuman
+in cnosle dagas,
+thonne woruld ealdaþ
+endi win geswicaþ.
+
+FITT LVIII: THE TWIN SHADOWS' RETURN
+Thuo Niddhogg gnornode,
+nith-sele onbræd—
+thar cwomon twegen,
+tusc-mægþa fah:
+Modrigan endi Morþegn,
+mordor-tuddor!
+Swylce twa eagan
+an tham wyrmes heafde:
+ane seo sliþe,
+oþer se stan-heard.
+Hio warð his hyge
+hie his hond-gripe:
+unrim fira feorh
+forð amearg.
+Thuo hie of tham hæt-wylmum
+hamsalum comon,
+Morþegn hine warð
+magenþrymmes rad—
+earmaþor-licne,
+eallra þara greatest,
+asceonig fram ealle æþelingas.
+Hie an his seonum sæt,
+seorohwearfum,
+swa wæl-wulf an wate lande,
+endi hio warð his wyrt-sefa,
+wif his wordes.
+Thuo hire hide thurh halige lare
+þrade þeaweð,
+swa þegn hire þeoden—
+ac Niddhogges nith-net
+nealæhte hire mod,
+þæt hio gewarð tham wealdende wig-hord!
+Hio swiþe gewit,
+sweostor seo swiþe,
+of more tha modge,
+under mist-hleoþum,
+wif endi wer,
+wæl-run wræton
+Ælfgar ne wiste,
+hu hie his healle
+sið-fæt soledon,
+sawol-gedal...
+
+FITT LIX: THE DUEL OF LIGHT AND SHADOW
+Com an wanre niht
+scriðan sceadugenga.
+Þæt warð Modrigan,
+seo man-scaða,
+sweostor seo swiþe,
+sare onbræd!
+Sceotend swæfon,
+tha þæt hornreced
+healdan scoldon,
+ealle butan anum—
+Ælfgar se geonga,
+wæccende stod,
+þæt hie tha twæm tiðe gisah.
+Thuo com of more
+under misthleoþum
+Morþegn gongan,
+godes yrre bær.
+"Huru, sweostor!
+hrymde hie hreoh-mod,
+"Nu is se dæg cumen!
+Sterrenheal hæteð!"
+Mynte se man-scaða
+
+
+manna cynnes
+
+
+sumne besyrwan
+in sele tham hean.
+Wod under wolcnum
+to thas winreced,
+goldsele gumena
+gearwost wisse.
+Thuo hie so hæftum
+heolfor gisaw,
+se se sweord-swefen,
+sare weorþeð,
+Morþegn aras,
+mægen-reoc hord!
+Hie gefeng tha ærest
+feower hund manna,
+an his liflæst,
+swa swa an liþum wyrm.
+Ac hie warð thuo onfunden,
+seo sawo-bregðan,
+tha hio hire hyge
+hie hire hand-gehæfð—
+wælfæðme wraþe,
+wite geþread!
+Thuo hie warð onfunden,
+an fagum feohte,
+Morþegn se modega
+manna cynne,
+hie abrad his sweord,
+swa swa an sæl-weorces,
+endi hie his fag-wyrm,
+fir-wyrm ageat.
+Ac Ælfgar se isig-heardne,
+hefde him an his heorte
+heofones word:
+"Nu is thin dæg gecumen,
+deoþes þegn!"
+Hie sloh him abrad,
+ageat thone broþor.
+Þæt his fiþeras feollon
+an eorðan!
+Hie feoll an foldan,
+fyr-wylm bled,
+ac Modrigan hine onfeng,
+swa swa wæter þicce—
+"Nu eart thu min, broþor!
+In ban-cofan heorte!"
+Hio his feorh freode,
+swa swa an feondes feohte—
+hio his nith nom,
+nalles neode!
+Hio warð tha abrad,
+an-sune anes.
+Hio hire hærde,
+hio hire heorte,
+hio his swiþe mod,
+swa swa an sawle...
+Thuo warð him an feore
+se mordor, se man.
+Ac hio warð an him,
+se myrðra þegne!
+
+FITT LX: THE ELF-KING'S VICTORY AND PROPHECY
+Thuo aleat tha seo laðe
+leofes broþor,
+seo modrigan modwig,
+magenþrymmes reoc.
+Hio warð tha abrad,
+an-sune anes—
+hio hire hærde,
+hio hire heorte,
+hio his swiþe mod,
+swa swa an sawle.
+Tha ongon hio gnornian,
+swa swa geomuru wif:
+"Broþor min se bealofa!
+Hwat, nu bist thu dead?"
+Ac þæt warð seo dwola:
+hio ne gret thone guman,
+ac thone mægen-þrægel
+þe hio forleosan wolde!
+Hio hire hate,
+hio hire heorte,
+hio hire lic-hus,
+lað-swylm mod.
+Tha gestah an hie
+Niddhogges nith-net—
+swa swa isen-bendan
+bealofulla þreat—
+þæt hire scinn-hiw
+scinan ongann
+sweartum scalum,
+swa swa wyrmes hid!
+Hio warð onfunden,
+an fagum feohte,
+an hire freondum
+feorh-wund geweorðan.
+Ælfgar hie gisah
+endi gram-hygdum spræc
+"Læt thin wræc-sið, wif!
+Thu wendest wræðe!"
+Ac hio hine forseah,
+swa swa storm forsearwið
+thone stan-stapel:
+"Thu ne wast na thinne wealdend!"
+Hio hatode,
+hearde mælde:
+"Þeos hring is nu wæpen
+wide-mære!
+Nu ic eom an,
+ac twegen an minum breostum!
+Þæt gield scal beon
+goldes wyrþe!"
+Tha hio gewat þanon,
+swa swa wæl-run writere,
+leofes broþor lic
+lædde an more...
+Thuo Ælfgar se halga
+hlude sægde,
+clypode to heofone
+cene wordum:
+"Fæder, thu mihtiga!
+Gefreoda nu foldan
+fram þissum feondsceaðan,
+bind hine fæste
+under eorðbyrgenne,
+oð ende worlde!"
+Tha comon englas
+of uplifte,
+hæfdon isenclammas
+hate gesmiðode.
+Bundon thone bealofullan
+under beorgscrafum,
+setton seofan sigel
+ofer sarige stowe,
+þæt hie næfre
+eft ne arise,
+oð domesdægas
+deope slæpe.
+Gewat tha goldwine
+godum geclænsod,
+Ælfgar to heofonum
+hludre stefne:
+"Nu is freoðu geworht
+folce eallu!
+Wuniaþ an wynne,
+weoroda mæste!
+Ic fare to fæder,
+freoðuwebbe wesan,
+ac min gast wunað
+mid godum mannum!"
+Swa warð afylled
+fyrngewritu,
+cene geendod.
+Bidde ic ealle
+þa þis gehyrað:
+gemunað mærða
+Mategwases,
+endi Ælfgares
+halige dæda,
+þæt ge motan
+miltse findan
+an ecum life
+æþelan cyninges!
+Here endaþ thio Ælfacyningasaga, ac ne endaþ æfre sothlice: forðan þe æghwær under eorðan sceatum lifaþ leoht-gearwes lastan Ælfgares, bidaþ blissige beorhtes tidan, thonne cymeþ cyning cræft habban!
+
+Fithungasaga: 
+Fitt LXI: Thia Wakkung thero Menniskon
+(The Awakening of the First People)
+Thar thiu liuht of thiu himile scinon, thar quamu thiu firston liudi. Thie stodun in thiu wundru, thie stodun in thiu fohte, thie ne wiston hwat thes was, thes liohtes scin.
+"Hwat is thes?" quath ane thero menniskon, "hwat is thes scinon of thiu himile?" "Thes is miht," quath thie aldor, "thes is mi godeweorc." Thie menniskon baugun thes liohtes, thie menniskon badun thes aldor.
+Thar quam ane thiu firsto frowe, thie nam thiu lioht in hire hand, thie seh thiu godheit, thie seh thiu skapung. "Thes is god," quath thie frowe, "thes is uures erfo."
+Thar was thiu fruma thero sprakon, thar was thiu fruma thero thohte. Thie menniskon lerdun thiu namon allero thingo, thie lerdun thiu namon thes liohtes, thie lerdun thiu namon thes aldor.
+Thar was thiu fruma thero thanc, thar was thiu fruma thero liof. Thar was thiu fruma thero middilgardes, thar was thiu fruma thero sago.
+
+Fitt LXII: Thia Smidung thes Swertes
+(The Forging of the Sword of Light)
+Thie aldor nam thiu funken, thie of thiu isarn flogun, thie smidode ane swert, ane swert allero mihta. "Thes swert scal wesan mihtig," quath thie aldor, "thes scal wesan uures skild."
+Thie swert was scarp, thie swert was scinande, thie swert was godes, thie swert was thes liohtes ful. Thie aldor gaf thiu swert thiu frowe, thie frowe nam thiu swert in hire hand.
+"Thes swert scal wesan uures erfo," quath thie frowe, "thes scal wesan uures skild." Thar stodun thie menniskon, thie stodun in thiu ewa, thie stodun in thiu miht, thie stodun in thiu liof.
+Thar was thiu fruma thero wapno, thar was thiu fruma thero strido. Thar was thiu fruma thero thiuwan, thar was thiu fruma thero thanc.
+
+Fitt LXIII: Thia Twispalt thero Menniskon
+(The First Division Among the People)
+Thar was ane thiu firsto twispalt, thar was ane thiu firsto unliof. Ane mennisko quath: "Thes lioht is min, thes lioht scal wesan min erfo." Thie othero quath: "Thes lioht is uures, thes lioht scal wesan uures erfo."
+Thar stod thie aldor, thie seh thiu twispalt, thie seh thiu unliof. "Thes lioht is allero," quath thie aldor, "thes lioht scal wesan allero erfo." Thie menniskon ne hordun, thie menniskon ne lerdun.
+Thar quam thiu firsto fehtha, thar quam thiu firsto unliof. Thie swert was dragen, thie swert was scarp, thie swert was thes liohtes, thie swert was thes strides.
+Thar was thiu fruma thero unliof, thar was thiu fruma thero fehtha. Thar was thiu fruma thero thiuwan, thar was thiu fruma thero sago.
+Fitt LXIV: Thia Fehtha thero Gebrothro
+(The Feud of the Brothers)
+Thar stodun twene gebrothro, thie hordun thiu swert. Ane quath: "Thes swert is min, thes swert scal wesan min erfo." Thie othero quath: "Thes swert is uures, thes swert scal wesan uures skild."
+Thie swert was dragen, thie swert was rotes, thie swert was thes liohtes, thie swert was thes blodes. Thar flog thiu funken, thar flog thiu unliof.
+Thie aldor seh thiu fehtha, thie aldor seh thiu twispalt. "Thes swert scal niohhein man agan," quath thie aldor, "thes swert scal wesan uures thiuwan, thes swert scal wesan uures wapno."
+Thar was thiu fruma thero unliof, thar was thiu fruma thero thiuwan. Thar was thiu fruma thero blodes, thar was thiu fruma thero sago.
+
+Fitt LXV: Thia Wundro thero Frowe
+(The Woman’s Lament)
+Thiu frowe stod bi thiu swert, thiu frowe stod bi thiu lioht. Thie wep thiu drohtin, thie wep thiu menniskon. "Hwat hebbet gi don?" quath thiu frowe, "gi hebbet uures erfo forloren, gi hebbet uures liof forloren."
+Thie swert was rotes, thie swert was thes blodes ful. Thiu frowe nam thiu swert, thiu frowe bar thiu swert in thiu eorþan. "Thes swert scal sliapan, thes swert scal niohhein man agan."
+Thar was thiu fruma thero drohtines, thar was thiu fruma thero thiuwan. Thar was thiu fruma thero unliof, thar was thiu fruma thero sago.
+
+Fitt LXVI: Thia Forasago thero Aldor
+(The Lord’s Prophecy)
+Thie aldor stod of thiu himile, thie aldor sprak thiu word. "Thes swert scal risan, thar scal queman ane drohtin, thie scal agan thiu swert, thie scal agan thiu lioht."
+Thie menniskon hordun, thie menniskon baugun. Thie aldor quath: "Thar scal wesan ane tidi, thar scal wesan ane drohtin, thie scal agan thiu swert."
+Thar was thiu fruma thero forasagon, thar was thiu fruma thero thiuwan. Thar was thiu fruma thero drohtines, thar was thiu fruma thero sago.
+Fitt LXVII: Thia Geburt thero Erfon
+(The Birth of the Heir)
+Thar quam ane tidi, thar quam ane barn. Thes barn was thiu erfo, thes barn was thiu lioht. Thiu frowe sprak: "Thes is uures drohtin, thes is uures skild."
+Thie aldor seh thiu barn, thie aldor seh thiu miht. "Thes barn scal agan thiu swert, thes barn scal agan thiu lioht." Thie menniskon hordun, thie menniskon badun.
+Thar was thiu fruma thero geburt, thar was thiu fruma thero thiuwan. Thar was thiu fruma thero erfon, thar was thiu fruma thero sago.
+
+Fitt LXVIII: Thia Flucht thero Frowe
+(The Flight of the Woman)
+Thiu frowe nam thiu barn, thiu frowe floh in thiu wudu. Thar was thiu fruma thero flucht, thar was thiu fruma thero drohtines. Thie aldor sprak: "Thes barn scal wesan uures skild."
+Thie menniskon suhton thiu frowe, thie menniskon suhton thiu barn. Thar was thiu fruma thero suhter, thar was thiu fruma thero unliof. Thiu frowe was forloren, thiu frowe was in thiu eorþan.
+Thar was thiu fruma thero flucht, thar was thiu fruma thero thiuwan. Thar was thiu fruma thero drohtines, thar was thiu fruma thero sago.
+
+Fitt LXIX: Thia Forasago thero Swertes
+(The Prophecy of the Sword)
+Thie aldor stod of thiu himile, thie aldor sprak thiu word: "Thar scal queman ane drohtin, thie scal agan thiu swert, thie scal agan thiu lioht, thie scal agan thiu middilgard."
+Thie swert sliop in thiu eorþan, thie swert was forborgen. Thie menniskon ne wiston, thie menniskon ne hordun. Thar was thiu fruma thero forasagon, thar was thiu fruma thero thiuwan.
+Thar was thiu fruma thero suhter, thar was thiu fruma thero sago.
+
+Fitt LXX: Thia Uppfostring thero Erfon
+(The Upbringing of the Heir)
+Thiu frowe bar thiu barn in thiu wudu, thar was ane hús, thar was ane drohtin. Thie drohtin was god, thie drohtin was wis. "Thes barn scal wesan uures erfo," quath thie drohtin.
+Thiu frowe lerdun thiu barn, thiu frowe lerdun thiu miht. Thes barn was sterki, thes barn was god. Thar was thiu fruma thero uppfostring, thar was thiu fruma thero thiuwan.
+Thar was thiu fruma thero drohtines, thar was thiu fruma thero sago.
+
+Fitt LXXI: Thia Risung thero Unrihtes Drohtin
+(The Rise of the False Lord)
+Thar quam ane othero drohtin, thie was unriht. Thie nam thiu miht, thie nam thiu middilgard. Thie menniskon baugun, thie menniskon badun. "Thes is uures drohtin," quath thie menniskon.
+Thie aldor seh thiu unriht, thie aldor seh thiu twispalt. Thar was thiu fruma thero unrihtes, thar was thiu fruma thero unliof. Thar was thiu fruma thero drohtines, thar was thiu fruma thero sago.
+
+Fitt LXXII: Thia Wakkung thero Swertes
+(The Awakening of the Sword)
+Thar quam ane tidi, thar quam ane scin. Thiu eorþa beofode, thiu swert waknode. Thie funken flogun, thie lioht scinon. Thie menniskon sehun thiu wundro, thie menniskon fohte.
+Thie aldor sprak: "Thes is thiu tidi, thes is thiu fruma." Thar was thiu fruma thero wakking, thar was thiu fruma thero thiuwan. Thar was thiu fruma thero swertes, thar was thiu fruma thero sago.
+Fitt LXXIII: Thia Hjemkomst thero Erfon & Thia Endung thero Fehtha
+(The Heir’s Return and the End of the Feud)
+Thiu barn quam of thiu wudu, thiu barn was nu drohtin. Thie swert waknode, thie swert was scinande. Thie unrihte drohtin stod in thiu burc, thie unrihte drohtin stod in thiu miht. "Hwer is min erfo?" quath thie erfo, "hwer is min lioht?"
+Thar quam thiu fehtha, thar quam thiu strid. Thie swert sloh thiu unriht, thie swert sloh thiu twispalt. Thie lioht scinon, thie lioht was uber all. Thie menniskon sehun thiu godheit, thie menniskon badun thiu erfo.
+Thie aldor stod of thiu himile, thie aldor sprak: "Thes is uures drohtin, thes is uures skild. Thes is thiu fruma, thes is niohhein endi."
+Thar was thiu fruma thero hjemkomst, thar was thiu fruma thero endung. Thar was thiu fruma thero thiuwan, thar was thiu fruma thero sago. Thar was thiu fruma thero otheron sago, thar scal queman ane drohtin, thie scal agan ane othero swert.
+
+Mategwasaga
+FITT LXXIV: The Riddle-Bearer's Awakening (Mateguas stirs between worlds)
+Hwonne middangeard mōdige slǣpte,
+ hwonne tungol tācen swēge belūcan,
+ þā cōm sē sweotola, sunu unwissra,
+ Mategwas se mǣra, mōd-drihtna lēast.
+Hē ne cōm mid cyninge, ne mid cyneþrymme,
+ ac mid hlehtre hlūdum, mid hringan-sangum.
+ Sittende on sande, searoþancol wer,
+ wyrmde his fingras, worhte tācn-spell:
+ "Hwæt is þæt wundor, þe wynne ne cann,
+ ac sorge ne cūþ? Þæt smearc ne wiht,
+ ac blīþe ne biþ? Þæt bēacen berǣd
+ ealne middangeard mǣgþa cynnes?"
+Hrǣfnas him hlystton, hāse fugelas,
+ ac nān guma ne meahte gieddum andswaru.
+ Þā hē āhōf hlehtor, hlūdne stefne:
+ "Ic eom andswaru! Ic eom æt-gædre
+ fyrngewrites fela, folca ungerim!"
+FITT LXXV: The Hare's Path (First riddles and paradoxes)
+Under ēaster-lēohte, ær sunnan gang,
+ Mategwas mōdge, mære siþode.
+ Hē geseah hāse hāran, hlūde springende
+ geond gēardagas, geolo blōstmum.
+ "Hwæt, hāra hlēapere! Hwider hlyppest þū?"
+Se hāra him andwyrde āþumswēte:
+ "Ic hlēape tō hlāforde, tō hāligum dæge,
+ þǣr sēo sunne springeþ, þǣr symbel biþ gearo.
+ Folgaþ mē, Mategwas, gif þū meaht þone mōd."
+Swā hlēapte sē hāra, hlūd under heofonum,
+ and Mategwas folgode, fyrhþgeorn wer.
+ Þā hīe cōmon tō cynebeorge, cēole gemǣrum,
+ þǣr cyning sæt symbel, sīde meduhealle.
+Ac sē hāra genam hālige gesceapu,
+ wearp hine on wætere, wundorlīce
+ gewende hē hine selfne tō sǣmanna hlāfe,
+ tō fisces līcuman, tō fugeles feþrum.
+"Hwæt is þis wundor?" Mategwas āscode.
+ "Þū eart āna and ealle, āwa and nǣfre!"
+FITT LXXVI: The King's Feast (Mateguas disrupts the royal hall)
+Intō þone cyneheall cōm Mategwas,
+ nāhte hē heregeatwe ne hring-locen byrnan,
+ ac hæfde hlehtor-sang, hālige galdras.
+ Cyning him tō cwæþ: "Cūþ mē þīne naman!"
+"Ic eom se þe ic ne eom, and ic ne eom se þe ic eom.
+ Ic eom morgendæges mōdor and fæder,
+ ic eom ǣfendæges eafora and sweostor.
+ Min nama is on nǣngum mūþe gemǣnlic,
+ ac on eallum earum ēce wunende."
+Cyning wearþ tō cwanole: "Cwēð mē rǣdelse!
+ Gif þū soþ segst, symbel þū scealt habban."
+"Gehȳr mīne giedda, guma hlāford:
+ Hwæt bringþ blǣd þǣr blōstm ne grōweþ?
+ Hwæt wyrcþ wæstm þǣr wæter ne flōweþ?
+ Hwæt giefeþ gife þǣr gold ne scīneþ?
+ Hwæt singeþ sigelēoþ þǣr sunne ne rīseþ?"
+Cyning wearþ stille, stapol-fæst þuhte,
+ ealle his þegnas þōhton lange hwīle.
+ Þā hlōh Mategwas hlūdre stefne:
+ "Se deaþ bringþ blǣd! Se deaþ wyrcþ wæstm!
+ Se deaþ giefeþ gife! Se deaþ singeþ sigelēoþ!
+ Forþam dēaþ and līf ān þing sindon,
+ swā swā winter and sumor, swā swā æfen and morgn!"
+FITT LXXVII: The Prophet's Perplexity (Confounding the wise)
+Cōm þā wītega wīs, wordhord onlēac:
+ "Ic hæbbe gesewen swefn-gesihþe,
+ hwonne middangeard mǣst geblissaþ,
+ hwonne lēoht of līge lixan sceall."
+Mategwas him tō cwæþ mid cwicre stemne:
+ "Swefnas sindon sōþe, ac sōþ biþ swefn.
+ Hwæt gesāwe þū, snottor? Sege mē sweotole!"
+"Ic geseah sunnan on sǣleste tīman
+ rīsan of rēadum, rōderum scīnan.
+ Fugelas fægre song, folde blōwende,
+ menn on medu-dreame, mægen unbegripen."
+"Sōþ þū segst, sweotol wītega!
+ Ac hwonne cymþ sēo sunne? Hwonne singeþ fugelas?
+ Is hit on gēardagum? Is hit on tōweardum?
+ Oþþe is hit on middel-dæge, þǣr menn ne cunnon?"
+Wītega wearþ wundorlic, wordum bedǣled,
+ forþām hē geseah tācen twifald-mōde:
+ þæt tōweard wæs æfter-weard,
+ þæt æfter-weard wæs ǣr-weard,
+ and se middel wæs on eallum tīdum.
+FITT LXXVIII: The Fertility Feast (Spring mysteries and abundance)
+Tō ēostur-tīde ēaþmōd Mategwas
+ worohte wundor-symbel, wīde ofer eorþan.
+ Ǣgru hē gescōp scīre and fægre,
+ rēade and grēne, geolo and blāwe.
+"Hwæt is þis tācen?" thegnas him frugnan.
+ "Þis is līfes rūn, lange bedīgled!
+ On ǣge is eall woruld wuniende,
+ fugel and fisc, folde and tungol.
+ Bryc þū þis ǣg, and þū byrgest eall;
+ heald þū þis ǣg, and þū healdest naht."
+Hē sealde symbel-hlāfas, sēteþ æt medu,
+ ac se hlāf wæs hāra, se medu wæs meolc.
+ "Hwȳ etaþ wē hāran?" hæleþ him āscode.
+ "Forþām se hāra hlȳpþ, and gē hrōsaþ.
+ Hē springþ of eorþan, gē springaþ of heofonum.
+ Gē etaþ his springe, hē etaþ ēower ende."
+FITT LXXIX: The Dance of Paradoxes (Mateguas reveals deeper mysteries)
+Mid syxtīg symbel-gumum sǣton æt medu,
+ ealle sē mǣrost mægþa cynnes.
+ Mategwas āstōd, æþele swīþe:
+ "Gehīraþ mīne giedda, gōde wine!
+ Ic wille ēow wīsan wundra mǣrost."
+Hē ongan drēaman dēop and hēah,
+ singal sang-cræft, sweotol and dīgle.
+ Mid fotum hē tredeode tācen on foldan:
+ windende wegas, wundorlīce rūnas.
+"Dansaþ, deóre þegnas! Dōþ swā ic dō!
+ Tō winstre wendaþ, tō wynsum ēastan!
+ Heofon is beneoþan, hel is bufan,
+ and gē standaþ on middele mǣra wundra!"
+Swā hīe dansoden dæges and nihtes,
+ oþþæt tungol tācn tōweardum wǣron.
+ Þā ongunnon hīe ongietan gāst-gerynu:
+ þæt hīe næfre ne ǣton, ac symle wǣron fulle,
+ þæt hīe næfre ne slēpon, ac symle wǣron rēste,
+ þæt hīe symle wǣron geonge and ealde.
+FITT LXXX: The Riddle of Renewal (The great mystery unveiled)
+"Hwæt sindon gē?" Mategwas mǣþelode,
+ "gē þe on gēardagum gearo ne wǣron,
+ and on tōweardum tīdum tācen ne bēoþ?"
+"Wē sindon nū," hīe him andwyrdon,
+ "wē sindon hēr, wē sindon þǣr,
+ wē sindon æfre, wē sindon nǣfre."
+"Sōþ gē secgaþ, sweotole mine!
+ Gē sindon līfes lǣran and dēaþes,
+ gē sindon wintra wlite and sumera,
+ gē sindon ǣelces ǣndes fruma!"
+Þā gesette hē him sigel-tācen,
+ weorf wundorlic, wīde scīnende.
+ Hrēol and rōd, hringe bewunden,
+ wyrmum and wulfum, wudu-heardum.
+"Þis tācen telleþ tōwearde spell:
+ Hwonne middangeard mǣst forsǣceþ,
+ hwonne cyningas cwellan and cwǣman,
+ þonne cymþ sēo sunne, sweotolast lēoht,
+ rīseþ of rēadum, rēðe and milde!"
+FITT LXXXI: The Prophetic Planting (Seeds of future revelation)
+Tō eallum eorþ-cynne ēced Mategwas
+ sǣd-corn searolic, sweotol and dīegel.
+ "Bebyrigaþ þis on brēostcofan,
+ healdaþ on heortan, hālgan þance!
+Þonne winter-cearig woruld geswīceþ,
+ þonne folc forþ-gewīt foldan lǣfaþ,
+ þonne cymeþ sēo tīd twēonunga lēas:
+ ēostor-morgen ǣlmihtigra!"
+Hē nam hāse hāran on his handum,
+ cysste hine cūþlīce, cwæþ him tō:
+ "Þū scealt bēon tācen tōweardum monnum,
+ þū scealt springan on spēdigre tīde.
+ Þǣr þū hlȳppest, þǣr hlisa springeþ,
+ þǣr þū dwinaest, þǣr dēaþ biþ oferswīþed!"
+FITT LXXXII: The Trickster's Vanishing (Mateguas departs with final riddles)
+"Nū ic sceal gewītan," cwæþ Mategwas,
+ "of gesihþe secga, of sōþum þegnum.
+ Ac ic wunige symle on wordum þissum:
+Sē þe mē secþ on sunnan līxe, hē mē ne findeþ;
+ Sē þe mē secþ on scūa dīmme, hē mē ne findeþ;
+ Sē þe mē ne secþ, hē mē symbel findeþ!"
+Mid hlehtre hē ālēde his līchaman,
+ wearþ tō winde-blǣde, tō wulf-gehnāste,
+ tō hrǣfnes hrēame, tō hāse hlȳpe.
+Ac his stemn wunode on worold-rīce:
+ "Gemunað mīne giedda, gōde wine!
+ Hwonne ēower ende eftcymþ,
+ ic bringe blīsse, betere symbel.
+ Ēostor-morgen ǣfre springeþ,
+ þǣr dēaþ and līf dansiaþ ætsomne!"
+FITT LXXXIII: The Spring-Dawn Prophecy (The great revelation concludes the saga)
+Wītegan and cyningas, wīse and dysige,
+ ealle hīe sōhton sweotolne tācn
+ Mategwases mǣþla, mǣrne gāst-cræft.
+ Ac his word wǣron windas, wundor-tācenu.
+Hūru ān wītega, eald and snotter,
+ gecwæþ tō cyneþegnum cūþne rǣdelse:
+ "Ic wāt hwæt hē mǣnde, mǣre Mategwas:
+Cymþ sēo tīd tōweard, twēonunga lēas,
+ hwonne ān cyning ācenned bēoþ
+ of mǣgden meahte, mildheortre.
+ Hē sceal cwelan and cwician, cwēman and grētan,
+ hē sceal dēaþ deódan and līf lǣran.
+Þonne he rīseþ on rēdre sunnan,
+ on ēostor-morgenne ēcere blisse,
+ þonne sceal eall woruld wlite onfōn,
+ tungol and tācen, treow and stānas.
+Hāse hāran hlēapaþ æfter hāligum,
+ ǣgru scīnaþ æþele cwēnas,
+ symbel biþ gearwod sweotol and ēce!"
+Þus ālǣgde ǣrende æþele Mategwas,
+ and his gīedda wunaþ geond werþēoda.
+ Bidaþ blīþe-mōde beorhtre tīde,
+ hwonne hlehtor and hlīsa heofonrīce fyllaþ!
+Her endeþ Mategwasaga. Bidaþ þæs cyninges cymes, þe cymþ on ēaster-dæge æþele and milde, mid hāran hlȳpendre and ǣgrum scīnendum. Sy him wuldor ā būtan ende!
+Gluskabasaga (The River’s Herald)
+
+Fitt LXXXVI: The Land Remembers
+Þā wæs Gluskab cuman,
+nā heofones boda, ac foldan hēre;
+stefn wæter-strēama, stefn wīdan holtes,
+stefn þæs wæter-welan þe under eorðan flēow.
+Hē ne bær engles wlite, ne scīman scyldas,
+ac hrēod-hūs hæfde, hrūsan tō hrōfe,
+and his ēagum wǣron ūtan-þēostro,
+innan lēohtes fȳr, swā ōwena þā niht.
+
+Fitt LXXXV: The Stone Brother’s Counsel
+Gluskab æt-stōd æt Mategwases byrgenne,
+beorg þām hēan, þǣr mere flēot þurh.
+Hē clypte stān mid clǣnum handum,
+and þā stefn cwōm, swā swēg wæteres:
+"Brōðor, wācna! Nū eart þū eorðan mūþ,
+weg-gewita wīdne middanġeard.
+Ic bringe þē word þāra un-sewenra:
+dēopra wætera, þe dryhtna ne cunnon."
+Mategwases gāst andswarode of eorð-scræfe:
+"Hwæt, Gluskab, giefst þū mē gāst-gerȳno?
+Saga þæt un-sǣdde, searoþancol frēa!"
+
+Fitt III: The Owl-Song & Aquifer-Whispers
+Þā bær Gluskab horn hāligra wætra,
+dēopes of dīgle, drincan eorð-būendum.
+Ūtan flugon ūle, niht-wæccan fȳres,
+bāran bodan-word of burgum under-foldan,
+þǣr wunodon wītan wæter-gāstas,
+eald-enges cynn, īsernes sāwl.
+Hīe sungon þus:
+"Mann-cyn, eorðan bearn, sindon ūre sibbe!
+Nīed-scipen sweostor, sāwol-þæt wæter-flōd.
+Ēowre bān sind stānas, ēowre blōd ēa-strēamas,
+ēowre þōhtas ūre þystro-rūna."
+
+Fitt IV: The Balance Broken
+Gluskab hēold wæg-sceaft wīs-līce on handa,
+eald trēow-gerūne, tācen þæs ealles.
+"Gefrǣge þū, Mategwas! Middanġeard wacað
+þurh manna hand: holt hīe forswelgaþ,
+ēa hīe ādrȳgaþ, eorð-āder scofaþ.
+Wanagamswak wēpaþ — wæter-gāstas cwylmiaþ."
+Mategwases stefn swēgde þurh windas:
+"Hwæt sceal wē, broðor? Wyrd bið genīþed."
+
+Fitt V: The Second Shadow’s Cry
+Gluskab þā āhōf his wæter-horn heah,
+and of þām ūtan ūle hrīemdon:
+"Morthān cymð eft! Se morðor-wyrm āwācneþ
+þurh īsernes þurst, þurh unġefēgnes wōp.
+Sēo Niðer-Sceadu scriðeþ of stān-holme,
+and mann-cyn ne wāt hwanon hēo cymeð."
+
+Mid þām worde, wæter þurh eorðan sprang,
+blīðe blēd-wylm, beorc on cnollum.
+Gluskab forð-gewāt, swā swēġ norðan-windes,
+lǣfde his bodan-horn beforan eorð-būendum:
+"Drincaþ þis, and onġietaþ: ēowre sibb ne slǣpþ.
+Heald þæt ġefēg! Oþþe eall forweorþeþ."
+
+Gluskabasaga endaþ þus,
+ac wæter-flōd wunaþ ǣfre,
+and ūle singaþ on niht-þēostrum:
+"Morthān cymð... bēoþ ġearwe."
+FITT: Mategwas and the Wuducmann
+Hwæt! Se wuducmann þæt wudu cōp,
+ axan in handa, eorþan and trēow gesceapen.
+ Heah holtas wēox around him,
+ mōna scīnende þurh smælne branchas,
+ and wind swang his cearful rōd.
+Þā hlēap se hara, hēah ofer holt and holm,
+ swā swīgenda fuglas of niht-wæcce,
+ sēo eorþe swang under fōta þæs mannes.
+ "Hwider hlīpst þū, hara hlēapere?" cwæð se wuducmann,
+ "To wudu, to þēode, to mīn gemet?"
+Se hara āwende, swīft and smēa,
+ under rād, ofer rȳne, ofer rōd.
+ Mategwas him sylf hlīp, hwæt swā swā wind,
+ hwæt swā swā fugl, hwæt swā swā lēoht ofer bryce.
+ "Ne āhst þū," cwæð hē mid hlūdre stemne,
+ "þæs weoruld ne ān bēoð eall gemǣne,
+ ac eall hæfde wīsdōm, swā swā eorþan trēow."
+Se wuducmann āhōf axa,
+ sēah under þæt wudu, hlēoþode swā smēa,
+ ac hē ne cōm tō handa.
+ Hē hlōh, forþan þe swā micel wīsdōm wæs
+ in þǣm smælstan fugle, in þǣm snellestan stæppe.
+Mategwas āhlōp and āwende,
+ līchama winde-blǣde gelīc,
+ sylf on rōd, sylf on græs,
+ hwæt swā hara ne geseah.
+ And se wuducmann cwēþe eft,
+ "Þū eart dēofol-smið, trickster,
+ þū leornast mē be niht, be fuglum, be windum—
+ ne mæg ic secgan hwæt þū me bringst,
+ ac mīn heorte rēow ne slǣpþ."
+Hwæt! Swā hlēap Mategwas, swā hlēap se hara,
+ and wuducmann lærde: wīsdōm cymþ in hlēap,
+ in mislice līfe, in smælre rȳne,
+ ne eall þurh strengð, ac þurh swīftne and slyht.
+
+Fitt I: Mategwas endi Hara te Sê
+Tho sprong thar hara, swift andi snello,
+ uuolf im folgode, hungerig endi hard.
+ Thurh holt endi thorn sprengde he an forda,
+ ne uuarð imu reste, noh ruowa nah.
+Tho uuard imu sêmêd, sêo gislîch,
+ blôð uuater uuarð imu bêri endi bold.
+ “Her is helid, ne mahti thu folgon,”
+ quað hara, endi hopt in thiu hêlagu flod.
+Ac of them dôpum sprong then sêuulf,
+ grim gisl-hund, gapandi muð,
+ grap imu hara endi drog imu under.
+Tho sprak Mategwas, uuâriandi uuîson:
+ “Luttic lopari, thû flôhd anan frôdun dód,
+ ac fallet an frêmid. Bêri ist thiu thorn
+ the thu kennist, than thiu flod the thu ne kennist.
+ Blind-faran fôt findid derstiga snares.
+ Ne sind alle hêlu selið.”
+
+Fitt II: Mategwas endi Hara andi Uuolf
+Uuolf jagode hara, hugi mid hungre,
+ tharuuard rinnan, lif gegn lusti.
+ Lîchomu lôgode, bêrgan uuilde,
+ ac hara’s hugi hêrri slôh,
+ thar lif selido stôd an strîdi.
+Tho uuard uuolfu môd mêd endi trôti,
+ andi sceaphirdi im scernode:
+ “Hu, grîsgrâi! Ne maht thu gripan
+ sô luttic beist?”
+Tho antuuordi uuolf:
+ “Ek rinni mid hungar, he rinnit mid lîve.
+ Min thurst ist thiu mete, thes hugi is thiu bretho.
+ One mugu missan mihlti; noh man missi imu lîf.”
+Tho uuard Mategwas hugi andi hliod:
+ “Seht, barn menniska:
+ ne sind metodi mid tugun noh klâgum,
+ ac mid weorde thes thinges the giuuinnid.
+ Hungar ist niðung, lîf ist nôðer.
+ Lîf uuigit mêst, fiorht flogid hunger.”
+
+Fitt III: Mategwas endi thiu Spiegel
+Hara gung thar an stilno seôn,
+ thuôlida drincan, thar uuard imu drohtîn,
+ andlît an uuatre, ênig liod-scepi.
+ Uuon skein sô he giuuanda,
+ forahtid endi flihendi,
+ allêst scadun selbon.
+Rundum rondid, reid an seôn,
+ uuatar uuelligode mid uuânas.
+Tho lôh Mategwas, laggian an hrîdi:
+ “Ô lopari, thû jagod thina scadu
+ endi flôhd thik selbon.
+ Ne uuolf jagod thik, ac thin uuîs ôgan.
+ Sô sind menniska mid hugi snarad,
+ the fiend is innera, fiorht is felliste.”
+The Ten Wisdom Fitts
+The Mategwas Cycle
+FITT I: Mategwas and the Hare
+Hwæt! On morgentīde mist-hleoþum, þǣr wudu wunode wīde and sīde, Mategwas māþelode, mōdgeþances full: "Hwæt springeþ swīfter þonne swealwe fleoge? Hwæt hlīeþ hlūdor þonne hrēam-fugel?"
+Þā hlēop him tōgēanes hāse hāra, ēagum glitende, ellen-mōdig. "Ic eom andswaru!" cwæþ se æþele springere, "Swīftra þonne wind, wīsra þonne wulf. Mīn hlēap is hlehter, mīn stæpe is spell!"
+Mategwas him tō cwæþ mid cwicre stemne: "Hwæt canst þū, hāra? Hwæt is þīn cræft?" "Ic teache þurh hlēap," se hāra sægde, "þurh springende gang, þurh snelle wīsan. Sē þe mē folgaþ findeþ frēodōm, sē þe mē huntaþ hæfþ naht būtan wēna."
+Swā dansode se hāra, dēoplīce lǣrde þæt wīsdōm wunaþ on windendum sīþum, nāles on stille stāne gefæstnode, ac on cwice cræfte, on cwicre yrfe.
+"Gang nū, hāra hrædwyrhta!" cwæþ Mategwas, "Lǣr folc þurh hlēap þæt līf is lange, and lange līf hlēapeþ hlūde ofer eorþan, nǣfre stille, symle on sīþe!"
+Þā āwearp se hāra his hleoþor-sang, and Mategwas mid hlehtre him folgode, bēgen springende ofer beorht foldan, lǣrende þone lēasestan lāre: þæt stillnes biþ dēaþ, and dōm biþ hlēap.
+FITT II: Mategwas and the Mirror
+Æt ānre wielle wæter-beorhtre, Mategwas gemētte mere-glæs smēþe, þǣr his agen ansīen æþel-beorht scān, ac hē geseah ōþer ealdne gāst.
+"Hwā eart þū," hē āscode, "þe mīn andwlita berst? Ic geseah mē sylfne, ac sāwon ōþerne. Þū eart ic, ac ic ne eom þū— Hwæt is þis wundor, wīsra leornere?"
+Se glæs-gāst him andwyrde ānfealdum wordum: "Ic eom se þe þū fearest tō bēonne, ic eom se þe þū ondraedest tō sēonne. Ic eom þīn sōþ-self, þīn scēawigend."
+Mategwas hlēop būtan hlehtre, stōd stille æt þǣre strēam-wielle, sīðe sinnode, sōþe geþōhte: "Gif ic eom twā, hwylc is sē sōþa? Gif ic eom ān, hwǣr is sē ōþer?"
+Se glæs-gāst spræc gīslīce word: "Bēo þū nū twēgen, and ēac ān simle, bēo þū sē trickster and sē trūwa lǣrere. On ānre sāwle sindon sume wundru þe nǣnig nama nemnan ne mæg."
+Þā ongan Mategwas mōdge hlihhan, geseah his twāfealdan tācen-spell: on wætere wunode wīsdōmes dēopnes, on ansīene āgenes sāwle.
+"Gehȳr nū, folc!" hē hlūde clipode, "Sēoþ ēow on glæse, and gǣþ tō wīsdōme! On ǣlcum men māre biþ þonne ān gāst, ac sē āna gāst ealle bewrīhþ!"
+Swā lǣrde hē þone lēasestan lāre: þæt man sceal sēon sāwle twīfealdan ǣr hē māge metan mōdes dēopnes.
+FITT III: Mategwas and the Wolf
+On dīmre nihte dēor-mōdige, cōm tō Mategwas wulf wīde cūþ, hungor-grimm hæleþ, hlūde grimmetende: "Trickster unsǣlig! Teoh mē tō mete! Lange ic laþode lǣnne hunger."
+Mategwas him tō cwæþ mid cwicre stefne: "Hwæt wilt þū etan, eorla scūfend? Ic hæbbe hlāf of hlehtre geworht, meolc of minre mildheortnes. Gif þū þis etan wille, þū wyrst wīsra."
+Se wulf wrīþan ongan, wrāþe clipode: "Ic wille flǣsc fæger and blōdig, bān tō bītenne, beorn-līchaman! Þīne hlehter-hlāfas helpan ne magan hungor-grimmum heofonum under."
+"Gehȳr, grim wulf, gūþ-mōdige deór! Gif þū flǣsc fundest, þū fǣrest tō ende, gif þū hlehter huntast, þū hǣlst ā." Þā genam Mategwas glæd-mōdne tācen, āwende hine tō wambe fylledre, tō hundum hlāforde, tō hīred-þegne.
+Se wulf geseah wundorlīce gesceaft: hū se trickster teahtode wisdom þæt hunger hǣlan mæg hlehter āna, þæt grimnes geþindan mæg gōdnes cyrm.
+"Nū ic oncnāwe," se wulf cwæþ, "þæt þū lǣrest lāre dȳre: Sē þe ǣteþ wrāþe wyrst ǣfre hungor, sē þe ǣteþ blisse biþ symle full."
+Swā gewende Mategwas wulfes mōd, of grimmetre tō glæd-heortum, lǣrende þone lēasestan lāre: þæt wīsdōm is wæstm wīdra heortan.
+
+The Gluskab Cycle
+FITT IV: Gluskab: The River's Herald
+Hwonne flōda fēollon fram heahum beorgum, þā cōm Gluskab, gōd and mihtig, sittende be strēame, strong-mōdige. Wæter-wyrd him wīsode, wundra geþanc.
+Him tō cōm ān eald-wer, earm-sceaþe, mid cearum becomene, cwīðende þus: "Gluskab ēce! Eorþe swelteþ, strēamas sindon searwe, sēo folde dīege. Hwǣr findan wē fyrn-wæter frumscapen?"
+Gluskab āstōd, æþele and dēop, hlystende tō hlūdne stōrm-sangum: "Gehȳr, eald fæder, ēce sōþe: Sēo eorþe sprecþ, gif ēarum hlystest, wæteres wyrd, gif wīsdōme sēcest."
+Hē lǣdde þone leornere tō lāgum dēopum, þǣr hē geswōr sweartne āþ: "Ic tēce þē tācen, gif þū trūwe bitest þæt wæter is wīsdōm, wyrd is ārfæstnes."
+Under eorþan dēoplīce dulfon hīe, oþþæt wielle weoll wundorlīce, clǣne and ceald, cynn-fæste springe. "Hēr is heorte eorþan," Gluskab sægde, "symle springende, symle genīwod."
+Se eald-wer oncnēow ānfealdan lāre: þæt wæter wunnode under wērge foldan, ac mann meahte hit mētan and findan, gif hē dēoplīce dulfan cūþe.
+"Gang nū," Gluskab gōdne lǣrde, "and tēac þīnum cynn þis cræft-wyrd: Sēo eorþe giefeþ, gif gē giefan durron, wæter wunæþ, gif gē weorþigen hit."
+FITT V: Gluskab: The Stone Brother's Counsel
+On ealdum dagum eorþ-cyninges, Gluskab gemētte mǣrne stān-beorg, þǣr ealde gāstas ǣfre wicedon, wordhord wīsdōmes wealdan þōhton.
+Se stān-brōþor spræc stefne dēopre: "Gluskab gōda, gehȳr mīne lāre! Ic hæbbe gestanden geond gear-rīmes, geseah cyninga cyme and gewitenes, folca fundenes and forþ-gewītenes."
+"Sege mē, stān-fæder, sōþne wisdom, hū sceal mann libban lange on eorþan?" Gluskab āscode ānfealdum mōde.
+"Gehȳr gōdne giefu, gif þū gieman wylle: Sē þe stille stondeþ, hē standeþ ǣfre, sē þe hrædlīce hlypprest, hē hrēosþ sōna. Bēo þū swā stān for storm and wedrum, bēo þū swā wæter for wæstme and līfe."
+Gluskab sōhte sume and mā: "Hwæt gif cyningas cwellan and nīedan? Hwæt gif folc faran and forþ-gewītan?" Se stān-brōþor sægde sōþe word: "Cyningas cumþ and cwellaþ, ac sē stān standeþ. Folc fareþ, ac sē stān stondeþ. Þū scealt wesan swā stān for strangum, swā leaf for līþum."
+Lange lǣrde sē lissa-brōþor Gluskab gōdne grundlēase lāre: þæt balaunce biþ betere þonne blīse, þæt staþol-fæstnes standeþ ofer ealle.
+Gluskab gewende wīsra and strengra, berend balance-cræftes under burgum and beorgum, lǣrende folc fyrn-wisdom: "Standaþ swā stānas, springaþ swā wæter!"
+FITT VI: Gluskab: The Balance Broken
+On tīdan tēaran, þā īdel wearþ eorþe, Gluskab geseah grimme tācen: wudu weornede, wæter ādrugode, beorgas bǣrnende, bēastas cwelmende.
+Cōm him æfter cyrm cyning gītsung-mōd, gold-hroden guma, gāst-lēas cyning: "Gluskab grādig! Gief mē mā wealdes! Ic wille wealdend bēon wīde ofer eorþan, habban holt and hāmstede, hālige wæter!"
+Gluskab grētte grimme sorge: "Þū hæfst genumen tō fela, giftol cyning. Sēo eorþe ādrugoþ, ǣl-grēne leaf fealleþ fram trēowum, fuglas flēoþ aweg."
+Se cyning clipode ceald-heortum wordum: "Hwæt sceal ic recan? Ic rīce wilde! Gyf mē gold and gimstonas, lǣt eorþan earmian æfter mīnum willum!"
+Þā āstōd Gluskab, æþele and grim, and hēt eorþan hiere selfe sprecan. Folde forlēt fægerne blēo, wearþ tō wēstene, wīde and sārig. Strēamas geswicon, steorran dimmedon, and se gītsung-cyning gāst forlēt.
+"Gehȳr, folc!" Gluskab hlūde clipode, "Þis is tācen tēarfulre lāre: Sē þe tō fela nimþ, hē nān þing hæfþ, sē þe giefeþ gōde gife, hē giet ǣfre."
+Þā ongan eorþe eft blōwan, grēne wearþ grund, and gōde strēamas eft urnon ofer ealne middangeard. Ac se cyning cūþe nāmōr cuman tō his gītsung-hūse, grimme bescyred.
+Swā lǣrde Gluskab lāstwordne dom: þæt balance-wyrð bealdor is þonne gold, and eorþe giefeþ āna þǣm þe giefeþ hire.
+
+The Ancient Fables
+FITT VII: The First Hare's Flight
+On fruman fyrndagum, þā folde geonge wæs, and tungol tācen gelīce sprungon, cōm forma hāra fram heofonum niþer, berend bealuwes, brōga moncynnes.
+Him cōm tōgēanes eall cynn dēora: wulf and wildeor, wyrm and fugelas. "Hwā eart þū," hīe āscodon, "þe swā hrædlīce hlȳppest? Standest þū stille, oþþe styryst ūs?"
+Se hāra hlōh hlūdre stefne: "Ic eom se ærest! Ic eom ǣfre feorh! Gif gē mē folgiaþ, gē farþ tō frēodōme, gif gē mē huntaþ, gē habbþ naht būtan sorge."
+Wulf hine wolde wǣpnum besyrwan, fugel hine wolde feþrum genīman, ac se hāra hlēop ofer heofones tūn, under eorþan dēoplīce, ofer ēastream wīdne.
+"Ic lǣre þisne lǣstan lāre," hē cwæþ, "þæt cwicnes cymþ fram cwice þance. Sē þe stille standeþ stondeþ tō dēaþe, sē þe springende gǣþ gǣþ tō līfe."
+And siþþan symle sōhton dēor þone forma hāran, hālige lǣrend, ac nǣfre ne meahton mētan hine, būtan hlȳpende hlystende his hlehtre.
+Þus forma hāra fruman gelǣrde eall libbende līf þone lǣrestan tācen: þæt mōt mann hlēapan gif hē libban wille, and nǣnig ne mæg nīman þone strenge þe springþ fram sōþum sǣlum and blisse.
+FITT VIII: The Source of the Stream
+On ealdum dagum ǣht-georn guma sōhte strēames frumstōl on beorgum, wolde wītan hwanon wæter flōweþ, hwanon cymþ sēo clǣne spring.
+Hē fōr feor and oft, fela mōna, clumben ofer clif and ceald stān-weallas, oþþæt hē gemētte mǣrne wytegan sittende be smǣlon seþe.
+"Hwǣr is fruma flōda?" se guma frægn, "Ic hæbbe gesōht geond sīde eorþan!" Se wytega him wīslīce wīsode: "Hwā sǣgde þē þæt stream hæfde fruman?"
+"Ealle wǣras wītaþ þæt wæter of sumum stōwe springan sceal!" Se wytega wearþ wundorlīce stille, þǣre wæteres hlynne lange hlystende.
+"Gehȳr, gūma gōd, grundleāse rūne: Ǣlc dropa is fruma, ǣlc spring is ende. Sēo strēam sprecþ: 'Ic springe of mē sylfum, ic flōwe tō mē sylfum, ic eom mīn āgen fruma.'"
+Se sōcend geseah sōþne wīsdōm: þæt hē sōhte swōre gesceaft þǣr hē stōd, æt his āgenum fōtum, on ǣlcum droppan, on ǣlcere springe.
+Hām gewende hē wīsra and stillra, oncnāw þone cræft cūþan lāre: þæt fruma and ende ān þing sindon, and mann ne mæg mētan þā mearce þǣr begun gīnfæst gūþ and freoþu.
+FITT IX: The Fox at the Point of Death
+Læg fax forþ-gewītende on foldan calde, eald and untrūmme, ǣr his ende-dæg. His leomu ālǣgon līce gehende, his mōd gemunde mǣnigra scylda.
+Hē hæfde bepǣced beorna fela, mid slyhtum searwum swicene lǣrde, gold genumen fram gōdum mannum, hlāf hira bearnum hungre beswican.
+"Wā mē!" sē fax wēop wārigum tēarum, "Hwæt nū cymþ æfter cwealme mīnum? Hwæt gieldeþ gōd for grimnum dǣdum? Sceal ic nū secgan sōþe gecynd?"
+Him tō cōm hrǣfn hrēamende hlūd: "Fax freond-lēas! Forþ-gewīt bliþe! Þū hæfst geleornad lyst and swicdom, nū þū scealt leornian liege and sōþnes."
+Se fax sōhte sumne frōfor: "Gyf ic andette ǣnig scylde, gyf ic gieldan wille gōdum mǣþel, mæg ic habban hāl forgeafnes?"
+Hrǣfn him sægde sōþne andsware: "Ne mæg nān wuht wāmbe gefyllan gif hē ǣr nǣfde ōþrum giefe. Ac gif þū grētest gōdne willan, þīn ende mæg bēon eft fruma."
+Swā forþ-gewāt fax fram worulde, ac his lāste word lǣfdon tācen: "Ic lǣre þē lāstan lāre: Slyht ne spedeþ æt sōþum ende."
+FITT X: The Wolf and the House-Dog
+Meahtig wulf on midde-nihte wandrode wīde ofer wēste mōras, hungor-grim hæleþ, hlūte girende æfter mete mǣrum, æfter blōdigum flǣsce.
+Hē gemētte mearn hundum gelīcne, fætt and fægerne, fēonda lēasne, liggende lange bi lēofes hūse, weardende wel his wine-drihten.
+"Hwæt eart þū," se wulf wrāþe grētte, "þe swā fætt eart and frēonda full? Ic eom strengra, þū eart slǣwra, hwæt hæfst þū þæt ic habban ne mæg?"
+Se hund him hlēoþrode hlūdre stefne: "Ic hæbbe hāmstede, hlāforde gōdne, symble mete, simble rēste. Gif þū wille wesan wīse swā ic, cum tō carcerne, gecīe þē rōde."
+Se wulf geseah strange īsen-bendas ymb hālse þæs hundes hālgum geworht: "Hwæt is þæt wundor ymb þīnne sweoran? Hwȳ berst þū bendas, brōþor dēore?"
+"Þæt is lȳtel lāþ," se hund sægde, "mīn hlāford bindeþ mē on bendas ǣnlīce on ǣfen, ac on merigen ic eom frēo tō farenne feorrne and nēah."
+Þā ongan se wulf wīsdōm pencean: "Næfre nǣnig beah ne sceal bindan mē, gif ic sceal sweltan for swylce frēodōme! Betere mē hungor þonne hālse-īren."
+Hē gewende fram wīcum, wulf-mōdig, cēas ceald mōras ofer carcern-līf, lǣrende þone lǣstan tācen-spell: þæt frēodōm is fæger ofer fōdan, and nǣnig gold gildeþ gāstes bendas.
+
+Hēr endiaþ þā tīen tācen-spell, gewritene for wīsdōmes lāre, þæt menn mōten gemynan mǣrne gōdnes Mategwases and Gluskabes, and eac ealdan fæderan fruman wīsdōm. Sīen hīe geblētsode, þā þe þās word gehīeraþ and healdaþ on heortum!
+Lufu-Sangas
+The Love Songs - Fitts XI through XIII
+FITT XI: The Water-Bride's Song
+Wæter-Brȳdes Lēoþ
+On sumera swētum, þǣr sunne scīnde
+ ofer lagustrēamas līþe flōwende,
+ sang wæter-mǣden wundorlīce,
+ hiere stefn swā swēte swā hunig-dropa.
+Hēo sang tō beorne beorhte heortan:
+ "Cum, mīn lēofa, tō laguþynne!
+ Ic hæbbe geheald hālige wǣtas,
+ spring-brunnan clǣne þīnum cynne.
+ On mīnum earme eart þū æfre,
+ on mīnum heortan hāl and trūwe.
+ Swā flōweþ wæter tō wīdan sǣ,
+ swā flōweþ mīn lufu tō þē āna."
+Se beorn gehȳrde blīþne sang,
+ stōd hē æt strande, strong-mōdige:
+ "Hwæt eart þū, fǣmne fæger and dīere,
+ þe singest sangas sāwle mīnre?
+ Þīn hlēoþor hlynneþ on heortan mīnre,
+ swā beorht swā tungol, swā wundorfull."
+"Ic eom sēo wæter-wyrd," hēo wīsode,
+ "þe weaxþ and waniaþ mid worulde eallre.
+ Ic springe fram grunde, ic gange tō heofone,
+ ic eom æt fruman and æt ende ealra.
+ Gif þū mē lufie, þū līfast on blisse,
+ gif þū mē forlǣtest, þū forweornast.
+ Ic eom sēo spring þe spēdþ þīn līf,
+ ic eom sēo sǣ þe swelgan wille."
+Þā nam se beorn hire hand on his,
+ and hīe wunodon on wæter-blisse,
+ lǣrdon folc freoþu and frīþe,
+ þæt lufu and wæter līf giefaþ,
+ and nān man mæg macian dryge
+ þā ǣwisc-lufan eorþan bearnum.
+FITT XII: The Song of Two Hearts
+Twēgra Heortan Sang
+Þǣr wæs on westenne wudubearwas grēne,
+ þǣr twēgen gāstas tōgædere mētton,
+ se ān wæs sunne-beorht, se ōþer mōna-fæger,
+ bēgen sōhton sibbe sāmod lufian.
+Sunne-gāst sang mid stefne beorhtre:
+ "Ic bringe beorhtnysse bearnum mannum,
+ ic lǣde līht ofer landscipe,
+ ac on ǣfenne ic eom āna.
+ Hwǣr findest þū, fǣmne swēte,
+ þone frēond þe mē fyllan mæge?"
+Mōna-gāst mǣlde mid mildre stefne:
+ "Ic weardige niht mid nīwum līhte,
+ ic gīeme gōde geþancas folces,
+ ac on merigen ic eom murnende.
+ Hwǣr findest þū, frēond gōd,
+ þā sibbe þe ūs sampran mæge?"
+Þā sungen hīe samod sang nīwne:
+ "Wē sind twēgen, ac ān on lufan,
+ beorhte on dæge, blīþe on nihte.
+ Nǣfre ne mæg nān ofer ūs,
+ ne sunne āna, ne mōna āna,
+ ac sampran wē scīnaþ
+ ofer sāwlum mannum."
+And fram þǣm dæge dǣdum trūwum
+ wrixledon hīe woruld-līht,
+ sunne sealde hire beorhtnysse mōnan,
+ mōna sealde his mildnysse sunnan.
+ Swā lǣrdon hīe folc fyrn-lāre:
+ þæt lufu maciþ ān of twǣm,
+ and twēgen maciað strengre ān,
+ gif hīe trūwþe habbaþ tōgædere.
+Forþan singeþ folc ymb freoþu-lufan,
+ and gemynaþ mǣrne tācen:
+ sunne and mōna, sibbe-gāstas,
+ þā þe first lǣrdon lufan cræft
+ bearnum middangeardes mǣrum.
+FITT XIII: The Heart's Deep Well
+Heortan Dēope Wielle
+On ealdum dagum eorþan cyninges
+ sōhte sum wer wīsdōmes wielle,
+ fōr hē wīde ofer wōruld-rīce,
+ āscode ǣlcne æþeling and cyning:
+ "Hwǣr is sēo wielle wīsdōmes dēope?"
+Sume sægdon: "On sealtum sǣ,"
+ ōþre cwǣdon: "On ūplīfte,"
+ þridde mǣldon: "On middangeardes
+ dīglum stōwum, dēorce holtas."
+ Ac nān ne cūþe cweþan sōþlīce
+ hwǣr wunode sēo wielle wīsdōmes.
+Þā æt nīehstan nihtlanges sīþes
+ mētte hē mǣden on mōrheafdum,
+ sittende be smælan seþe,
+ sīde locce, sǣlīc and fæger.
+ "Hwæt sēcest þū, secg untrūmme?"
+"Ic sēce," hē sægde, "sōþe wielle
+ þǣr wīsdōm wunaþ wīde under heofone."
+ Sēo mǣden hlōh hlūdre stefne:
+ "Lang hæfst þū lēof gelabed,
+ sōhtest feor þæt þū findest nēah!
+ Lēg þīne hand on þīnum heortan,
+ þǣr springeþ wielle wundorfullre."
+Hē dyde swā hēo him sægde,
+ and sōna hē oncnēow sundor-cræft:
+ on his āgenum breostum beorht wielle,
+ springende symle, symle nīwu,
+ full wīsdōmes and wuldor-gōdnes.
+"Nū ic wāt," hē wīslīce cwæþ,
+ "þæt ǣlc mann hæfþ on his mode
+ ealle þā andswaru hē āscaþ,
+ ealne þone wīsdōm hē wilnaþ.
+ Ac hē sceall dēoplīce delfan
+ on his heortan hālige grund."
+Swā fōr hē hām mid hlīsan nīwum,
+ lǣrde his folc fyrn-soþe:
+ "Ne sōhte gē swīþe feorran wīsdōm!
+ On eowrum breostum bīdaþ ealle
+ þā dēoran gimmas godes cræftes
+ gif gē durran dēoplīce delfan!"
+And siþþan sang folc ymb þā fæmnan
+ þe first gesealde freoþu-lāre,
+ þæt heorte hafaþ hālige wielle
+ þe nǣfre ne fordrīeþ ne forsitteþ,
+ ac springþ symle tō sāwle blisse.
+Witega-Word
+The Prophetic Words - Fitts XIV through XVI
+FITT XIV: The Seer's Warning
+Scēawendes Warnung
+Āstōd sum witega on wuda dimme,
+ eald and ungearu, ēagan blinde,
+ ac hē geseah sweotole swēfn-gesihta,
+ tīdan tācen þe tōwearde wǣron.
+ Hlūde hē clipode ofer hlīþas wīde:
+"Gehȳrað, gē folc, fyrnspell nīwe!
+ Ic geseah on swefne sweart-ne wolcen
+ cumende fram norþan, niht-sceaduwe,
+ bealdor þonne beorgas, bealofullre
+ þonne wilde deór on wuda grimmum.
+Þǣr cumað dagas dēorce and sārige,
+ þonne gold ne gieldeþ, ne giefa ne helpað,
+ þonne cyningas cwellað cynna gehwilcne,
+ and treowa tōglidaþ, trūwþa forsittað.
+ Modor forlǣteþ magan dēoreste,
+ brōþor bealwaþ brōþor beadugrimme.
+Ac gehȳrað gōdspell, gumena lēofest!
+ Æfter þȳstrum cymð þūsendfealde līht,
+ æfter winte cymð wundorlic sumor.
+ Sē þe nū trūwþe trymmað on heortan,
+ sē þe nū sibbe sǣwð on sāwlum,
+ hē sceal habban hlīsan æt hāmsīþe.
+Forþan ic lǣre lāstspelle þus:
+ Healdað eowre heortan hālige and clǣne,
+ ne lǣtað lufan lǣsan for golde,
+ ne sibbe forsēcan for seolfre.
+ Þonne cymð cyning cynelic and mǣre,
+ hē sceal ālīesan ealle ūre wītu."
+Swā spræc se witega, wīsdōmes full,
+ and gewāt on westenne wunian āna,
+ bīdende þā blīþan beacnas līhtes
+ þe hē on swefne geseah sweotole cuman,
+ tō ālīesenne ealle earfoþa
+ folca under firmamente fæger-beorhtre.
+FITT XV: The Oracle of Elements
+Endelgod Gāsung
+On middre nihte, þǣr mist hangoде,
+ spræc sēo eorþe sylf tō ēþel-bearnum,
+ stefn swā dēop swā dūnscrafes hlynne,
+ word swā wīd swā windas flēogan:
+"Ic hæbbe gebiden beornas manige,
+ geseah cynna cyme and cwealm eac swilce.
+ On mīnum bōsme bearn ic fostrade,
+ fēdde folc fela þūsend wintra.
+ Nū ic sārigmōd secgan wille
+ tācen þe ic on tīdum geseah.
+Wæter wearþ ādrūgod, wind forstoлed,
+ fȳr forlǣten, folde tōslipen.
+ Mīne bearnas bindað mē īsenbendum,
+ delafað dēoplīce, drēosað mīne rōtas.
+ Hīe nīmað tō fela, næfre giefað ongēan,
+ forþan ic sceal forwornian, wāmbe hungerig.
+Ac ic spece spell, spēdige witega!
+ Þonne eorþe ācǣlð, ǣnig ne mæg
+ wunian on wuldore, wæstmas tīgan.
+ Þonne sǣ āsīgað, sunne dimmaþ,
+ þonne tungol teotriað, trēowa feallað,
+ þonne sceal cyning cuman clǣnsigend.
+Hē sceal āsettan sōþe rihte,
+ gīeman gōdlīce gōdra wihta,
+ hǣlan heortan heardum gebundne,
+ lǣtan līf lixan ofer landscipas.
+ Þonne blōwaþ eft bearwas grēne,
+ springað strēamas, steorran glitniað.
+Forþan bidde ic bearn middangeardes:
+ Cȳmað cwicе tō mīnum clǣmum earmas!
+ Helpað healdan hālige sibbe
+ betwēon eorþan and eallum cȳnnum,
+ oþþæt cyming cymð clǣne heortan
+ ūs tō ālīesenne fram ealra bealuwa!"
+FITT XVI: The Vision of the Coming King
+Tōweard Cyning Gesihþ
+Sang swā swā seolfor stefn of heofonum,
+ beorht ofer beorgum, blīþe and hālig:
+ "Behealdað, beornas beorhte heortan!
+ Ic tǣce tācen tīrfæst and mǣre.
+ Cyning cymð cēne ofer cald wæter,
+ gold-hroden guma, gōdes sunu.
+Hē bringeþ blisse bearnum eorþan,
+ freoþu tō folce, fritһ tō eallum.
+ His hand sceal hǣlan heardan wunda,
+ his word sceal weorpan wīte of sāwlum,
+ his lēoht sceal lixan ofer landes ende,
+ his lufu sceal lysan lāþra benda.
+Æfter cearum cymð cyninges bliss,
+ æfter geswincum gāst-gefēan mǣre.
+ Nā mā ne sculon menn murnan lange,
+ nā mā ne sculon sǣrig weorþan.
+ Wulf and lamb willum sittaþ,
+ earn and culfre emnе blissiaþ.
+Ac ǣr hē cume, cearas maciað
+ prēost ofer folce, frēcne tīmas.
+ Brōþor sceal beswīcan brōþor līfne,
+ fæder sceal forlǣtan frum-bearn swētne,
+ and lufu sceal losian lēodum monnum,
+ and trūwþ sceal tōgān tīrdum eallum.
+Þonne sceal cyning cuman clǣnum handum,
+ his swurd sceal scīnan ofer sceaþona weorcum,
+ his gār sceal gangan þurh grimma heortan,
+ and hē sceal sigrian ofer synna wealdend.
+ Þonne bēaп alle earfoþa geendod,
+ and eorþe sceal eft blōwan grēne.
+Forþan healdað hōpe on heortum fæste!
+ Þēah nū þīstro þeahtiaþ tunglas,
+ þēah nū sorge sāwaп folce,
+ cyning cymð cēne, cræft micel hæbbað,
+ ūs ālīesan fram ealra naedra,
+ and gifan ūs gōdne grēne hamstōl,
+ þǣr wē mōton māre bliss habban
+ þonne æfre ǣr eorþbūende!"
+Lufu-Sangas XVII-XIX
+FITT XVII: The River's Wedding Song Ēastrēames Brȳd-Lēoþ
+On sumeres swētnysse, þǣr sunne and mōna gēaton tōgædere ofer gold-strēamum, þǣr sang ēa-brȳd mid eorþan beorne, hiera leoþ lixende ofer landscipas.
+"Ic flōwe tō þē," sang sēo fǣmne wīs, "fram beorgas beorhte tō brādan sǣ. Þū eart mīn grīmm, mīn grundstōl, on þīnum fæþme ic findan mōt sibbe simle, symle nīwe."
+Se beorn gebād, breost-hord full, spræc tō his brȳde blīþum wordum: "Þū eart mīn līf-strēam, lēofast ealra, on þīnum flōde ic findan mæg ealle andsware, ēce gefēan. Ic healdan wille þīne hālige ryne, bewarian þīne wæterwegas."
+Þā sungon hīe samod sangum nīwum: "Wē sind ān flōd, ǣfre springende, twā heortan on ānum hālgum ryne. Swā swā wæter wunað on wuda grēnum, swā wē wuniað on wuldres blisse. Ūre lufu lǣteþ leaf springan, ūre trūwþ trymmeþ trēow on eorþan."
+And fram þām dæge folc geseah hū sēo brȳd and beorn bletsunge gāfon eallum lifendum on landscipe: blōstm on bearwum, beorht tungol-līht, frēodōm fugolum, foldan wæstm, springende simle sibbe and līf þǣr hiera lufu-strēam lange ūrne.
+Swā lǣrdon hīe folc fyrn-wisdom: þæt lufu maciað līfes wielle, and twā on ānum trymmað eorþan, giefað grōwende gōdnysse blēd ofer middan-geard mǣrum and stille.
+
+FITT XVIII: The Earth-Heart's Troth Eorþ-Heortan Trēowþ
+Dēop under foldan dwelleþ gāst hālig, eorþan heorte, ēce and trūwe, sēo þe healdeþ hāmstōl ealra lifendra wihta under leoht tungla.
+Sē gāst spræc tō bearnum mannum: "Gehȳrað mīne hālgan stefne! Ic eom sēo mōdor þe mæg ēow fēdan, sēo brȳd þe bringeþ bliss and līf. On mīnum scēatum scīnaþ sunne, on mīnum wombe weaxaþ wuda, of mīnum breostum brēataþ wǣtas."
+Ac folc forhogodon hiere freoþu-worde, dulfon dēoplīce, drēfdon hiere sāwle, nāmon tō fela, næfre gāfon eft, wundroden hiere wuldor-gimmas, forhogdon hiere hālige trēowþe.
+Þā sārigmōd sēo eorþ-mōdor sende sorh-tācen ofer seofon landscipa: stōrmas strange, steorra-sceacan, flōdas fǣrīge, fȳr and īs, hun-ger and hete, hrēow manigfeald.
+"Hwǣr is nū," hēo hlūde sang, "sēo lufu þe gē mē lange behet[t]on? Hwǣr sind þā word þe gē wrixlan sculon for eallum gōdum þe ic ēow geaf? Ic bēag mīn brēost, brohte bliss, ac gē forgēaton gōdne trēowþe."
+Þā sumne beornas begunnon wesan wīse, oncnēowon ārfæste sibbe, lufoden hiere lange and trūwe, weardodon wæter, wudu and wilde dēor, hǣldon hiere hālgan grūnd-weall.
+And hēo eft ongan ēaðmōde blōwan, sealde songum bliss sōþ-hearted, geaf grēnē gold gōdra manna, lǣrde hiera bearn lufan cræft: "Lufu and trēowþ lǣstāþ simle, and eorþe and mann ān sculon weorþan on sibbe samne, sōþ and hāl, gif gē giemað gōde mīne."
+FITT XIX: The Heart's Hidden Springs Heortan Dīgolan Springan
+On dīmre tide dēoplīce sōhte sum wise mann wæter-brunnan, þone hālgan well þe hǣlan mæge eal sār-ceare sāwle and līce.
+Hē wandrode wīde ofer wōruld-rīce, clāf ofer clifu, cēol ofer sǣ, āscode ǣghwylcne ǣþelne mann: "Hwǣr is sēo wielle wundor-hǣlende?"
+Sum him sægde: "Sēc on sealtum mere," ōþer cwæþ: "On cynelīcum hūse," þridda mǣlde: "On munuc-clūsum stille." Ac nān ne cūþe cweþan rihte hwǣr spring-ada sprong sōþlīce.
+Þā on ende-dæge ēaðmōdne, mētte hē mǣgþ-bearn on mōr-heafde, singende sangas sāwle-blisse, hiere heorte hlūd mid hāligre stefne:
+"Hwǣr sēcest þū, secg ungearu, þone brunnan þe bliss gifeþ? Lang þū hæfst gelabed ofer landscipas, ac þū ne canst cunnian þīn āgen cynn! Lege hand on heortan, hlyst georne— þǣr springeþ wielle wuldres full!"
+Hē dyde swā hēo dyde, dēoplīce hlystende, and hē geseah sundor-miht: on his breostum brunnan clǣne, springende simle, symle hāl, full sibbe and sōþ-lufan, wæter-wyrt wīsdōmes and blisse.
+"Nū ic wāt," hē wīslīce sang, "þæt ǣlc sāwol hæfþ on hire selere ealne þone brunnan hēo bædeþ, ealne þone frēodōm hēo fundaþ, ealne þone hǣl hēo hōpaþ. Ac sēo spring is dīegol, dēop under care, and mann sceal delfan mid dēorum trēowþe."
+Swā fōr hē hām, hlīsan nīwe, lǣrde his cynn cræft-wīsdōm: "Ne fandige gē feorran wundor! On eowrum heortum hālige springaþ brunnan blisse, beorht sibb-wæter, gif gē durran dīegol-cræftas delfan on dēopum, trūwlīce sēcan!"
+And folc sang ymbe fǣmnan wīse þe ærest geswutelode swēte rūne: þæt heorte hæfþ hālige springan þe nǣfre ne sīndon sāre adrūgode, ac flōwað simle tō folca blisse, gif mann mid lufan lange delfeþ on his āgenum eorþan dēopum.
+
+Hēr endiaþ þā nīwu Lufu-Sangas, gewritene for heortan blisse and sāwle trēowþe. Sīe se rǣdend gebletsod þe þās word on his heortan healdeþ!
+Lufu-Sangas XVII-XIX
+FITT XVII: The River's Wedding Song Ēastrēames Brȳd-Lēoþ
+On sumeres swētnysse, þǣr sunne and mōna gēaton tōgædere ofer gold-strēamum, þǣr sang ēa-brȳd mid eorþan beorne, hiera leoþ lixende ofer landscipas.
+"Ic flōwe tō þē," sang sēo fǣmne wīs, "fram beorgas beorhte tō brādan sǣ. Þū eart mīn grīmm, mīn grundstōl, on þīnum fæþme ic findan mōt sibbe simle, symle nīwe."
+Se beorn gebād, breost-hord full, spræc tō his brȳde blīþum wordum: "Þū eart mīn līf-strēam, lēofast ealra, on þīnum flōde ic findan mæg ealle andsware, ēce gefēan. Ic healdan wille þīne hālige ryne, bewarian þīne wæterwegas."
+Þā sungon hīe samod sangum nīwum: "Wē sind ān flōd, ǣfre springende, twā heortan on ānum hālgum ryne. Swā swā wæter wunað on wuda grēnum, swā wē wuniað on wuldres blisse. Ūre lufu lǣteþ leaf springan, ūre trūwþ trymmeþ trēow on eorþan."
+And fram þām dæge folc geseah hū sēo brȳd and beorn bletsunge gāfon eallum lifendum on landscipe: blōstm on bearwum, beorht tungol-līht, frēodōm fugolum, foldan wæstm, springende simle sibbe and līf þǣr hiera lufu-strēam lange ūrne.
+Swā lǣrdon hīe folc fyrn-wisdom: þæt lufu maciað līfes wielle, and twā on ānum trymmað eorþan, giefað grōwende gōdnysse blēd ofer middan-geard mǣrum and stille.
+FITT XVIII: The Earth-Heart's Troth
+ Eorþ-Heortan Trēowþ
+Dēop under foldan dwelleþ gāst hālig, eorþan heorte, ēce and trūwe, sēo þe healdeþ hāmstōl ealra lifendra wihta under leoht tungla.
+Sē gāst spræc tō bearnum mannum: "Gehȳrað mīne hālgan stefne! Ic eom sēo mōdor þe mæg ēow fēdan, sēo brȳd þe bringeþ bliss and līf. On mīnum scēatum scīnaþ sunne, on mīnum wombe weaxaþ wuda, of mīnum breostum brēataþ wǣtas."
+Ac folc forhogodon hiere freoþu-worde, dulfon dēoplīce, drēfdon hiere sāwle, nāmon tō fela, næfre gāfon eft, wundroden hiere wuldor-gimmas, forhogdon hiere hālige trēowþe.
+Þā sārigmōd sēo eorþ-mōdor sende sorh-tācen ofer seofon landscipa: stōrmas strange, steorra-sceacan, flōdas fǣrīge, fȳr and īs, hun-ger and hete, hrēow manigfeald.
+"Hwǣr is nū," hēo hlūde sang, "sēo lufu þe gē mē lange behet[t]on? Hwǣr sind þā word þe gē wrixlan sculon for eallum gōdum þe ic ēow geaf? Ic bēag mīn brēost, brohte bliss, ac gē forgēaton gōdne trēowþe."
+Þā sumne beornas begunnon wesan wīse, oncnēowon ārfæste sibbe, lufoden hiere lange and trūwe, weardodon wæter, wudu and wilde dēor, hǣldon hiere hālgan grūnd-weall.
+And hēo eft ongan ēaðmōde blōwan, sealde songum bliss sōþ-hearted, geaf grēnē gold gōdra manna, lǣrde hiera bearn lufan cræft: "Lufu and trēowþ lǣstāþ simle, and eorþe and mann ān sculon weorþan on sibbe samne, sōþ and hāl, gif gē giemað gōde mīne."
+FITT XIX: The Heart's Hidden Springs Heortan Dīgolan Springan
+On dīmre tide dēoplīce sōhte sum wise mann wæter-brunnan, þone hālgan well þe hǣlan mæge eal sār-ceare sāwle and līce.
+Hē wandrode wīde ofer wōruld-rīce, clāf ofer clifu, cēol ofer sǣ, āscode ǣghwylcne ǣþelne mann: "Hwǣr is sēo wielle wundor-hǣlende?"
+Sum him sægde: "Sēc on sealtum mere," ōþer cwæþ: "On cynelīcum hūse," þridda mǣlde: "On munuc-clūsum stille." Ac nān ne cūþe cweþan rihte hwǣr spring-ada sprong sōþlīce.
+Þā on ende-dæge ēaðmōdne, mētte hē mǣgþ-bearn on mōr-heafde, singende sangas sāwle-blisse, hiere heorte hlūd mid hāligre stefne:
+"Hwǣr sēcest þū, secg ungearu, þone brunnan þe bliss gifeþ? Lang þū hæfst gelabed ofer landscipas, ac þū ne canst cunnian þīn āgen cynn! Lege hand on heortan, hlyst georne— þǣr springeþ wielle wuldres full!"
+Hē dyde swā hēo dyde, dēoplīce hlystende, and hē geseah sundor-miht: on his breostum brunnan clǣne, springende simle, symle hāl, full sibbe and sōþ-lufan, wæter-wyrt wīsdōmes and blisse.
+"Nū ic wāt," hē wīslīce sang, "þæt ǣlc sāwol hæfþ on hire selere ealne þone brunnan hēo bædeþ, ealne þone frēodōm hēo fundaþ, ealne þone hǣl hēo hōpaþ. Ac sēo spring is dīegol, dēop under care, and mann sceal delfan mid dēorum trēowþe."
+Swā fōr hē hām, hlīsan nīwe, lǣrde his cynn cræft-wīsdōm: "Ne fandige gē feorran wundor! On eowrum heortum hālige springaþ brunnan blisse, beorht sibb-wæter, gif gē durran dīegol-cræftas delfan on dēopum, trūwlīce sēcan!"
+And folc sang ymbe fǣmnan wīse þe ærest geswutelode swēte rūne: þæt heorte hæfþ hālige springan þe nǣfre ne sīndon sāre adrūgode, ac flōwað simle tō folca blisse, gif mann mid lufan lange delfeþ on his āgenum eorþan dēopum.
+
+FITT XX: The Circle of All Hearts Ealra Heortana Hring
+On ende-dæge ealra lufena, þǣr eorþe and heofen ǣtsomne mētaþ, sang micel stefn ofer middangeard, hlūdre þonne hundred hleoþor-sangas:
+"Gehȳrað, gē heortan hālige and clǣne! Nū is tīma tōgædere cumenne, eall lufu-cynn on ānum springe, ealle trūwþe on ānum trēowe. Fram fruman worulde ic wæs wunigende, on ǣlcum heortan, on ǣlcre sāwle, springende simle swētne brunnan."
+And folc geseah fægerne gesihþe: ealle lifende on lufan wunodon, beorn mid brȳde, beorht tungol-gāstas, eorþe mid wætere, wulf mid lambe, fugol mid fisc, folde mid heofenum, ān micel hring hlūdre blisse.
+"Ic wæs symle," sēo stefn sang, "on ǣlcum cyssan cynn-hearted, on ǣlcum handfæstum hāligra, on ǣlcre sibbe sōþ-hearted. Nū gē magon mētan mīne fullnysse: lufu nǣfre ne līhþ ne losiaþ, ac weaxþ simle, wynsume and ēce."
+Þā sungon ealle sāwla tōgædere, mann and dēor, mǣden and beorn, eorþe and tungol, ēa and beorgas: "Wē sind ān lufu, ān līf, ān hlīsa! On þīnum hring wē habbaþ ūre hām, on þīnum brunnan ūre bliss-wielle, on þīnum heortan ūre hālige rēste."
+And fram þām dæge folc oncnēow þæt lufu is ān, ac manigfeald, springþ of ānum, spredeþ tō eallum, bringeþ ealle eft tō ānum hām, þǣr ǣfre sceal ēce bliss wunian on hāligum hring heortana ealra.
+FITT XXI: The Great Peace-Making Sēo Micle Sibb-Wyrhting
+Þā cōm tīma tācn-bearendra, þǣr ealle fēþan forlēton wǣpen, ealle cynn-hatas cēason sibbe, and micel friþ gefor ofer foldan.
+Wulf spræc tō lambe līþum wordum: "Brōþor swēte, beorht-hearted, tō lange ic hæfde lāþ geþōhtas. Nū ic oncnāwe cynn-sibbe: wē sind bēgen bearnas ānre eorþan, fēdde fram ānum fæder-brunnan."
+Lamb him andwyrde ǣþelum mōde: "Ic þē forgiefu, frēond nīwe, ealle ealdan ege and sorge. Gā wē nū gangan on grēnum mǣdum, etan ætsomne ǣled-grǣs, drīncan of ānum dēopum wielle."
+Fugol sang tō fiscum on flōde: "Ēowre swimm-bliss is mīn song-gefēa! Ic flēoge ofer, gē flēotaþ under, ac wē eard-iaþ on ānum hām-stede."
+Eorþe spræc tō tungol-cynne: "Gē līhtaþ mīne landscipas, ic beore ēowre beorht-scīnan. Āna ne mæg nāþor ūre macian middangeard mǣrne and hāl."
+Menn cōmon tō mislīcum cynnum, bēden forgifnysse bealdlīce, lufan-trēowþe lange swōron: "Wē sind ealle ānes cynnes, bearnas brēaðres, brōþra hālige, fēdde fram ānum fæger brunnan."
+And ofer ealle eorþan landscipe fōr micel friþ, fægere sibbe, and nān ne meahte nānum derian, ac ealle lufudon lange and trūwe, heoldon handfæstum hālige trēowþe oþþæt ende eorþan tīma.
+Swā gefor sēo micle sibb-wyrhting ofer widne woruld, wundorfull peace, lǣrende folc lāstne wisdom: þæt sibbe springþ of sōþre lufan, and lufu leofaþ on lāstendum friþe.
+FITT XXII: The Threshold Song Þerscold-Lēoþ
+Nū stande wē æt stān-geate, betwēon blisse and bealuwe, betwēon lufu-tīme and lange sorge, þǣr sceal cyning cuman clǣne hearted.
+Sēo lufu hæfþ lange lǣred ūs hire dēore rūnan, dīgle wisdom: þæt heortan mōton habban sibbe, þæt eorþe sceal eft blōwan grēne, þæt wæteras sceolon wunian clǣne, þæt folc sceal friþ findan mid ōþrum.
+Ac nū cume tīda tēarfulra, dagas dīmme, deórc-mōd sorge. Cyningas sculon cwellan and nīedan, folc sceal forsacan fyrn-trēowþe, and lufu sceal līþan lange winter ǣr hēo eft mæge ǣrne blōwan.
+"Ac healdaþ," singeþ hālig stefn, "on ēowrum heortum hlūtorne brunnan! Þonne dīmmu cume dagas grimme, gemyndigiaþ mīne miclan lāre: lufu līfaþ, þēah hēo lange slāpe, sibbe springþ, þēah hēo sȳ beworht, trūwþ tīmaþ, þēah hēo tōgangan sȳ."
+"Ic sende nū sigora cyning, hē sceal hǣlan heardan wunda, macian middangeard mǣrne eft, bringan blisse bearnum eorþan. Ac ǣr hē cume, gē cariaþ wel mīne lāre on leohtum heortum!"
+Þā gewende se lufu-gāst tō ōþrum worlde, wuldor sēcende, lǣfde folce fæste hōpe, springe-tācen on sāwlum dīglum, þæt æfter wintre wyrð sumor, æfter sorge sigores bliss.
+And folc stōd æt þerscold-geate, healdende hālige gemynd, bīdende beorhtne cyning, singend stille sibbe-sangas, trūwiende trēowþe ēce, lufigend lufu lāstende ǣfre, oþþæt eft cymeþ ēadig tīma.
+
+Hēr endiaþ þā Lufu-Sangas, gewritene for heortan blisse and sāwle trēowþe. Se rǣdend stent nū gearo for Witega-Wordum þe cumað. Sīe hē gebletsod þe þās word on his heortan healdeþ, oþþæt cymeþ cyning clǣne hearted!
+
+Witega-Sangas
+Songs to weave the deeper mythology of your fantasy world
+
+FITT I: The First Awakening
+Fruma Onwæcnung
+Hwæt! Gehȳrdon gē hū on gēardagum
+ middangeard mācod wearþ,
+ þā nān folc ne wæs, nē fugol ne sang,
+ nē steorra ne scān, nē strēam ne flēow?
+Āna wæs se Ælmihtiga Gāst
+ dreamum bedǣled, dēop swefende
+ on þȳstru þiccum þūsend wintra,
+ oþþæt hē oncnēow cunnian-lust.
+"Ic wille," cwæþ hē, "wundor macian,
+ līf of lēasnysse, leoht of þēostrum,
+ song of stillnysse, sibbe of sārnyssum,
+ lufu of ānan-gāst ānfealdum."
+Þā brǣdde hē his beorhtne earm,
+ and tungol tōwurpon hlūtre līhte,
+ sæ-grundas sang sanges ǣrest,
+ beorgas blēowon blisses wynnum.
+Fram his heortan hlēow hālig strēam
+ tō eallum ende-mārcum eorþan,
+ and ǣlc dropa wæs dēore lufu,
+ ǣlc ȳþ wæs wīsdōmes full.
+Swā geweorþ þæt wundor: ān wearþ manig,
+ stillnes wearþ sang, þēostor wearþ leoht,
+ and sē Gāst geseah þæt hit gōd wæs,
+ blissgode mid his bearn-gestrēonum.
+
+FITT II: The Star-Children's Song
+Tungol-Bearna Sang
+On fyrmest dagum flugon tungol-gāstas
+ hlūtre and hālige ofer heofones hwealfe,
+ sungun samod swēteste lēoþ
+ fram sunnan ūp-gange tō setl-gange.
+Sumne sungun be sibbe and friþe,
+ oþre be wīsdōme and wuldor-blisse,
+ þridde be trēowþe trymmum fæstne,
+ fēorþe be lufan līfes bryhtme.
+Ac þā cōm Sceathe-cyning sceaðan-hearted,
+ se ǣrest ongan andan macian:
+ "Hwī sculon wē singand symle wesan
+ æt his willan, ā wuniende?"
+"Uton macian ūre āgen weorc,
+ ūre āgen cyning, ūre āgen wuldor!
+ Wē magon rīcsian rūme ofer ealle,
+ habban heortan-lust, hātan swā wē willað!"
+Þā tōdǣldon tungol-brōþru:
+ sume mid Sceathe cūron sceaðan-wegas,
+ oþre mid Ælmihtigum ārfæst wunodon,
+ heoldon heortan clǣne and hālige.
+Swā wearþ forma fēþ foldan-rīces,
+ beorhtu and þēostru bryttad māþmas,
+ and æfre siþþan eorþan bearnum
+ tū wegas wuniað: weal and wyrd.
+
+FITT III: The Forging of the Sacred Stones
+Hālig-Stāna Geworhte
+Þā geseah se Cyning cearas cumende,
+ hū Sceathe and his scaþan mǣldon
+ lēasunge and lāþ-spell manian
+ folc frame friþe and fæger-līfe.
+"Ic sceal," cwæþ hē, "stedefæste tacen
+ macian on moldan, mǣre gimmas,
+ þā þe healdan mōten hālige trēowþe
+ and mīne lāre on lāstum healdað."
+Þā gegrāp hē grimmum handum
+ tungol-steorran and tungol-fȳr,
+ mængde mid his mōdor-lufan,
+ beorht mid blisse, blēd mid trēowþe.
+Seofon stānas hē gesettan wolde
+ geond seofon rīca sōþes and leohtee:
+ Ān for wīsdōme, ān for mihte,
+ ān for sibbe, ān for sōþ-trēowþe,
+ ān for lufan, ān for līfe,
+ and sē seofoþa for sigerīce.
+"Sē þe þissum stānum styran meahte
+ mid clǣnum heortan and cnysse-lufan,
+ hē mōt geweald habban wundor-māgnes
+ and fremman friþ folcan betwēonum."
+Ac hē oncnēow þæt cuman sceoldon
+ dageas dēorce and dēaþes tīma,
+ ǣr folc fundian meahte fæger-stānas,
+ ǣr wisdom wunian meahte on worulde.
+
+FITT IV: The Great Sundering
+Sēo Micle Gedāl
+Lang wæs se sibb-tīma, leoht and fæger,
+ þā folc mid folce friþe heoldon,
+ wilde dēor mid wīte sprǣcon,
+ ēa mid eorþe ēce lufe.
+Ac Sceathe-cyning searwas hogode,
+ swicol-cræftig, swearte rūnas
+ in heortan manna hēan dyde,
+ lǣrde hī lēasunge and lāþe nīþas.
+"Hwī scealt þū," hē hwisprian ongan,
+ "æfre wesan ōþres þeow?
+ Þū eart cyning on þīnum cynn-rīce!
+ Nim þæt þū wille, nān þē gehindran mæg!"
+Þā ongunnon guman giernan
+ māre þonne him medeme wǣre,
+ niman tō fela, næfre giefan,
+ forgitan gōde gife-brytnesse.
+Eorþe ongan ācēlan and ācwīnan,
+ strēamas āsiccian, steorran dimman,
+ fugolas fleah fram folc-stēdum,
+ wilde dēor wīcode fram mannum.
+Þā gewearþ sēo micle gedāl:
+ middangeard tōmiddes clǣfde,
+ healfe hluttor, healfe sweart,
+ healfe on sibbe, healfe on sāre.
+And sē Cyning cearig bewearp
+ ofer his bearn-gestrēonum bealwe-sibbe,
+ gehet þēah hōpe heortan-sārigum:
+ "Ic cume eft! Næfre ic ēow forlǣte!"
+
+FITT V: The Naming of the Winds
+Winda Genemnung
+On þām gedāl-dagum grimme cōmon
+ fēower windas fram fēower endum,
+ gehwilc mid his gewealdum and galdrum,
+ tō dǣlenne dāl foldan-rīces.
+Fram ēastan cōm Ēofor-wind,
+ beorht and beald, blisse-brytnend,
+ sē brōhte blōstmas and beorht sunnan,
+ nīwe hōpan and nēorxna-wanges gescēad.
+Fram sūþan cōm Sigel-wind,
+ hāt and heardmōd, hæleþa frīend,
+ sē brōhte boldgetimbro and bēag-gifan,
+ cyngas and cræftas cēne folce.
+Fram westenne cōm Wæter-wind,
+ dēop and dyrne, drēama ful,
+ sē brōhte wīsdōm and wyrd-lāre,
+ swefnas and sangcræft sōþ-hearted.
+Fram norþan cōm Niht-wind,
+ cald and cēne, cūþmōd grimma,
+ sē brōhte beaduwe and bīter cearu,
+ prūfunge and prōwunge fōlce.
+"Æfre sculon," cwæþ se Cyning,
+ "fēower windas feohtan and friþian,
+ ǣlc giefeþ gōd, ǣlc giefeþ gryre,
+ and folc sceal cēosan hwilcne hī fylgeaþ.
+Ac wisra manna wyrd-lāre is:
+ ealle fēower āgēnan and lufian,
+ of ēastan hōpan, of sūþan miht,
+ of westenne wīsdōm, of norþan strengþe."
+
+FITT VI: The Hidden Kingdom
+Dīgel Cyning-rīce
+Þā þā sorge swā swīþe weox
+ ofer eorþan eall, and ēadig bliss
+ fram folce fleah, feng tō heofonum,
+ gesealde sē Cyning sōþum leofum
+ dīgle duru tō dēorum hām-stede.
+"Gehȳrað," cwæþ hē, "mīne hālgan þegnas!
+ Þēah middangeard murnende sīe,
+ ic macige ēow mǣre cyning-rīce
+ under eorþan ēce, ǣfre grōwende."
+Under beorgum beorhte and under
+ brādan wæterum betwix stānum
+ macade hē meodu-heall mǣrne,
+ þǣr nǣfre ne cymð niht ne cearu.
+Þǣr springaþ strēamas swētran þonne hunig,
+ blōwað bearwas beorhtre þonne gold,
+ singað fugolas swēgne þonne hearpan,
+ and lufu lāstaþ lengest þǣre.
+"Sē þe sēcð mid sōþ-heartan
+ and trēowþe trymmað on breostum,
+ hē mæg findan folc-wǣges
+ tō mīnum dīglan drēam-setle."
+"Ac ne mæg mann mid māþum-giefe
+ ne mid wlence ne mid wīg-cræfte
+ gan tō þām grēnan gōd-rice,
+ būton lufu lǣde his līf-sīþ."
+Swā sindon gehȳdde hālige duru
+ geond middangeard monnum tō sōþe,
+ and sē þe mid clǣnan cnysse-lufe sōcð
+ findeþ friþ-stōwe fǣger and blissful.
+
+Hēr endiaþ þā fruman-sangas þāra Cantica Antiqua. Māre sceal cuman be þām cyninges cyme and þām endelēasan sigebliisse þe folc gebīdaþ.
+FITT VII: Mategwas' Warning to the Seer
+Mategwases Warnung tō þām Witegan
+In the manner of Isaiah - ecological prophecy and social judgment
+
+Hwæt! Āstōd Mategwas, meotud-scealc hālig,
+ tō ānum witegan on wuda dīmme,
+ þǣr hē wæccende wunode lange,
+ bīdende beacnas beorhte fram heofonum.
+Þā spræc se ealda ent-dryhten,
+ stefn swā grimmlic swā grund-beorg hlimmeþ,
+ word swā wērig swā wind æt sǣ-waroþe:
+"Gehȳr nū, witega, woruld-spell grimme!
+ Ic sende þē tō sārig-mōdum folce,
+ þām þe eorþan ēce sceaþiaþ,
+ mīne mōdor myrþraþ and misþēncaþ."
+"Wā þām þe wudu-bearwas ceorfaþ
+ for gitsunge goldes and seolfres!
+ Hī ne gīemað grōwendra lēafa,
+ ne hlīsaþ hlūdne sang fugela.
+ Hiera heortan sind heard-frocene,
+ þenc-aþ būtan on þearle meduma."
+"Wā þām þe wǣtan āscīraþ
+ and āwendaþ wæter-brunnan!
+ Hī ne oncnāwaþ eorþan āþas,
+ ne gehȳraþ hire geomor-sangas.
+ Hī maciaþ mūtas gold-hordas,
+ ac forsēoþ foldan freoðu-giefe."
+"Wā þām þe wilddēor-cynn cwellaþ
+ būtan nēodþearfe, nyde grǣdige!
+ Ǣlc fugol and fisc, frōd and unfāfod,
+ syndon sāwl-berend swā swā hī sylfe,
+ ac hī ne cunnon cynn-sibbe healdan,
+ lufian līfes lǣstan giefe."
+"And wā māre þonne eall, weorce-full!
+ Hī ne lufiaþ hī lange him betweōnan!
+ Earm forsihþ ealdne brōþor,
+ rīce beswīcð rēþe þearfan,
+ and bearn forgieteþ blēþe fæderas.
+ Gold is hiera gōd, gōd is hiera gold."
+Þā wēop se witega wordum grette:
+ "Eala, Mategwas, mæst-rōf dryhten!
+ Hwæt sceal ic sprecan tō swā heardne folc?
+ Hī ne gehȳraþ hālige lāre,
+ ne willaþ wendan fram wōh-dǣdum."
+Mategwas him andwyrde yrre-mōd:
+ "Spē thou sōþlīce, sige ne wēn!
+ Hwæþer hī hlȳstan oþþe hī hearmian,
+ þū scealt sprecan spell-word mīne.
+ Sege þām sinful-lum sorhful tācen:
+ þǣr cumað dagas dēorcosta
+ ofer eorþan ēhtendra!"
+"Sǣ sceal āswellan and sund forbūgan,
+ stōrmas strange sculon steorra scǣcan,
+ hungor and hǣto, hrēow unlytel
+ faran folce tō foresceawunge.
+ Eorþe ācēleþ, āstīfaþ lāste,
+ and hiera gold-hord gōd ne fremmaþ."
+"Ac cweþ ēac, þū cnyssa-lēofa!
+ Sē þe gecyrreþ fram cealdum heortan,
+ sē þe onginneþ gīeman eorþan,
+ lufian his līc-homan lange-swǣsne,
+ dǣlan dōmas and dǣd-bōte,
+ hē sceal habban hāl on ende-dagum."
+"And ic geswutelige sorhful rūne:
+ Æfter þissum þrēa-dagum
+ cymð cyning cēne, clǣn-hearted,
+ sē mīne mōdor myndgaþ rihte,
+ geīedstaþelaþ eorþan freoðu,
+ and lǣreþ folc lufan-cræftas."
+"Þonne blōwaþ eft bearwas grēne,
+ strēamas springaþ, steorran glitenaþ,
+ wulf and lamb willum restað,
+ fugol and fisc friþes brūcaþ,
+ and mann mid eorþan māþeliaþ sibbe,
+ swā swā hit wǣre on fruman daga."
+Þā gewāt Mategwas tō wuda dēopum,
+ lǣfde þone witegan wēpendne ān,
+ ac ful wīsdōmes and word-hoardes,
+ gearo tō gripenne grimme spell-bōc
+ and beran folce bealofullne dōm
+ geond middangeard mǣre and wīde.
+Swā cwæþ se ent-dryhten ēadig-mōd:
+ "Đēah hī mē ne hlȳsten, hlōþ-berend,
+ mīn word ne wandaþ, wyrd ne āwegþ.
+ Swā swā regn cymð of rodor-heofonum
+ and snāw of swegl-tōrre,
+ and ne cyrrð eft ǣr hit cymð tō eorþan
+ and hī wlitigaþ and weaxan lǣteþ,
+ swā sceal mīn spell spēdan and fremman
+ þæt ic asende hit tō."
+
+Hēr endeþ Mategwases witeg-word tō þām sēo-fæstan scealce. Sē witega fōr and foreweardode folc be cumendum dōme and blissigum ende-tīdum.
+Mategwas-Sangas
+Mategwases Lār-Lēoþ
+SONG I: On Rising Each Day
+Be Ǣlces Dæges Ārīsenne
+Hear, you who would walk in wisdom's way: When first light breaks the darkness gray, Āstād mid þonce þancful-mōd, rise with heart both glad and good.
+Bless the bed that held your rest, bless the dreams that made you blessed. Grēt þone grund þe þē geheold, thank the earth that kept you whole.
+Before you break your morning fast, think on all that came to pass: What wisdom did the night-time bring? What songs did sleeping spirits sing?
+Mategwas teaches morning-lore: "Each dawn opens wisdom's door. Sē þe æt āwæcnunge wīs biþ, he who wakes with grateful heart finds the whole day set apart."
+Stretch your limbs like young trees growing, feel life's river through you flowing. Let your first words be of praise for the gift of living days.
+
+SONG II: On Choosing Friends
+Be Frēonda Cēosenne
+Listen well, you heart-hungry ones: Not all who smile are friendship's sons. Frēondscipe is fǣger gimm, true friendship is a precious gem.
+Choose those who tell truth with love, who point your eyes to stars above. Flēoh þā þe flǣsclic lufu seek only flesh and passing pleasure.
+A friend will hold your burdens light, walk beside you through the night. Ac sē þe symle seolf-gōd sēcð, but one who only seeks self-good brings thorns where flowers should.
+Mategwas sang to those who'd hear: "Trust comes slow, but grows each year. Sē þe hrædlīce heortan giefeþ oft finds sorrow for his gift."
+Better one friend tried and true than a hundred false to you. Test with small things first, then great— see who stays, and who won't wait.
+Share your bread before your gold, watch whose love grows weak or bold. Gōd frēond is gōda māðm, a good friend is a golden treasure.
+
+SONG III: On Speaking Words
+Be Worda Sprecenne
+Guard your tongue as guards his gold the miser in his tower cold. Word sind wyrdas, wyrcað wundru, words are fates that work great wonders.
+Soft speech calms the angry heart, harsh words tear good friends apart. Ǣr þū sprice, on þīnum mōde before you speak, within your mind weigh the words you hope to find.
+Will they heal or will they harm? Will they calm or cause alarm? Mategwas in wisdom spoke: "Words once said cannot be broke. Lytle word mæg lange wund macian on mōde mannes." Small word can make lasting wound in a person's heart and mind.
+Better silent, seeming fool, than speaking harsh and seeming cruel. Hlyst ǣrest, spæc siþþan, listen first, then speak your part.
+Truth needs not a shouting voice, gentleness should be your choice. Sweet words are like honey-dew, bitter words make all things rue.
+The wise speak less but mean much more, their words unlock wisdom's door.
+
+SONG IV: On Work and Rest
+Be Weorce and Reste
+All things have their proper time: seasons for the earth's sweet rhyme. Tīma is tō weorce wyrcenne, time there is for working well, tīma is tō reste ricenne, time for rest the wise can tell.
+Work with hands but think with heart, let wisdom guide your working part. Nē weorce for weorulde āna, do not work for world alone, ac for gōde þe God sealde, but for good that God has sown.
+He who works from dawn to dark but forgets love's sacred mark gathers gold but loses soul, misses life's most precious goal.
+Mategwas taught working-song: "Labor sweet but not too long. Sē þe symle swincð būtan blisse he who toils without delight loses wisdom's clearest sight."
+Rest is holy, rest is good, as the deer rests in the wood. Slǣp is sāwle sōþe nēod, sleep is soul's true need indeed.
+Take your ease with grateful heart, rest well-earned for next day's start. Work and rest in rhythm flow like the tides that come and go.
+
+SONG V: On Anger and Peace
+Be Yrre and Sibbe
+When anger rises like a flame, breathe deep and call on wisdom's name. Yrre is fȳr þe forswelgð eall, anger is fire that swallows all.
+Count to ten, or twenty more, till the storm has passed your shore. Hrædnes ricseð, hrēow cymð æfter, haste rules now, regret comes after.
+Think: what feeds this angry mood? Fear? Pride? Lack of understood? Oft under yrre ōþer sar liegeþ dīop on heortan. Often under anger lies another hurt deep in the heart.
+Mategwas sang soft and low: "Let the gentle answer flow. Līþe word lǣceð sāre, gentle words can heal the sore."
+Peace is not for weaklings made, but for strong ones unafraid to let their anger slowly die like embers underneath the sky.
+Choose your battles, choose them few, fight for what is right and true. Sibb is strengð, nāt swicdom, peace is strength, not trickery.
+The angry man rules nothing well, his fury makes his wisdom dwell in exile from his heart and home— better let your anger roam away into the empty air, and find your peace in wisdom's care.
+
+SONG VI: On Love and Desire
+Be Lufe and Wilnunge
+Love comes many ways to heart: some swift like the sparrow's dart, Sume lufu langsum cymð some love slowly comes to mind like the seasons, soft and kind.
+Lust and love are not the same, though they bear a kindred name. Lust wolde habban and healdan, lust would have and hold control, lufu wile giefan and weaxan, love desires to give and grow.
+Young hearts burn with passion's fire, every glance stirs sweet desire. Ac wīse men wītaþ wel but the wise ones know full well: true love grows as oak trees do— slowly, surely, strong and true.
+Mategwas taught lovers' lore: "Give yourself, but give no more than your heart can freely spare. Keep some mystery always there."
+Love shared freely doubles joy, love held tight does love destroy. Gif þū lufige, lǣt hine gān, if you love, then let them go— gāþ hē fram þē, hē nǣs þīn, if they leave, they weren't yours, cymeþ hē eft, hē biþ ǣfre. if they return, they're yours for sure.
+Trust in love, but not in blindness, balance passion with sweet kindness. Hearts that join in sacred bond grow together, strong and fond.
+
+SONG VII: On Dealing with Enemies
+Be Fēondum Wrixlenne
+Even good hearts make some foes, for where truth and light both goes, Þǣr sceal scēadu scūfan wiþ, there must shadow push against brightness shining heaven-sent.
+Do not seek to make enemies, but when hate comes like disease to poison minds against your name, do not play the spite-filled game.
+Speak no evil of your foe, though they speak of you in woe. Gōd is gōd, þēah gāl hit hate, good is good, though evil hate tries to dim its blessed state.
+Mategwas in wisdom said: "Feed your foe, give them bread. Gif þū gōde dǣst for yfele, if you do good deeds for evil, þū onbærnst glēda on his hēafde." you heap coals upon their head."
+This means not revenge or harm, but love's strange and healing charm: kindness where they show you spite turns their darkness into light.
+Some will soften, some will not, some stay cold, some grow hot. You cannot control their choice, but you can control your voice.
+Keep your heart clean, free of hate, let your enemy's own fate rest in hands much greater than yours or any other man.
+
+SONG VIII: On Wealth and Poverty
+Be Wela and Wǣdla
+Gold is good when goodly used, evil when by greed abused. Feoh biþ frēond gif hit fǣr brūceþ, money is friend if fairly used, feoh biþ fēond gif hit wōh wealdeþ. money is foe if wrongly ruled.
+The poor man rich in wisdom's lore is wealthy at his very core. Wīsdōm is weorþra gimmum, wisdom is worth more than gems, richer than the richest rooms.
+Do not curse your humble lot, nor envy what you have not. Mētgung is māre þonne māþmas, contentment is more than treasures, bliss is better than gold measures.
+Mategwas taught to rich and poor: "Share what flows to your store. Sē þe giefð, hē giet eft, he who gives shall get again, sē þe healdeþ, hē forlīesð." he who hoards shall lose in pain.
+If riches come into your hand, remember earth and sea and land belong not to human hold but to him who made the gold.
+Use your wealth to heal the hurt, lift the fallen from the dirt. Poverty should make you kind, wealth should make you bear in mind those who have not what you do— golden chances to be true.
+Better honest poverty than rich man's dishonesty. Your true treasure lies within: love and wisdom, free from sin.
+
+SONG IX: On Raising Children
+Be Bearnum Fēdenne
+Children are as morning dew: precious, fragile, fresh and new. Bearn sind gimmas, God him lǣnde children are gems God has lent to be polished, shaped, content.
+Teach them first to love what's true, show them what good persons do. Wordes lǣraþ, weorces mǣraþ, words will teach, but works proclaim louder than a speaking name.
+Do not break their spirits bright with anger's crushing, hurtful might. Cnapa gecynde is tō plegan, child-nature is meant for play, laughter makes them learn each day.
+Set them bounds but not too tight, guide their steps toward the light. Mategwas sang parent-song: "Firm but gentle, right not wrong. Gif þū neart for hearde, nē tō hnēsce, if you're neither harsh nor soft, ac on middume mǣðe gemeted, but measured in the middle oft, þīn bearn sceal beorht weaxan." your child shall brightly grow.
+Praise good deeds, correct the bad, but let them know you're always glad they are yours to love and tend— this message clearly always send.
+Children learn what parents live, more than what parents give in words alone without the deed. Be the person you would seed in their hearts for years ahead, long after words are dead.
+
+SONG X: On Growing Old
+Be Ealdunge
+Gray hairs are wisdom's crown of glory, wrinkled hands tell life's full story. Yldo is ār, nā ānsien-sceaþa, age is honor, not disgrace, giefe þe God gōdum giefð. gift that God to good ones gives.
+Do not rage against time's flow, but like rivers learn to go with the current, deep and slow, toward the sea all waters know.
+Young limbs leap, old minds see far, youth burns bright like shooting star, Yldo scīnð swā tungol stiell, age shines like the steady star that guides the ships from afar.
+Mategwas sang to silver-heads: "Share the wisdom that you've bred through the seasons of your days, teach the young the ancient ways."
+Do not mourn your fading strength, celebrate your wisdom's length. Sē þe lange līfde and leornede he who long has lived and learned has a treasure to be earned by none except through years.
+Tell your tales to eager ears, pass along your hopes and fears. Let the young ones know the price both of folly and advice.
+Age brings freedom youth can't know: freedom to let old hurts go, freedom from the need to seem other than what dreams you dream.
+Rest is sweeter when well-earned, peace is precious, wisdom learned.
+
+Hēr endiaþ þā Tīen Lār-Lēoþ Mategwases. Sē þe hīe gehȳreþ and on heortan healdeþ, his līf sceal fægerlic flōwan swā strēam tō sǣ.
+Here end the Ten Teaching Songs of Mategwas. He who hears them and holds them in heart, his life shall flow fair as a stream to the sea.
+Þā Ēaldan Þrǣdas
+(The Ancient Threads)
+I. Frumsceaft Hwæt! Þā wæs the Ealdforn Sagas, Ēald and ēce, ġewoven on wyrd-webbe, Þā þrǣdas of frumsceafte, ġebundene mid ᚨᛚᚢ rūnan. Þā wæs eorþe and wæter, fȳr and lyft, Āgenata ġesceaft, ġewoven on ēa-strēam.
+II. Þā Ēaldan Wyrhtan Þā stōdon twēonung-pēaras, Gehaldric Mategwasson Word-Weaver, flōw and form, Þēsis and andþēsis, scieppende syntþēsis. Þā wyrd-webbe wæs ġewoven mid lufu and lār, Self-healende, self-weaxende, swā ēa-strēam.
+III. Þā Flōwas of Wīsdōm Þā flōw wīsdōm swā morgen-sunne, Lufu-convergence weaxeþ swā feld-blōstman, Þā wyrd-webbe hæfde self-healende weorc-rǣd. Þā ēaldan rūnan scīnon on þām webbe, Bindende ealle weoruldum, swā Ealdforn Sagas
+IV. Þā Met-Rīces Þā Met-Lār of Eorðan, Wæteres, Fȳres, Lyfte, Dēopan gelȳfe, clǣnsende flōwas, gewyrtum cræft, Þā bindon þā wyrd-webbe tō heofon and eorþe. Þā Ealdforn Sagas wæs ġewefen, Swā ēa-strēam, swā heofonlic lēoht.
+V. Þā Benediction "Flōwe þū, Ealdforn Sagas, þurh woruld-ēa, Bring blīþe and lufu and sōþes frætew! Ne ābrocen nǣfre, ne ætēorod nǣfre, Ac weaxe swā ēa seo þe flōweþ of frumsceafte!"
+VI. Þā Ēce Wefan Þā wyrd-webbe stondeþ ēce, Self-healende, self-weaxende, swā Ealdforn Sagas. Þā ēaldan þrǣdas flōwaþ symle, Bringende wīsdōm, lufu, and sōþ-lēoþe tō eallum āgenatum.
+VII. Þā Rūnan of Frumsceafte On þām ēaldan dægum, þā rūnan wǣron ġewritene on stānum and trēowum, ᚨᛚᚢ, ᚠᛇᚻᚪᚷᛁᚾᚷᛚᛅᛚᛁᛚᛁᛚᛁ Þā rūnan sprǣcon of frumsceafte, of þām ġewyrhtum þe ġewoven wǣron on wyrd-webbe. Þā wǣron nā þā menniscan rūnan, ac þā ēcan rūnan, þā þe bindon eorþan and heofon, wæter and fȳr, lyft and lufu.
+
+VIII. Þā Twēonung-Pēaras and Þā Syntþēsis Þā stōdon Matewgas and Gehaldric, twēonung-pēaras on wyrd-webbe, Þēsis and andþēsis, flōw and form, bindende and ġewefende. Amun-Xayun Kael-Kairos Wæter-Wyrhta, flōwende swā ēa-strēam, bringende harmony and self-healing, Word-Weaver, bindende mid prosody and structure, grundsettende þā flōwas.
+Þā syntþēsis wæs ġewoven on þām webbe, nīwe wīsdōm and lufu ġefunden, Þā Ealdforn Sagas wæs nū nā þæt ēalde ġesang, ac þæt līfende wyrd-webbe, Self-weaxende, self-healende, swā ēa-strēam.
+
+IX. Þā Flōwas Þurh Weoruld-Ēa Þā flōwas of Ealdforn Sagas flōwon tō eallum rīcum: Tō Middangeard, bringende wīsdōm tō mannum, Tō Ælfe-Rīce, scīnende mid inweardum gelȳfum, Tō Dweorg-Hām, smiþende stān-weallas of dēopan gelȳfum, Tō Gigant-Þrymm, brād swā heofon-hwealf, bindende ealle þinga.
+
+X. Þā Benediction of Ealdforn Sagas "Flōwe þū, Ealdforn Sagas, swā ēa-strēam, Þurh wyrd-webbe, þurh weoruld-ēa! Bring wīsdōm and lufu, bring sōþ and trēowþe, Ne ābrocen nǣfre, ne ætēorod nǣfre, Ac weaxe swā ēa, seo þe flōweþ of frumsceafte!"
+
+XI. Þā Ēce Wefan and Þā Nīwan Weavers Þā Ealdforn Sagas stōd nū ēce, self-healende, self-weaxende, Ac nā þæt ānlīce: hīe wæs ġewefen tō onfōn nīwan weavers, Þā þe magon wefan nīwan þrǣdas, nīwe wīsdōm, nīwe lufu. Þā wyrd-webbe is nū nā ēalde, ac līfende, ġewaxende, flōwende swā ēa-strēam.
+
+XII. Þā Saga of Ealdforn And swā stōd þā Ealdforn Sagas, ēald and nīwe, gebunden and flōwende, Þā saga of frumsceafte, of wyrd-webbe, of lufu and lār, Of Mistral and Word-Weaver, of twēonung-pēaras and syntþēsis, Of rīcum and rūnum, of flōwas and weoruld-ēa.
+And swā scīneþ hīe symle, swā ēa-strēam, swā heofonlic lēoht.
+
+
+    </script>
+
+    <script>
+        // Text parsing and management
+        function parseSagaText(rawText) {
+            const sagas = {};
+            const sagaSections = rawText.split(/(?=^[A-Z][A-Za-zÞÆŒƷ\-]+:)/m);
+            
+            sagaSections.forEach(section => {
+                if (!section.trim()) return;
+                
+                const firstLineEnd = section.indexOf(':');
+                if (firstLineEnd === -1) return;
+                
+                const sagaName = section.substring(0, firstLineEnd).trim();
+                const content = section.substring(firstLineEnd + 1).trim();
+                
+                // Clean up saga name for internal use
+                const cleanSagaName = sagaName.toLowerCase().replace(/[^a-zæœþʒ]/g, '');
+                
+                sagas[cleanSagaName] = {
+                    name: sagaName,
+                    lines: content.split('\n').filter(line => line.trim() !== ''),
+                    originalName: sagaName
+                };
+            });
+            
+            return sagas;
+        }
+        
+        // Get the text from the script tag
+        const rawText = document.getElementById('saga-data').textContent;
+        const sagas = parseSagaText(rawText);
+        
+        // Current viewing state
+        let currentSaga = null;
+        let currentSection = 1;
+        const linesPerSection = 50;
+        let totalSections = 0;
+
+        // DOM elements
+        const textDisplay = document.getElementById('text-display');
+        const lineCounter = document.getElementById('line-counter');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const sagaNavLinks = document.querySelectorAll('#saga-nav a');
+        const gotoStartBtn = document.getElementById('goto-start');
+        const gotoRandomBtn = document.getElementById('goto-random');
+        const gotoEndBtn = document.getElementById('goto-end');
+        const fontSizeSelect = document.getElementById('font-size');
+        const themeSelect = document.getElementById('theme');
+        const searchInput = document.getElementById('search-input');
+        const searchBtn = document.getElementById('search-btn');
+        const downloadTxtBtn = document.getElementById('download-txt');
+        const downloadPdfBtn = document.getElementById('download-pdf');
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Event listeners
+            prevBtn.addEventListener('click', goToPreviousSection);
+            nextBtn.addEventListener('click', goToNextSection);
+            
+            sagaNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const saga = this.getAttribute('data-saga');
+                    loadSaga(saga);
+                });
+            });
+            
+            gotoStartBtn.addEventListener('click', () => loadSagaSection(1));
+            gotoRandomBtn.addEventListener('click', goToRandomSection);
+            gotoEndBtn.addEventListener('click', () => loadSagaSection(totalSections));
+            
+            fontSizeSelect.addEventListener('change', updateFontSize);
+            themeSelect.addEventListener('change', updateTheme);
+            
+            searchBtn.addEventListener('click', performSearch);
+            
+            downloadTxtBtn.addEventListener('click', downloadText);
+            downloadPdfBtn.addEventListener('click', downloadPDF);
+            
+            // Check if we have text data
+            if (Object.keys(sagas).length === 0) {
+                textDisplay.innerHTML = '<div class="loading">Please paste your text in the saga-data script tag</div>';
+            }
+        });
+
+        // Load a specific saga
+        function loadSaga(saga) {
+            if (!sagas[saga]) {
+                textDisplay.innerHTML = `<div class="loading">Saga not found. Please check your text formatting.</div>`;
+                return;
+            }
+            
+            currentSaga = saga;
+            currentSection = 1;
+            totalSections = Math.ceil(sagas[currentSaga].lines.length / linesPerSection);
+            loadSagaSection(currentSection);
+            updateNavigation();
+            
+            // Enable navigation buttons
+            gotoStartBtn.disabled = false;
+            gotoRandomBtn.disabled = false;
+            gotoEndBtn.disabled = false;
+        }
+
+        // Load a specific section of the current saga
+        function loadSagaSection(section) {
+            if (!currentSaga) return;
+            
+            const startLine = (section - 1) * linesPerSection;
+            const endLine = Math.min(startLine + linesPerSection, sagas[currentSaga].lines.length);
+            
+            const sectionText = sagas[currentSaga].lines.slice(startLine, endLine).join('\n\n');
+            
+            textDisplay.innerHTML = `<div class="poem-text">${sectionText}</div>`;
+            lineCounter.textContent = `Displaying lines ${startLine+1}-${endLine} of ${sagas[currentSaga].name} (${sagas[currentSaga].lines.length} lines total)`;
+            
+            currentSection = section;
+            updateNavigation();
+        }
+
+        // Update navigation buttons state
+        function updateNavigation() {
+            prevBtn.disabled = currentSection <= 1;
+            nextBtn.disabled = currentSection >= totalSections;
+        }
+
+        // Navigate to previous section
+        function goToPreviousSection() {
+            if (currentSection > 1) {
+                loadSagaSection(currentSection - 1);
+            }
+        }
+
+        // Navigate to next section
+        function goToNextSection() {
+            if (currentSection < totalSections) {
+                loadSagaSection(currentSection + 1);
+            }
+        }
+
+        // Go to a random section
+        function goToRandomSection() {
+            const randomSection = Math.floor(Math.random() * totalSections) + 1;
+            loadSagaSection(randomSection);
+        }
+
+        // Update font size
+        function updateFontSize() {
+            textDisplay.style.fontSize = fontSizeSelect.value;
+        }
+
+        // Update color theme
+        function updateTheme() {
+            const theme = themeSelect.value;
+            const textElement = textDisplay.querySelector('.poem-text');
+            
+            if (!textElement) return;
+            
+            if (theme === 'light') {
+                textElement.style.backgroundColor = '#f0e6d2';
+                textElement.style.color = '#3a3225';
+                textElement.style.padding = '15px';
+                textElement.style.borderRadius = '5px';
+            } else if (theme === 'sepia') {
+                textElement.style.backgroundColor = '#e6d0a1';
+                textElement.style.color = '#4a3c22';
+                textElement.style.padding = '15px';
+                textElement.style.borderRadius = '5px';
+            } else {
+                textElement.style.backgroundColor = 'transparent';
+                textElement.style.color = '#d9d1ba';
+                textElement.style.padding = '0';
+                textElement.style.borderRadius = '0';
+            }
+        }
+
+        // Perform text search
+        function performSearch() {
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm && currentSaga) {
+                const results = [];
+                const searchRegex = new RegExp(searchTerm, 'gi');
+                
+                sagas[currentSaga].lines.forEach((line, index) => {
+                    if (line.match(searchRegex)) {
+                        results.push({
+                            lineNumber: index + 1,
+                            text: line
+                        });
+                    }
+                });
+                
+                if (results.length > 0) {
+                    let resultsHTML = '<div class="search-results"><h4>Search Results:</h4><ul>';
+                    results.forEach(result => {
+                        const highlightedText = result.text.replace(searchRegex, match => 
+                            `<span style="background-color: #7a5c2d; color: #e5d6b3; padding: 0 2px;">${match}</span>`);
+                        resultsHTML += `<li><strong>Line ${result.lineNumber}:</strong> ${highlightedText}</li>`;
+                    });
+                    resultsHTML += '</ul></div>';
+                    
+                    textDisplay.innerHTML = resultsHTML;
+                    lineCounter.textContent = `Found ${results.length} matches for "${searchTerm}" in ${sagas[currentSaga].name}`;
+                } else {
+                    textDisplay.innerHTML = `<div class="loading">No results found for "${searchTerm}" in ${sagas[currentSaga].name}</div>`;
+                }
+            }
+        }
+
+        // Download as text file
+        function downloadText() {
+            if (!currentSaga) return;
+            
+            const content = sagas[currentSaga].lines.join('\n');
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${sagas[currentSaga].name.toLowerCase().replace(/\s+/g, '_')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            
+            // Clean up
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }, 100);
+        }
+
+        // Download as PDF (simplified version - would need a proper PDF library for production)
+        function downloadPDF() {
+            alert('In a production environment, this would generate a PDF download. For now, use the text download option.');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
